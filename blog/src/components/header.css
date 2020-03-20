@@ -1,0 +1,11 @@
+header {
+    position: fixed;
+    background: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 64px;
+    width: 90%;
+    min-width: 700px;
+    max-width: 1200px;
+    z-index: 10;
+}
