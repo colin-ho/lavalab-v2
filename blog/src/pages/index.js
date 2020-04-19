@@ -4,11 +4,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import "./index.css"
 
+import HomePage from "./home.js"
+
+import "./index.css"
 const IndexPage = () => (
   <Layout>
-    <div class='image-section' style={{ backgroundImage: `url('img/Spring-2019-Retreat.jpg')` }}>
+    <HomePage></HomePage>
+    {/* <div class='image-section' style={{ backgroundImage: `url('img/Spring-2019-Retreat.jpg')` }}>
       <div class='hero'>
         <div class='divider'/>
         <div class='hero-text'>
@@ -61,7 +64,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      {/* first steps */}
+    
       <div class='content content-full' style={{height: 500}}>
         <div class='tile tile-full'>
           <div class='tile-content'>
@@ -307,7 +310,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
   </Layout>
 )

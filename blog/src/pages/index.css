@@ -51,7 +51,7 @@ body {
 }
 
 .tile-label {
-    margin-top: 30px;
+    margin-top: 15px;
     font-family: 'NeurialGrotesk-Medium';
     text-transform: uppercase;
     font-size: 16px;
@@ -71,15 +71,16 @@ body {
 
 .carousel-header {
     font-family: 'Editor';
-    font-size: 45px;
+    font-size: 54px;
+    line-height: 58px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .carousel-text {
     font-family: 'NeurialGrotesk';
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 1.1;
 }
 
 .carousel-nav {
@@ -88,7 +89,7 @@ body {
     left: 0;
     width: 100%;
     background-color: black;
-    height: 70px;
+    height: 100px;
 }
 
 .image-section {
@@ -103,13 +104,13 @@ body {
 .image-section-inner {
     position: relative;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 900px;
     height: 100%;
 }
 
 .content-section {
     background-color: #f2f2f7;
-    padding: 40px 64px;
+    padding: 40px 40px;
 }
 
 .content-section-dark {
@@ -119,8 +120,8 @@ body {
 .content {
     position: relative;
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 1% 0;
+    max-width: 1350px;
+    padding-bottom: 2%;
 }
 
 .content-half {
@@ -129,7 +130,7 @@ body {
 }
 
 .content-full {
-
+    
 }
 
 .hero {
@@ -217,25 +218,23 @@ body {
     display: flex;
     align-items: center;
     background-color: white;
-    height: 25%;
-    width: 85%;
-    max-height: 96px;
+    height: 96px;
     max-width: 400px;
-    bottom: 25px;
-    left: 25px;
-    right: 25px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
 }
 
 .label-icon {
     margin-left: 20px;
-    height: 28%;
-    max-height: 20px;
+    height: 20px;
     border: 0.5px solid #ff5c39;
     border-radius: 100px;
-    padding: 10px;
+    padding: 8px;
 }
 
 .label-content {
+    font-size: 16px;
     line-height: 1.09;
     margin-left: 20px;
 }

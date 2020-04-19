@@ -4,8 +4,8 @@ header {
     left: 50%;
     transform: translateX(-50%);
     height: 64px;
-    width: 90%;
+    width: 95%;
     min-width: 700px;
-    max-width: 1200px;
+    max-width: 1312px;
     z-index: 10;
 }
