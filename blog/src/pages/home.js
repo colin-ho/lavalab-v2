@@ -6,7 +6,8 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import { ContentContainer, TileRow, Tile, ImageTile } from "../components/tile"
+import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile } from "../components/tile"
+import { Carousel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
 import TileDemoNight from '../../static/img/Fall-2019-Demo-Night.jpg'
@@ -14,6 +15,7 @@ import TileDemoNight from '../../static/img/Fall-2019-Demo-Night.jpg'
 import RightArrowIcon from '../../static/icon/Right-Arrow-Icon/Light.png'
 import DownArrowIcon from '../../static/icon/Down-Arrow-Icon/Light.png'
 import PlayIcon from '../../static/icon/Play-Icon/Light.png'
+import DemoNightIcon from '../../static/icon/Events/Demo-Night-Icon/Highlight.png'
 
 import "./home.css"
 const HomePage = () => {
@@ -38,8 +40,12 @@ const HomePage = () => {
             </ImageHero>
             <ContentContainer>
                 <TileRow>
-                    <ImageTile image={ TileDemoNight } ></ImageTile>
-                    <Tile></Tile>
+                    <ImageTile image={ TileDemoNight } >
+                        <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
+                    </ImageTile>
+                    <ContentTile>
+                        <Carousel title="Welcome"></Carousel>
+                    </ContentTile>
                 </TileRow>
             </ContentContainer>
         </div>
@@ -98,6 +104,7 @@ const ImageHero = styled.div`
         align-items: center;
         position: relative;
         margin-left: auto;
+        font-family: NeurialGrotesk-Medium;
     }
 
     .get-to-know-us img {
@@ -125,6 +132,7 @@ const StyledButton = styled.div`
     padding: 10px 15px;
     font-size: 16px;
     justify-content: center;
+    font-family: 'NeurialGrotesk-Medium';
     
     img {
         display: block;

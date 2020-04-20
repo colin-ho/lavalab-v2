@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 
 import HomePage from "./home.js"
 
-import "./index.css"
 const IndexPage = () => (
   <Layout>
     <HomePage></HomePage>
