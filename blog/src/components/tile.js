@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ContentContainer = styled.div`
     width: 95%;
-    max-width: 1312px;
+    max-width: 1044px;
     margin: 0 auto;
     padding: 20px 0;
 `
@@ -14,13 +14,15 @@ const TileRow = styled.div`
     height: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 10px 0;
 `
 
 const Tile = styled.div`
-    height: 640px;
-    width: 640px;
+    position: relative;
+    height: 512px;
+    width: 512px;
     background-color: white;
+    
 `
 
 const ImageTile = styled(Tile)`
@@ -29,21 +31,36 @@ const ImageTile = styled(Tile)`
 `
 
 const StyledContentTile = styled(Tile)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
 
     .content {
-        width: 576px;
-        height: 576px;
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
         border-top: 1px solid #e5e5ea;
+    }
+
+    .title {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        text-transform: uppercase;
+        font-family: 'NeurialGrotesk-Medium';
+        padding: 16px 0;
+        font-size: 14px;
     }
 `
 
 const ContentTile = (props) => {
     return(
-        <StyledContentTile>
+        <StyledContentTile type={ props.type }>
+            <p className='title'>
+                    { props.title }
+            </p>    
             <div className='content'>
+                
                 { props.children }
             </div>
         </StyledContentTile>
@@ -53,14 +70,15 @@ const ContentTile = (props) => {
 
 const StyledEventLabel = styled.div`
     display: flex;
-    position: relative;
-    top: 508px;
-    left: 32px;
-    height: 100px;
-    width: 394px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    height: 80px;
+    width: 340px;
     background-color: white;
     align-items: center;
     font-size: 16px;
+    line-height: 18px;
 
     img {
         height: 18px;

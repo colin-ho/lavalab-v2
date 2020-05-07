@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 
 import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile } from "../components/tile"
-import { Carousel } from "../components/carousel"
+import { Carousel, CarouselSlide } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
 import TileDemoNight from '../../static/img/Fall-2019-Demo-Night.jpg'
@@ -43,14 +43,59 @@ const HomePage = () => {
                     <ImageTile image={ TileDemoNight } >
                         <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
                     </ImageTile>
-                    <ContentTile>
-                        <Carousel title="Welcome"></Carousel>
+                    <ContentTile title='Welcome'>
+                        <Carousel titles={['Welcome', 'Cirrculum']}>
+                            <CarouselSlide>
+                                <h1>
+                                    A definitive home for euntrepreneurs
+                                </h1>
+                                <p>
+                                    We are the University of Southern California’s premiere, student-run, product incubator. 
+                                    Every semester since 2013, we have invited 28 of the university’s most visionary 
+                                    designers, developers, and product managers to build tomorrow’s technology startups, 
+                                    today.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>
+                                    This panel is about curriculum
+                                </h1>
+                                <p>
+                                    Lorem ipsum yah yeet
+                                </p>
+                            </CarouselSlide>
+                        </Carousel>
+                    </ContentTile>
+                </TileRow>
+                <TileRow>
+                    <ContentTile type='full' title='Events'>
+                        <Carousel titles={['First Steps', 'Beach Bonfire']}>
+                            <CarouselSlide>
+                                    <h1>
+                                        First steps
+                                    </h1>
+                                    <p>
+                                        Traditional information sessions are boring.
+                                        So, we created First Steps: a networking event 
+                                        and ideation sprint open to any prospective applicants 
+                                        who want a taste of the LavaLab experience, a breakdown 
+                                        of the organization, and a detailed walkthrough of our 
+                                        application process. 
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                        </Carousel>
                     </ContentTile>
                 </TileRow>
             </ContentContainer>
         </div>
-
-
     )
 }
 
@@ -63,7 +108,7 @@ const ImageHero = styled.div`
     .hero-content {
         position: relative;
         margin: 0 auto;
-        max-width: 1140px;
+        max-width: 1044px;
         width: 90%;
         top: 460px;  
     }

@@ -1,5 +1,5 @@
 // carousel component... fk
-import React from "react"
+import React, { useState } from "react"
 import styled from 'styled-components'
 
 import LeftIconDisabled from "../../static/icon/Left-Arrow-Icon/disabled.png"
@@ -9,35 +9,33 @@ import RightIconEnabled from "../../static/icon/Right-Arrow-Icon/light.png"
 
 
 const StyledCarousel = styled.div`
-    width: 100%;
+    width: 472px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
 
 
     .carouselControls {
         display: flex;
         align-items: center;
-        position: relative;
+        position: absolute;
+        width: 472px;
+        left: 0;
         bottom: 0;
-        width: 100%;
-        height: 100px;
+        height: 80px;
         background-color: #000000;
     }
 
     .carouselContent {
+        position: relative;
+        height: 100%;
         width: 100%;
-        flex-grow: 1;
-    }
-
-    .carouselTitle {
-        text-transform: uppercase;
-        font-family: 'NeurialGrotesk-Medium';
-        padding: 32px 0;
+        display: flex;
+        flex-direction: row;
+        transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);   
     }
 
     img {
-        heght: 15px;
+        height: 15px;
         width: 15px;
         padding: 6px;
         border: 1px solid #FFFFFF;
@@ -53,22 +51,65 @@ const StyledCarousel = styled.div`
         margin-left: 15px;
         color: white;
     }
+
+    .carouselSlideContainer {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
 `
 
-const Carousel = ( props ) => {
+const StyledCarouselSlide = styled.div`
+    margin-top: 60px;
+    height: 80%;
+    width: 100%;
+
+    h1 {
+        font-family: 'Editor';
+        font-size: 42px;
+        padding: 20px 0;
+        line-height: 46px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+`
+
+const CarouselSlide = ({title, children}) => (
+    <StyledCarouselSlide>
+        <p className='title'> {title} </p>
+        { children }
+    </StyledCarouselSlide>
+) 
+
+const Carousel = ( {children, titles} ) => {
+    const [currentSlide, setCurrentSlide] = useState(0)
+
     return (
         <StyledCarousel>
-            <p className='carouselTitle'>{ props.title }</p>
-            <div className='carouselContent'>
-
+            <div className='carouselContent' style={{
+                width: `${100 * children.length}%`,
+                transform: `translateX(${-100/children.length * currentSlide}%)`
+            }}>
+                {
+                    children.map((slide, idx) =>(
+                        <div className='carouselSlideContainer' key={ idx }>
+                            { slide }
+                        </div>
+                    ))
+                }
+                { children }
             </div>
             <div className='carouselControls'>
-                <img src={ LeftIconDisabled } className='disabled'></img>
-                <img src={ RightIconEnabled }></img>
-                <div className='currentPage'>Curriculum</div>
+                <img src={ currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled } className={ currentSlide === 0 ? 'disabled' : '' } onClick={() => { if(currentSlide !== 0) setCurrentSlide(currentSlide - 1) }}></img>
+                <img src={ currentSlide === children.length - 1 ? RightIconDisabled : RightIconEnabled } className={ currentSlide === children.length - 1 ? 'disabled' : '' } onClick={() => { if(currentSlide < children.length - 1) setCurrentSlide(currentSlide + 1) }}></img>
+                <div className='currentPage'>{ currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}</div>
             </div>
         </StyledCarousel>
     )
 }
 
-export { Carousel }
+export { Carousel, CarouselSlide }
