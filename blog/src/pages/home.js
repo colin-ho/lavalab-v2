@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile } from "../components/tile"
-import { Carousel, CarouselSlide } from "../components/carousel"
+import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile } from "../components/tile"
+import { Carousel, CarouselSlide, TiledCarousel, SinglePanel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
 import TileDemoNight from '../../static/img/Fall-2019-Demo-Night.jpg'
@@ -16,6 +16,24 @@ import RightArrowIcon from '../../static/icon/Right-Arrow-Icon/Light.png'
 import DownArrowIcon from '../../static/icon/Down-Arrow-Icon/Light.png'
 import PlayIcon from '../../static/icon/Play-Icon/Light.png'
 import DemoNightIcon from '../../static/icon/Events/Demo-Night-Icon/Highlight.png'
+
+import PersonIcon from '../../static/icon/Person-Icon/Highlight.png'
+
+import FirstStepsIcon from '../../static/icon/Events/First-Steps-Icon/Highlight.png'
+import BeachBonfireIcon from '../../static/icon/Events/Beach-Bonfire-Icon/Highlight.png'
+
+import AirbnbIcon from '../../static/icon/Airbnb-Icon/Light.png'
+import AmazonIcon from '../../static/icon/Amazon-Icon/Light.png'
+import AppleIcon from '../../static/icon/Apple-Icon/Light.png'
+import FacebookIcon from '../../static/icon/Facebook-Icon/Light.png'
+import GoogleIcon from '../../static/icon/Google-Icon/Light.png'
+import MicrosoftIcon from '../../static/icon/Microsoft-Icon/Light.png'
+import RobinhoodIcon from '../../static/icon/Robinhood-Icon/Light.png'
+import SlackIcon from '../../static/icon/Slack-Icon/Light.png'
+import SnapchatIcon from '../../static/icon/Snapchat-Icon/Light.png'
+import TwitterIcon from '../../static/icon/Twitter-Icon/Light.png'
+import UberIcon from '../../static/icon/Uber-Icon/Light.png'
+import MoreIcon from'../../static/icon/Add-Icon/Light.png'
 
 import "./home.css"
 const HomePage = () => {
@@ -69,8 +87,8 @@ const HomePage = () => {
                 </TileRow>
                 <TileRow>
                     <ContentTile type='full' title='Events'>
-                        <Carousel titles={['First Steps', 'Beach Bonfire']}>
-                            <CarouselSlide>
+                        <TiledCarousel titles={['First Steps', 'Beach Bonfire', 'Beach Bonfire']}>
+                            <CarouselSlide icon={ FirstStepsIcon }>
                                     <h1>
                                         First steps
                                     </h1>
@@ -83,7 +101,7 @@ const HomePage = () => {
                                         application process. 
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
                                     <h1>
                                         Beach bonfire
                                     </h1>
@@ -91,19 +109,285 @@ const HomePage = () => {
                                         SOOO HYPE
                                     </p>
                             </CarouselSlide>
-                        </Carousel>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ BeachBonfireIcon }>
+                                    <h1>
+                                        Beach bonfire
+                                    </h1>
+                                    <p>
+                                        SOOO HYPE
+                                    </p>
+                            </CarouselSlide>
+                        </TiledCarousel>
                     </ContentTile>
                 </TileRow>
+            </ContentContainer>
+            <ImageHero background={ HeroTop } height='500'>
+                <div className='event-container'>
+                    <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>                  
+                </div>
+            </ImageHero>
+            <ContentContainer>
+                <TileRow>
+                    <ContentTile type='full' title='Community'>
+                        <SinglePanel>
+                            <CarouselSlide>
+                                <h1>
+                                A network of like-minded innovators, over 200 members strong and growing
+                                </h1>
+                                <p>
+                                Your fellow cohort members are friends for life. With an expansive network 
+                                of designers, developers, product managers, and all-around great people, 
+                                LavaLab offers the unique opportunity to become part of something greater 
+                                than yourself. Our community is full of rich life experience and extensive 
+                                industry knowledge. With kickbacks, parties, and workshops, alumni are always 
+                                involved, even after their Cohort semester.
+                                </p>
+                            </CarouselSlide>
+                        </SinglePanel>
+                    </ContentTile>
+                </TileRow>
+            </ContentContainer>
+            <ImageHero className='quote'>
+                <div className='quote-content'>
+                    <span>“</span><br/>
+                    (CAN WE REPLACE THIS lmao)
+                    LavaLab was seriously one of the most 
+                    unique experiences of my life. I loved it — 
+                    I felt like I grew a lot, especially as a presenter. I made amazing friends and it opened a huuuge door with Microsoft 
+                    as well.
+
+                    <div className='quote-profile'>
+                        <img src={ PersonIcon } />
+
+                        <div className='quote-profile-details'>
+                            <p className='name'>
+                                Jay Goettman
+                            </p>
+                            <p className='detail'>
+                                Product Manager · Fall 2019
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+            </ImageHero>
+
+            <ContentContainer>
+                <TileRow>
+                    <ContentTile title='Alumni Project Spotlight'>
+                        <Carousel titles={['Kyoku', 'Project Wren']}>
+                            <CarouselSlide>
+                                <h1>
+                                    Kyoku
+                                </h1>
+                                <p>
+                                Working with dietitians and doctors, Kyoku creates personalized nutrition, tailored to the body type, workout activity, and fitness goals 
+                                of each user. They provide unique, plant-based, superfood shakes in beautifully designed, 
+                                single-serve packets that are delivered 
+                                monthly to your doorstep.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>
+                                    Project Wren
+                                </h1>
+                                <p>
+                                    Something
+                                </p>
+                            </CarouselSlide>
+                        </Carousel>
+                    </ContentTile>
+
+                    <EmploymentTile title='Alumni Industry Employment' theme='dark'>
+                        <EmploymentContent>
+                            <div className='employment-item'>
+                                <img src={ AirbnbIcon }/>
+                                Airbnb
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ AmazonIcon }/>
+                                Amazon
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ AppleIcon }/>
+                                Apple
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ FacebookIcon }/>
+                                Facebook
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ GoogleIcon }/>
+                                Google
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ MicrosoftIcon }/>
+                                Microsoft
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ RobinhoodIcon }/>
+                                Slack
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ SnapchatIcon }/>
+                                Snapchat
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ SlackIcon }/>
+                                Slack
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ TwitterIcon }/>
+                                Twitter
+                            </div>
+                            <div className='employment-item'>
+                                <img src={ UberIcon }/>
+                                Uber
+                            </div>
+                            <div className='employment-item'>
+                                <img className='more-icon' src={ MoreIcon }/>
+                                And more
+                            </div>
+                        </EmploymentContent>
+                        
+                    </EmploymentTile>
+                </TileRow>
+                <TileRow>
+                    <ContentTile title='Executive Team' type='full'>
+
+                    </ContentTile>
+                </TileRow>
+
             </ContentContainer>
         </div>
     )
 }
 
+const EmploymentContent = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+
+    .employment-item {
+        flex: 1 0 21%;
+        text-align: center;
+        color: #8e8e93;
+        margin-bottom: 70px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            height: 48px;
+        }
+
+
+        .more-icon {
+            height: 20px;
+            border: 1px solid white;
+            padding: 4px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 100px;
+        }
+    }   
+`
+
 const ImageHero = styled.div`
+    position: relative;
     background-image: url(${ props => props.background });
-    height: 810px;
+    height: ${({ height }) => height ? height : '810'}px;
     width: 100%;
     background-size: cover;
+
+    &.quote {
+        color: white;
+        background-color: black;
+        font-family: 'Editor';
+        font-size: 52px;
+        line-height: 62px;
+        display: flex;
+        align-items: center;
+        
+        .quote-content { 
+            margin: 0 auto;
+            width: 95%;
+            max-width: 1044px;
+            span{
+                color: #ff5c39;
+            }
+
+            .quote-profile {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 17.5px;
+
+                img {
+                    height: 18px;
+                    width: 18px;
+                    padding: 8px;
+                    border: 1px solid #ff5c39;
+                    border-radius: 100px;
+                    margin-right: 15px;
+                }
+
+                .quote-profile-details {
+                    .name {
+                        font-family: 'NeurialGrotesk-Medium';
+                    }
+
+                    .detail {
+                        font-family: 'NeurialGrotesk';
+                        color: #8e8e93;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .event-container {
+        position: relative;
+        max-width: 1044px;
+        margin: 0 auto;
+        height: 100%;
+    }
 
     .hero-content {
         position: relative;

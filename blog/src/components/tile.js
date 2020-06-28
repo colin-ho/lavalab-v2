@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const ContentContainer = styled.div`
     width: 95%;
     max-width: 1044px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px 0;
 `
 
@@ -22,6 +22,8 @@ const Tile = styled.div`
     height: 512px;
     width: 512px;
     background-color: white;
+
+    
     
 `
 
@@ -32,6 +34,8 @@ const ImageTile = styled(Tile)`
 
 const StyledContentTile = styled(Tile)`
     width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
+    background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
+    color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
 
     .content {
         position: absolute;
@@ -39,7 +43,7 @@ const StyledContentTile = styled(Tile)`
         bottom: 20px;
         left: 20px;
         right: 20px;
-        border-top: 1px solid #e5e5ea;
+        border-top: 1px solid ${({ theme }) => theme == 'dark' ? '#2c2c2e' : '#e5e5ea' };
     }
 
     .title {
@@ -51,11 +55,44 @@ const StyledContentTile = styled(Tile)`
         padding: 16px 0;
         font-size: 14px;
     }
+
+    .employment-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        width: 100%;
+
+        .employment-item {
+            flex: 1 0 21%;
+            text-align: center;
+            color: #8e8e93;
+            margin-bottom: 70px;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    height: 48px;
+                }
+
+
+                .more-icon {
+                    height: 20px;
+                    border: 1px solid white;
+                    padding: 4px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    border-radius: 100px;
+                }
+            }   
+    }
+
+    
 `
 
 const ContentTile = (props) => {
     return(
-        <StyledContentTile type={ props.type }>
+        <StyledContentTile theme={ props.theme } type={ props.type }>
             <p className='title'>
                     { props.title }
             </p>    
@@ -66,6 +103,14 @@ const ContentTile = (props) => {
         </StyledContentTile>
     )
 }
+
+const EmploymentTile = styled(ContentTile)`
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+`
 
 
 const StyledEventLabel = styled.div`
@@ -115,8 +160,9 @@ const EventLabel = (props) => {
 export {
     ContentContainer,
     TileRow,
-    Tile,
+    Tile ,
     ImageTile,
     ContentTile,
+    EmploymentTile,
     EventLabel
 }

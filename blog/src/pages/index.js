@@ -118,7 +118,7 @@ const IndexPage = () => (
           <div class='tile tile-square'>
             <div class='tile-content'>
               <div class='top-bar'/>
-              <div class='tile-label'>Alumni Project Spotlight</div>
+              <div class='tile-label'> Project Spotlight</div>
               <div class='carousel'>
                 <div class='carousel-item'>
                   <h3 class='carousel-header'>Kyoku</h3>

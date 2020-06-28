@@ -7,6 +7,10 @@ import RightIconDisabled from "../../static/icon/Right-Arrow-Icon/disabled.png"
 import LeftIconEnabled from "../../static/icon/Left-Arrow-Icon/light.png"
 import RightIconEnabled from "../../static/icon/Right-Arrow-Icon/light.png"
 
+import FacebookIcon from "../../static/icon/Facebook-Icon/light.png"
+import InstagramIcon from "../../static/icon/Instagram-Icon/light.png"
+import TwitterIcon from "../../static/icon/Twitter-Icon/light.png"
+
 
 const StyledCarousel = styled.div`
     width: 472px;
@@ -41,10 +45,16 @@ const StyledCarousel = styled.div`
         border: 1px solid #FFFFFF;
         border-radius: 100px;
         margin-left: 32px;
+        cursor: pointer;
     }
 
     img.disabled {
         border: 1px solid #8e8e93;
+        cursor: not-allowed;
+    }
+
+    .social-icon {
+        margin-left: 16px;
     }
 
     .currentPage {
@@ -112,4 +122,123 @@ const Carousel = ( {children, titles} ) => {
     )
 }
 
-export { Carousel, CarouselSlide }
+const SinglePanel = ( {children} ) => {
+
+    return (
+        <StyledCarousel style={{ "width": "80%" }}>
+            <div className='carouselContent'>
+                { children }
+            </div>
+            <div className='carouselControls'>
+                {/* TODO: Setup links through constants page */}
+                <img className='social-icon' src={ FacebookIcon }/>
+                <img className='social-icon' src={ InstagramIcon }/>
+                <img className='social-icon' src={ TwitterIcon }/>
+                <div className='currentPage'>Connect with our community</div>
+            </div>
+        </StyledCarousel>
+    )
+}
+
+const StyledTiledCarousel = styled.div`
+    display: flex;
+`
+
+const IconGrid = styled.div`
+    width: 472px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 100;
+    flex-wrap: wrap;
+    margin-left: 70px;
+`
+
+const IconGridTile = styled.div`
+    display: inline-flex;
+    vertical-align: top;
+    width: 135px;
+    height: 135px;
+    margin: 12.5px 0;
+    
+
+    border: 1px solid #f2f2f7;
+    background-color: #f2f2f7;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    &.active {
+            background-color: white;
+            border: 1px solid #e5e5ea;
+
+            p: {
+                text-color: black;
+            }
+    }
+
+    .tile-inner {
+        width: 75px;
+        height: auto;
+        align-self: center;
+    }
+
+    p {
+        text-align: center;
+        color: #8e8e93;
+        padding-top: 10px;
+    }
+
+    img {
+        display: block;
+        height: 48px;
+        width: 48px;
+        margin: 0 auto;
+    }
+`
+
+const TiledCarousel = ( {children, titles} ) => {
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    return (
+        <StyledTiledCarousel>
+            <StyledCarousel>
+                <div className='carouselContent' style={{
+                    width: `${100 * children.length}%`,
+                    transform: `translateX(${-100/children.length * currentSlide}%)`
+                }}>
+                    {
+                        children.map((slide, idx) =>(
+                            <div className='carouselSlideContainer' key={ idx }>
+                                { slide }
+                            </div>
+                        ))
+                    }
+                    { children }
+                </div>
+                <div className='carouselControls'>
+                    <img src={ currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled } className={ currentSlide === 0 ? 'disabled' : '' } onClick={() => { if(currentSlide !== 0) setCurrentSlide(currentSlide - 1) }}></img>
+                    <img src={ currentSlide === children.length - 1 ? RightIconDisabled : RightIconEnabled } className={ currentSlide === children.length - 1 ? 'disabled' : '' } onClick={() => { if(currentSlide < children.length - 1) setCurrentSlide(currentSlide + 1) }}></img>
+                    <div className='currentPage'>{ currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}</div>
+                </div>
+            </StyledCarousel>
+            <IconGrid>
+                {
+                    children.map((slide, idx) => (
+                        <IconGridTile className={ currentSlide === idx ? 'active' : ''} onClick={ () => setCurrentSlide(idx) }>
+                            <div className='tile-inner'>
+                                <img src={ slide.props.icon }/>
+                                <p>
+                                    { titles[idx] }
+                                </p>
+                            </div>
+                        </IconGridTile>
+                    ))
+                }
+            </IconGrid>                
+        </StyledTiledCarousel>
+    )
+}
+
+export { Carousel, TiledCarousel, SinglePanel, CarouselSlide }
