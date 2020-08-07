@@ -86,6 +86,10 @@ const StyledCarouselSlide = styled.div`
         font-size: 18px;
         line-height: 1.2;
     }
+
+    em {
+        line-height: 2.5;
+    }
 `
 
 const CarouselSlide = ({title, children}) => (

@@ -22,9 +22,6 @@ const Tile = styled.div`
     height: 512px;
     width: 512px;
     background-color: white;
-
-    
-    
 `
 
 const ImageTile = styled(Tile)`
@@ -36,6 +33,7 @@ const StyledContentTile = styled(Tile)`
     width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
     background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
     color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
+    height: ${({ height }) => height }px;
 
     .content {
         position: absolute;
@@ -92,7 +90,7 @@ const StyledContentTile = styled(Tile)`
 
 const ContentTile = (props) => {
     return(
-        <StyledContentTile theme={ props.theme } type={ props.type }>
+        <StyledContentTile theme={ props.theme } type={ props.type } height={ props.height }>
             <p className='title'>
                     { props.title }
             </p>    
@@ -107,7 +105,6 @@ const ContentTile = (props) => {
 const EmploymentTile = styled(ContentTile)`
     background-color: black;
     color: white;
-
     display: flex;
     flex-wrap: wrap;
 `

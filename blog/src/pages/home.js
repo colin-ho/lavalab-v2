@@ -21,6 +21,12 @@ import PersonIcon from '../../static/icon/Person-Icon/Highlight.png'
 
 import FirstStepsIcon from '../../static/icon/Events/First-Steps-Icon/Highlight.png'
 import BeachBonfireIcon from '../../static/icon/Events/Beach-Bonfire-Icon/Highlight.png'
+import FiresideChatsIcon from '../../static/icon/Events/Fireside-Chat-Icon/Highlight.png'
+import AlumniWorkshopsIcon from '../../static/icon/Events/Alumni-Workshop-Icon/Highlight.png'
+import CommunityRetreatIcon from '../../static/icon/Events/Community-Retreat-Icon/Highlight.png'
+import PitchNightIcon from '../../static/icon/Events/Pitch-Night-Icon/Highlight.png'
+import HackNightIcon from '../../static/icon/Events/Hack-Night-Icon/Highlight.png'
+import LavaLabFormalIcon from '../../static/icon/Events/LavaLab-Formal-Icon/Highlight.png'
 
 import AirbnbIcon from '../../static/icon/Airbnb-Icon/Light.png'
 import AmazonIcon from '../../static/icon/Amazon-Icon/Light.png'
@@ -34,6 +40,26 @@ import SnapchatIcon from '../../static/icon/Snapchat-Icon/Light.png'
 import TwitterIcon from '../../static/icon/Twitter-Icon/Light.png'
 import UberIcon from '../../static/icon/Uber-Icon/Light.png'
 import MoreIcon from'../../static/icon/Add-Icon/Light.png'
+
+import PresidentIcon from '../../static/icon/President-Icon/Highlight.png'
+import CurriculumIcon from '../../static/icon/Curriculum-Icon/Highlight.png'
+import RecruitmentIcon from '../../static/icon/Recruitment-Icon/Highlight.png'
+import CommunityIcon from '../../static/icon/Community-Icon/Highlight.png'
+import IndustryRelationsIcon from '../../static/icon/Industry-Relations-Icon/Highlight.png'
+import FinanceIcon from '../../static/icon/Finance-Icon/Highlight.png'
+import DesignIcon from '../../static/icon/Design-Icon/Highlight.png'
+import DevelopmentIcon from '../../static/icon/Development-Icon/Highlight.png'
+import MarketingIcon from '../../static/icon/marketing.png'
+
+import Anant from '../../static/img/exec/anant.jpg'
+import Bella from '../../static/img/exec/bella.jpg'
+import Ivy from '../../static/img/exec/ivy.jpg'
+import Jessica from '../../static/img/exec/jessica.jpg'
+import Jimena from '../../static/img/exec/jimena.jpg'
+import Madison from '../../static/img/exec/madison.jpg'
+import Tomas from '../../static/img/exec/tomas.jpg'
+import Viren from '../../static/img/exec/viren.jpg'
+import Glory from '../../static/img/exec/glory.png'
 
 import "./home.css"
 const HomePage = () => {
@@ -62,24 +88,37 @@ const HomePage = () => {
                         <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
                     </ImageTile>
                     <ContentTile title='Welcome'>
-                        <Carousel titles={['Welcome', 'Cirrculum']}>
+                        <Carousel titles={['Welcome', 'The Experience', 'Cirrculum']}>
                             <CarouselSlide>
                                 <h1>
-                                    A definitive home for euntrepreneurs
+                                    Welcome
                                 </h1>
                                 <p>
+                                    <em>Fully immerse yourself in the startup experience.</em><br/>
                                     We are the University of Southern California’s premiere, student-run, product incubator. 
-                                    Every semester since 2013, we have invited 28 of the university’s most visionary 
-                                    designers, developers, and product managers to build tomorrow’s technology startups, 
-                                    today.
+                                    Every semester, LavaLab invites a new cohort of visionary designers, developers, and project 
+                                    managers to build tomorrow’s startups, today.
                                 </p>
                             </CarouselSlide>
                             <CarouselSlide>
                                 <h1>
-                                    This panel is about curriculum
+                                    The Experience
                                 </h1>
                                 <p>
-                                    Lorem ipsum yah yeet
+                                    Every semester for the past 7 years, LavaLab takes a cohort of 28 students composed of designers, 
+                                    developers, and project managers. After getting to know your fellow cohort members, you are then 
+                                    put into teams of 4 to create your startup. Dream big: makeup company, bar hopping app, parking 
+                                    hardware--anything goes.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>
+                                    Curriculum
+                                </h1>
+                                <p>
+                                    Our trademark curriculum teaches you how to build a product, from ideation to deployment, while 
+                                    reinforcing principles of entrepreneurship and innovation. Learn the ins-and-outs of your role 
+                                    as a designer, developer, or project manager.
                                 </p>
                             </CarouselSlide>
                         </Carousel>
@@ -87,18 +126,16 @@ const HomePage = () => {
                 </TileRow>
                 <TileRow>
                     <ContentTile type='full' title='Events'>
-                        <TiledCarousel titles={['First Steps', 'Beach Bonfire', 'Beach Bonfire']}>
+                        <TiledCarousel titles={['First Steps', 'Beach Bonfire', 'Fireside Chats', 'Alumni Workshops', 'Community Retrat', 'Pitch Night', 'Hack Night', 'Demo Night', 'LavaLab Formal']}>
                             <CarouselSlide icon={ FirstStepsIcon }>
                                     <h1>
-                                        First steps
+                                        Idea Grind
                                     </h1>
                                     <p>
-                                        Traditional information sessions are boring.
-                                        So, we created First Steps: a networking event 
-                                        and ideation sprint open to any prospective applicants 
-                                        who want a taste of the LavaLab experience, a breakdown 
-                                        of the organization, and a detailed walkthrough of our 
-                                        application process. 
+                                        Jump right in and see what LavaLab is about with our spin 
+                                        on an Info Session. Through discussion and brainstorming, 
+                                        hearing from E-board, and asking questions, you'll get a 
+                                        taste of what LavaLab is about.
                                     </p>
                             </CarouselSlide>
                             <CarouselSlide icon={ BeachBonfireIcon }>
@@ -106,47 +143,72 @@ const HomePage = () => {
                                         Beach bonfire
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        The first social event of the new cohort. Bond with your 
+                                        fellow cohort members and LavaLab alumni over roasted marshmallows.
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide icon={ BeachBonfireIcon }>
+                            <CarouselSlide icon={ FiresideChatsIcon }>
                                     <h1>
-                                        Beach bonfire
+                                        Fireside Chats
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        Each semester, LavaLab invites the industry’s top pioneers and entrepreneurs 
+                                        to share their experiences and engage with our members. In the past, we’ve 
+                                        had industry leaders like Elon Musk, Evan Spiegel, and Arielle Zuckerberg.
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide icon={ BeachBonfireIcon }>
+                            <CarouselSlide icon={ AlumniWorkshopsIcon }>
                                     <h1>
-                                        Beach bonfire
+                                        Alumni Workshops
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        LavaLum know best. Learn insights and skills from alumni-led workshops 
+                                        on anything from React Native, to Figma shortcuts, to giving the best pitch.
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide icon={ BeachBonfireIcon }>
+                            <CarouselSlide icon={ CommunityRetreatIcon }>
                                     <h1>
-                                        Beach bonfire
+                                        Community Retreat
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        Who doesn’t love a weekend getaway? Join fellow cohort members and LavaLab alumni 
+                                        for a trip away from Downtown Los Angeles. Get to know your future co-founders on a 
+                                        whole ‘nother level.
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide icon={ BeachBonfireIcon }>
+                            <CarouselSlide icon={ PitchNightIcon }>
                                     <h1>
-                                        Beach bonfire
+                                        Pitch Night
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        Two weeks before the final showcase, run through your pitch with no judgement. 
+                                        Get feedback from LavaLum on how to perfect your product and pitch for Demo Night.
                                     </p>
                             </CarouselSlide>
-                            <CarouselSlide icon={ BeachBonfireIcon }>
+                            <CarouselSlide icon={ HackNightIcon }>
                                     <h1>
-                                        Beach bonfire
+                                        Hack Night
                                     </h1>
                                     <p>
-                                        SOOO HYPE
+                                        It’s the final stretch. Join your fellow devs and designers to grind out the finishing 
+                                        touches of your product. Fuel up with free food and encouragement from our E-board.
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ DemoNightIcon }>
+                                    <h1>
+                                        Demo Night
+                                    </h1>
+                                    <p>
+                                        The Oscars of LavaLab. Demo and pitch your product to investor judges to showcase your 
+                                        team's hard work. Congratulations, you’re now a LavaLum!
+                                    </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={ LavaLabFormalIcon }>
+                                    <h1>
+                                        LavaLab Formal
+                                    </h1>
+                                    <p>
+                                        A celebration of hard work, new friends, and the graduation of another accomplished cohort. Cheers!
                                     </p>
                             </CarouselSlide>
                         </TiledCarousel>
@@ -164,15 +226,14 @@ const HomePage = () => {
                         <SinglePanel>
                             <CarouselSlide>
                                 <h1>
-                                A network of like-minded innovators, over 200 members strong and growing
+                                    A network of like-minded innovators, over 200 members strong and growing
                                 </h1>
                                 <p>
-                                Your fellow cohort members are friends for life. With an expansive network 
-                                of designers, developers, product managers, and all-around great people, 
-                                LavaLab offers the unique opportunity to become part of something greater 
-                                than yourself. Our community is full of rich life experience and extensive 
-                                industry knowledge. With kickbacks, parties, and workshops, alumni are always 
-                                involved, even after their Cohort semester.
+                                    The LavaLab network is like no other. We are a community of entrepreneurs, go-getters, 
+                                    and change makers who value connection, deep engagement, and building for a brighter 
+                                    future. Grow together in an environment that meets you where you’re at and pushes you 
+                                    to become the best version of yourself. At LavaLab, you’ll meet your future co-founders 
+                                    and some of your closest friends.
                                 </p>
                             </CarouselSlide>
                         </SinglePanel>
@@ -182,21 +243,18 @@ const HomePage = () => {
             <ImageHero className='quote'>
                 <div className='quote-content'>
                     <span>“</span><br/>
-                    (CAN WE REPLACE THIS lmao)
-                    LavaLab was seriously one of the most 
-                    unique experiences of my life. I loved it — 
-                    I felt like I grew a lot, especially as a presenter. I made amazing friends and it opened a huuuge door with Microsoft 
-                    as well.
-
+                        Lavalab made my semester one of the most rewarding experiences as a student so far. Turning a vision into 
+                        a reality, finding lifelong friends and potential cofounders, and learning to hustle make this something 
+                        I'd recommend to everyone.
                     <div className='quote-profile'>
                         <img src={ PersonIcon } />
 
                         <div className='quote-profile-details'>
                             <p className='name'>
-                                Jay Goettman
+                                Shub Gaur
                             </p>
                             <p className='detail'>
-                                Product Manager · Fall 2019
+                                Product Manager · Spring 2020
                             </p>
                         </div>
                         
@@ -208,24 +266,35 @@ const HomePage = () => {
             <ContentContainer>
                 <TileRow>
                     <ContentTile title='Alumni Project Spotlight'>
-                        <Carousel titles={['Kyoku', 'Project Wren']}>
+                        <Carousel titles={['Kyoku', 'Recess', 'Spree']}>
                             <CarouselSlide>
                                 <h1>
                                     Kyoku
                                 </h1>
                                 <p>
-                                Working with dietitians and doctors, Kyoku creates personalized nutrition, tailored to the body type, workout activity, and fitness goals 
-                                of each user. They provide unique, plant-based, superfood shakes in beautifully designed, 
-                                single-serve packets that are delivered 
-                                monthly to your doorstep.
+                                    Working with dietitians and doctors, Kyoku creates personalized nutrition, tailored to the body type, workout activity, and fitness goals 
+                                    of each user. They provide unique, plant-based, superfood shakes in beautifully designed, 
+                                    single-serve packets that are delivered 
+                                    monthly to your doorstep.
                                 </p>
                             </CarouselSlide>
                             <CarouselSlide>
                                 <h1>
-                                    Project Wren
+                                    Recess
                                 </h1>
                                 <p>
-                                    Something
+                                    Recess creates shared calendars that display free-time between all parties and suggests 
+                                    personalized activities for you and your group. Maintain your friendships with a frictionless 
+                                    scheduling flow.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>
+                                    Spree
+                                </h1>
+                                <p>
+                                    Everyone hates comparing prices online. Spree turns anyone into a shopping wizard by 
+                                    automatically comparing prices and checking out from everywhere, in just one click!
                                 </p>
                             </CarouselSlide>
                         </Carousel>
@@ -285,15 +354,95 @@ const HomePage = () => {
                     </EmploymentTile>
                 </TileRow>
                 <TileRow>
-                    <ContentTile title='Executive Team' type='full'>
+                    <ContentTile title='Executive Team' type='full' height='1200'>
                         <ExecutiveBoard>
                             <div className="member">
-                                <img className="profile-pic"/>
+                                <img src={ Glory } className="profile-pic"/>
                                 <div className="description">
-                                    <div className="eboard-icon"></div>
+                                    <img className="eboard-icon" src={ PresidentIcon }/>
                                     <div className="description-inner">
                                         <p className="name">Glory Kanes</p>
                                         <p className="eboard-title">President</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Viren } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ CurriculumIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Viren Parmar</p>
+                                        <p className="eboard-title">Director of Cirriculum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Bella } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ RecruitmentIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Bella Archer</p>
+                                        <p className="eboard-title">Director of Recruitment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Anant } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ CommunityIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Anant Vasudevan</p>
+                                        <p className="eboard-title">Director of Community</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Madison } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ IndustryRelationsIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Madison Gong</p>
+                                        <p className="eboard-title">Director of Industry Relations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Jimena } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ FinanceIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Jimena Villarreal</p>
+                                        <p className="eboard-title">Director of Sponsorship</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Ivy } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ DesignIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Ivy Tsang</p>
+                                        <p className="eboard-title">Director of Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Tomas } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ DevelopmentIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Tomas Acin</p>
+                                        <p className="eboard-title">Director of Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={ Jessica } className="profile-pic"/>
+                                <div className="description">
+                                    <img className="eboard-icon" src={ MarketingIcon }/>
+                                    <div className="description-inner">
+                                        <p className="name">Jessica Wang</p>
+                                        <p className="eboard-title">Director of Marketing</p>
                                     </div>
                                 </div>
                             </div>
@@ -306,17 +455,23 @@ const HomePage = () => {
 }
 
 const ExecutiveBoard = styled.div`
+    position: relative;
     display: flex;
-    flex-wrap: 4;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 50px;
+    height: 500px;
 
     .member {
-        flex-basis: 25%;
-        width: 25%;
+        position: relative;
+        width: 33.33%;
+        display: block;
+        box-sizing: border-box;
+        padding: 0 30px;
 
         .profile-pic {
             background-color: grey;
-            width: 288px;
-            height: 288px;
+            width: 100%;
             margin: 0 auto;
             margin-top: 20px;
             display: block;
@@ -335,7 +490,10 @@ const ExecutiveBoard = styled.div`
                 width: 35px;
                 height: 35px;
                 display: block;
-                background-color: orange;
+                border: 1px solid #ff5c39;
+                box-sizing: border-box;
+                padding: 6px;
+                border-radius: 100px;
             }
 
             .description-inner {
