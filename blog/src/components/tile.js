@@ -156,13 +156,37 @@ const EventLabel = (props) => {
 const Masthead = styled.div`
     display: flex;
     position: relative;
-    top: 50px;
+    top: 30px;
+
+
+    .right {
+        width: 50%;
+        display: flex;
+
+        .tile {
+            width: 50%;
+            border-box: box-sizing;
+            padding: 0 20px;
+            padding-top: 20px;
+            
+            margin: 10px;
+            background-color: #F2F2F7;
+
+            .tile-title {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .detail {
+                font-size: 14px;
+            }
+        }
+    }
 `
 
 const MastheadTextTile = styled.div`
+    width: 50%;
     position: relative;
-    top: 50px;
-    height: 512px;
     display: block;
 
     h1 {
@@ -177,18 +201,15 @@ const MastheadTextTile = styled.div`
     }
 
     .subheader {
-        font-family: Neurial Grotesk;
-        font-style: normal;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         text-transform: uppercase;
-
         color: #FF5C39;
+        padding: 10px 0;
     }
 
     .content {
-        font-family: Neurial Grotesk;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;

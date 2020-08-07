@@ -84,28 +84,45 @@ const HomePage = () => {
                     </div>
                 </div>
             </ImageHero>
+
             <ContentContainer>
                 <TileRow>
-                    <ContentTile title="LavaLab for Impact 2020" type="full">
+                    <ContentTile title="LavaLab for Impact 2020" type="full" height="350">
                         <Masthead>
                             <MastheadTextTile>
-                                    <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
-                                    <p className="subheader">
-                                        LavaLab is dedicating its efforts this semester to support USC's
-                                        black community.
-                                    </p>
-                                    <p classname="content">
-                                        LavaLab will be shifting its focus from recruiting a cohort to
-                                        building an accessible, inclusive, virtual program this fall.
-                                        We are launching a Social Entrepreneurship Toolkit that has two components,
-                                        LavaConnect and LavaLearn.
-                                    </p>
+                                <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
+                                <p className="subheader">
+                                    LavaLab is dedicating its efforts this semester to support USC's
+                                    black community.
+                                </p>
+                                <p classname="content">
+                                    LavaLab will be shifting its focus from recruiting a cohort to
+                                    building an accessible, inclusive, virtual program this fall.
+                                    We are launching a Social Entrepreneurship Toolkit that has two components,
+                                    LavaConnect and LavaLearn.
+                                </p>
                             </MastheadTextTile>
+                            <div className='right'>
+                                <div className='tile'>
+                                    <p className='tile-title'>LavaConnect</p>
+                                    <p className='detail'>
+                                        LavaConnect pairs students who have entrepreneurial ideas 
+                                        that support the BIPOC community with Lava alumni who can 
+                                        provide coding, designing, project management and mentorship.
+                                    </p>
+                                </div>
+                                <div className='tile'>
+                                    <p className='tile-title'>LavaLearn</p>
+                                    <p className='detail'>
+                                        LavaLearn provides open access curriculum along with 
+                                        entrepreneurial and tech resources, workshops, and fireside 
+                                        chats to USC and the greater public.
+                                    </p>
+                                </div>
+                            </div>
                         </Masthead>
                     </ContentTile>
                 </TileRow>
-            </ContentContainer>
-            <ContentContainer>
                 <TileRow>
                     <ImageTile image={ TileDemoNight } >
                         <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
