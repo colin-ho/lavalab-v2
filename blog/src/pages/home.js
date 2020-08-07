@@ -10,6 +10,8 @@ import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, Employme
 import { Carousel, CarouselSlide, TiledCarousel, SinglePanel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
+import Fall2019DemoNight from '../../static/img/Fall-2019-Retreat.jpg'
+
 import TileDemoNight from '../../static/img/Fall-2019-Demo-Night.jpg'
 
 import RightArrowIcon from '../../static/icon/Right-Arrow-Icon/Light.png'
@@ -215,7 +217,7 @@ const HomePage = () => {
                     </ContentTile>
                 </TileRow>
             </ContentContainer>
-            <ImageHero background={ HeroTop } height='500'>
+            <ImageHero background={ Fall2019DemoNight } height='800'>
                 <div className='event-container'>
                     <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>                  
                 </div>
