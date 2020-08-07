@@ -2,14 +2,14 @@
 import React, { useState } from "react"
 import styled from 'styled-components'
 
-import LeftIconDisabled from "../../static/icon/Left-Arrow-Icon/disabled.png"
-import RightIconDisabled from "../../static/icon/Right-Arrow-Icon/disabled.png"
-import LeftIconEnabled from "../../static/icon/Left-Arrow-Icon/light.png"
-import RightIconEnabled from "../../static/icon/Right-Arrow-Icon/light.png"
+import LeftIconDisabled from "../../static/icon/Left-Arrow-Icon/Disabled.png"
+import RightIconDisabled from "../../static/icon/Right-Arrow-Icon/Disabled.png"
+import LeftIconEnabled from "../../static/icon/Left-Arrow-Icon/Light.png"
+import RightIconEnabled from "../../static/icon/Right-Arrow-Icon/Light.png"
 
-import FacebookIcon from "../../static/icon/Facebook-Icon/light.png"
-import InstagramIcon from "../../static/icon/Instagram-Icon/light.png"
-import TwitterIcon from "../../static/icon/Twitter-Icon/light.png"
+import FacebookIcon from "../../static/icon/Facebook-Icon/Light.png"
+import InstagramIcon from "../../static/icon/Instagram-Icon/Light.png"
+import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png"
 
 
 const StyledCarousel = styled.div`
