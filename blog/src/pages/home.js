@@ -282,19 +282,75 @@ const HomePage = () => {
                                 And more
                             </div>
                         </EmploymentContent>
-                        
                     </EmploymentTile>
                 </TileRow>
                 <TileRow>
                     <ContentTile title='Executive Team' type='full'>
-
+                        <ExecutiveBoard>
+                            <div className="member">
+                                <img className="profile-pic"/>
+                                <div className="description">
+                                    <div className="eboard-icon"></div>
+                                    <div className="description-inner">
+                                        <p className="name">Glory Kanes</p>
+                                        <p className="eboard-title">President</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ExecutiveBoard>
                     </ContentTile>
                 </TileRow>
-
             </ContentContainer>
         </div>
     )
 }
+
+const ExecutiveBoard = styled.div`
+    display: flex;
+    flex-wrap: 4;
+
+    .member {
+        flex-basis: 25%;
+        width: 25%;
+
+        .profile-pic {
+            background-color: grey;
+            width: 288px;
+            height: 288px;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .description {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 5px 0;
+            }
+            
+            .eboard-icon {
+                width: 35px;
+                height: 35px;
+                display: block;
+                background-color: orange;
+            }
+
+            .description-inner {
+                margin-left: 10px;
+
+                .eboard-title {
+                    text-transform: none;
+                    color: #8e8e93;
+                }
+            }
+
+            
+        }
+    }
+`
 
 const EmploymentContent = styled.div`
     display: flex;
