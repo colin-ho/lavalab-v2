@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile } from "../components/tile"
+import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile, Masthead, MastheadTextTile } from "../components/tile"
 import { Carousel, CarouselSlide, TiledCarousel, SinglePanel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
@@ -84,6 +84,27 @@ const HomePage = () => {
                     </div>
                 </div>
             </ImageHero>
+            <ContentContainer>
+                <TileRow>
+                    <ContentTile title="LavaLab for Impact 2020" type="full">
+                        <Masthead>
+                            <MastheadTextTile>
+                                    <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
+                                    <p className="subheader">
+                                        LavaLab is dedicating its efforts this semester to support USC's
+                                        black community.
+                                    </p>
+                                    <p classname="content">
+                                        LavaLab will be shifting its focus from recruiting a cohort to
+                                        building an accessible, inclusive, virtual program this fall.
+                                        We are launching a Social Entrepreneurship Toolkit that has two components,
+                                        LavaConnect and LavaLearn.
+                                    </p>
+                            </MastheadTextTile>
+                        </Masthead>
+                    </ContentTile>
+                </TileRow>
+            </ContentContainer>
             <ContentContainer>
                 <TileRow>
                     <ImageTile image={ TileDemoNight } >
