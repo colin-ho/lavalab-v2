@@ -128,7 +128,7 @@ const HomePage = () => {
                 </TileRow>
                 <TileRow>
                     <ContentTile type='full' title='Events'>
-                        <TiledCarousel titles={['First Steps', 'Beach Bonfire', 'Fireside Chats', 'Alumni Workshops', 'Community Retrat', 'Pitch Night', 'Hack Night', 'Demo Night', 'LavaLab Formal']}>
+                        <TiledCarousel titles={['First Steps', 'Beach Bonfire', 'Fireside Chats', 'Alumni Workshops', 'Community Retreat', 'Pitch Night', 'Hack Night', 'Demo Night', 'LavaLab Formal']}>
                             <CarouselSlide icon={ FirstStepsIcon }>
                                     <h1>
                                         Idea Grind
