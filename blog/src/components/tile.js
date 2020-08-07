@@ -156,6 +156,50 @@ const EventLabel = (props) => {
     )
 }
 
+const Masthead = styled.div`
+    display: flex;
+    position: relative;
+    top: 50px;
+`
+
+const MastheadTextTile = styled.div`
+    position: relative;
+    top: 50px;
+    height: 512px;
+    display: block;
+
+    h1 {
+        font-family: 'Editor';
+        color: black;
+        font-size: 36px;
+        width: 500px;
+        margin: 20px 0;
+        line-height: 47px;
+        font-weight: 'bold';
+        font-style: 'normal'
+    }
+
+    .subheader {
+        font-family: Neurial Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        color: #FF5C39;
+    }
+
+    .content {
+        font-family: Neurial Grotesk;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #000000;
+    }
+`
 
 export {
     ContentContainer,
@@ -164,5 +208,7 @@ export {
     ImageTile,
     ContentTile,
     EmploymentTile,
-    EventLabel
+    EventLabel,
+    Masthead,
+    MastheadTextTile,
 }
