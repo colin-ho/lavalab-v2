@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile, Masthead, MastheadTextTile } from "../components/tile"
+import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile, Masthead, MastheadTextTile, FreeTile } from "../components/tile"
 import { Carousel, CarouselSlide, TiledCarousel, SinglePanel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
@@ -73,10 +73,10 @@ const HomePage = () => {
                     <h1 className='hero-header'>Find Your Cofounders</h1>
                     <div className='bottom-row'>
                         <Button text='Join our community'/>
-                        <div className='clear-button'>
+                        {/* <div className='clear-button'>
                             <p>Watch the film</p>
                             <img src={ PlayIcon }/>
-                        </div>
+                        </div> */}
                         <div className='get-to-know-us'>
                             Get to know us
                             <img src={ DownArrowIcon }/>
@@ -257,7 +257,7 @@ const HomePage = () => {
             </ContentContainer>
             <ImageHero background={ Fall2019DemoNight } height='800'>
                 <div className='event-container'>
-                    <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>                  
+                    <EventLabel icon={ DemoNightIcon } name='Retreat' location='Los Angeles, CA' date='Fall 2019'/>                  
                 </div>
             </ImageHero>
             <ContentContainer>
@@ -394,8 +394,13 @@ const HomePage = () => {
                     </EmploymentTile>
                 </TileRow>
                 <TileRow>
-                    <ContentTile title='Executive Team' type='full' height='1200'>
+                    <FreeTile title='Executive Team' type='full'>
+                        <hr/>
+                        <p className='title'>
+                            Executive Team
+                        </p>   
                         <ExecutiveBoard>
+                            
                             <div className="member">
                                 <img src={ Glory } className="profile-pic"/>
                                 <div className="description">
@@ -487,7 +492,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </ExecutiveBoard>
-                    </ContentTile>
+                    </FreeTile>
                 </TileRow>
             </ContentContainer>
         </div>
@@ -499,8 +504,8 @@ const ExecutiveBoard = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    top: 50px;
-    height: 500px;
+    margin-top: 30px;
+    padding-bottom: 50px;
 
     .member {
         position: relative;
@@ -548,6 +553,15 @@ const ExecutiveBoard = styled.div`
             
         }
     }
+
+
+
+    @media only screen and (max-width: 550px) { 
+        .member {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 `
 
 const EmploymentContent = styled.div`
@@ -588,6 +602,11 @@ const ImageHero = styled.div`
     width: 100%;
     background-size: cover;
 
+    @media only screen and (max-width: 1115px) { 
+        height: 500px;
+        background-position: center;
+    }
+
     &.quote {
         color: white;
         background-color: black;
@@ -596,10 +615,15 @@ const ImageHero = styled.div`
         line-height: 62px;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 1115px) { 
+            font-size: 28px;
+            line-height: 32px;
+        }
         
         .quote-content { 
             margin: 0 auto;
-            width: 95%;
+            width: 90%;
             max-width: 1044px;
             span{
                 color: #ff5c39;
@@ -649,6 +673,10 @@ const ImageHero = styled.div`
         max-width: 1044px;
         width: 90%;
         top: 460px;  
+        
+        @media only screen and (max-width: 1115px) { 
+            top: 150px;
+        }
     }
 
     .hero-header {
@@ -658,11 +686,16 @@ const ImageHero = styled.div`
         width: 50%;
         line-height: 1.1;
         margin: 30px 0;
+
+        @media only screen and (max-width: 1115px) { 
+            font-size: 55px;
+        }
     }
 
     .bottom-row {
         display: flex;
         align-items: middle;
+
     }
     
     .clear-button {

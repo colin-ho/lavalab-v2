@@ -16,6 +16,9 @@ const StyledCarousel = styled.div`
     width: 472px;
     height: 100%;
     overflow: hidden;
+    @media only screen and (max-width: 1115px) { 
+            width: 100%;
+    }
 
 
     .carouselControls {
@@ -27,6 +30,10 @@ const StyledCarousel = styled.div`
         bottom: 0;
         height: 80px;
         background-color: #000000;
+
+        @media only screen and (max-width: 1115px) { 
+            width: 100%;
+        }
     }
 
     .carouselContent {
@@ -80,11 +87,17 @@ const StyledCarouselSlide = styled.div`
         font-size: 42px;
         padding: 20px 0;
         line-height: 46px;
+
+        @media only screen and (max-width: 1115px) { 
+            font-size: 28px;
+            line-height: 1.1;
+        }
     }
 
     p {
         font-size: 18px;
         line-height: 1.2;
+        font-size: 16px;
     }
 
     em {
@@ -126,10 +139,56 @@ const Carousel = ( {children, titles} ) => {
     )
 }
 
+const StyledSinglePanel = styled.div`
+    .carouselControls {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 472px;
+        left: 0;
+        bottom: 0;
+        height: 80px;
+        background-color: #000000;
+
+        @media only screen and (max-width: 1115px) { 
+            width: 100%;
+        }
+
+        img {
+            height: 15px;
+            width: 15px;
+            padding: 6px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100px;
+            margin-left: 32px;
+            cursor: pointer;
+        }
+
+        img.disabled {
+            border: 1px solid #8e8e93;
+            cursor: not-allowed;
+        }
+
+        .social-icon {
+            margin-left: 16px;
+        }
+
+        .currentPage {
+            margin-left: 15px;
+            color: white;
+        }
+    }
+
+    @media only screen and (max-width: 1115px) { 
+            width: 100%;
+            height: 600px;
+        }
+`
+
 const SinglePanel = ( {children} ) => {
 
     return (
-        <StyledCarousel style={{ "width": "80%" }}>
+        <StyledSinglePanel>
             <div className='carouselContent'>
                 { children }
             </div>
@@ -140,12 +199,18 @@ const SinglePanel = ( {children} ) => {
                 <img className='social-icon' src={ TwitterIcon }/>
                 <div className='currentPage'>Connect with our community</div>
             </div>
-        </StyledCarousel>
+        </StyledSinglePanel>
     )
 }
 
 const StyledTiledCarousel = styled.div`
     display: flex;
+
+    @media only screen and (max-width: 1115px) { 
+        .icon-grid {
+            display: none;
+        }
+    }
 `
 
 const IconGrid = styled.div`
@@ -227,7 +292,7 @@ const TiledCarousel = ( {children, titles} ) => {
                     <div className='currentPage'>{ currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}</div>
                 </div>
             </StyledCarousel>
-            <IconGrid>
+            <IconGrid className='icon-grid'>
                 {
                     children.map((slide, idx) => (
                         <IconGridTile className={ currentSlide === idx ? 'active' : ''} onClick={ () => setCurrentSlide(idx) }>

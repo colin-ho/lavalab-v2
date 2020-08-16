@@ -15,6 +15,16 @@ const TileRow = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0;
+    width: 100%;
+
+    @media only screen and (max-width: 1115px) {
+        display: block;
+        padding: 0;
+
+        .community {
+            height: 800px;
+        }
+    }
 `
 
 const Tile = styled.div`
@@ -22,6 +32,33 @@ const Tile = styled.div`
     height: 512px;
     width: 512px;
     background-color: white;
+`
+
+const FreeTile = styled.div`
+    position: relative;
+    background-color: white;
+
+    hr {
+        position: absolute;
+        height: 0;
+        margin: 0 auto;
+        border: none;
+        border-top: 1px solid #e5e5ea;
+        margin-top: 20px;
+        left: 30px;
+        right: 30px;
+        top: 0;
+    }
+
+    .title {
+        position: relative;
+        left: 30px;
+        top: 30px;
+        text-transform: uppercase;
+        font-family: 'NeurialGrotesk-Medium';
+        padding: 16px 0;
+        font-size: 14px;
+    }
 `
 
 const ImageTile = styled(Tile)`
@@ -34,6 +71,11 @@ const StyledContentTile = styled(Tile)`
     background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
     color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
     height: ${({ height }) => height }px;
+
+    @media only screen and (max-width: 1115px) { 
+        margin: 10px auto;
+        width: 100%;
+    }
 
     .content {
         position: absolute;
@@ -107,6 +149,10 @@ const EmploymentTile = styled(ContentTile)`
     color: white;
     display: flex;
     flex-wrap: wrap;
+    
+    @media only screen and (max-width: 1115px) {
+        height: 550px !important;
+    }
 `
 
 
@@ -229,4 +275,5 @@ export {
     EventLabel,
     Masthead,
     MastheadTextTile,
+    FreeTile
 }
