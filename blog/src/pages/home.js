@@ -72,7 +72,7 @@ const HomePage = () => {
                     <HeroDivider></HeroDivider>
                     <h1 className='hero-header'>Find Your Cofounders</h1>
                     <div className='bottom-row'>
-                        <Button text='Join our community'/>
+                        {/* <Button text='Join our community'/> */}
                         {/* <div className='clear-button'>
                             <p>Watch the film</p>
                             <img src={ PlayIcon }/>
@@ -539,6 +539,7 @@ const ExecutiveBoard = styled.div`
     flex-wrap: wrap;
     width: 100%;
     margin-top: 30px;
+    padding-top: 60px;
     padding-bottom: 50px;
 
     .member {

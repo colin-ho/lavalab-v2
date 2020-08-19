@@ -53,10 +53,10 @@ const FreeTile = styled.div`
         right: 30px;
         top: 0;
     }
-
+    
     .title {
-        position: relative;
-        left: 30px;
+        position: absolute;
+        left: 20px;
         top: 30px;
         text-transform: uppercase;
         font-family: 'NeurialGrotesk-Medium';
@@ -459,7 +459,7 @@ const Masthead = styled.div`
                     }
 
                     .left-text {
-                        flex-basis: 50%;
+                        flex-basis: 30%;
                     }
                 }
             }
