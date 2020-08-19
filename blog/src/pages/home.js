@@ -454,7 +454,7 @@ const HomePage = () => {
                                     <img className="eboard-icon" src={ CurriculumIcon }/>
                                     <div className="description-inner">
                                         <p className="name">Viren Parmar</p>
-                                        <p className="eboard-title">Director of Cirriculum</p>
+                                        <p className="eboard-title">Director of Operations</p>
                                     </div>
                                 </div>
                             </div>
