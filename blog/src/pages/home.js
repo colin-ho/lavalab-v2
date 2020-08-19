@@ -19,6 +19,8 @@ import DownArrowIcon from '../../static/icon/Down-Arrow-Icon/Light.png'
 import PlayIcon from '../../static/icon/Play-Icon/Light.png'
 import DemoNightIcon from '../../static/icon/Events/Demo-Night-Icon/Highlight.png'
 
+import LavaLabLogo from "../../static/lavalab-logo.png"
+
 import PersonIcon from '../../static/icon/Person-Icon/Highlight.png'
 
 import FirstStepsIcon from '../../static/icon/Events/First-Steps-Icon/Highlight.png'
@@ -69,6 +71,7 @@ const HomePage = () => {
         <div className='page'>
             <ImageHero background={ HeroTop }>
                 <div className='hero-content'>
+                    <img src={ LavaLabLogo }/>
                     <HeroDivider></HeroDivider>
                     <h1 className='hero-header'>Find Your Cofounders</h1>
                     <div className='bottom-row'>
@@ -77,10 +80,10 @@ const HomePage = () => {
                             <p>Watch the film</p>
                             <img src={ PlayIcon }/>
                         </div> */}
-                        <div className='get-to-know-us'>
+                        {/* <div className='get-to-know-us'>
                             Get to know us
                             <img src={ DownArrowIcon }/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </ImageHero>
@@ -645,6 +648,7 @@ const ImageHero = styled.div`
     height: ${({ height }) => height ? height : '810'}px;
     width: 100%;
     background-size: cover;
+    background-position: center;
 
     @media only screen and (max-width: 1115px) { 
         height: 500px;
@@ -717,6 +721,12 @@ const ImageHero = styled.div`
         max-width: 1044px;
         width: 90%;
         top: 460px;  
+        vertical-align: top;
+
+        img {
+            display: inline-block;
+            width: 250px;
+        }
         
         @media only screen and (max-width: 1115px) { 
             top: 150px;
@@ -729,7 +739,8 @@ const ImageHero = styled.div`
         color: white;
         width: 50%;
         line-height: 1.1;
-        margin: 30px 0;
+        margin: 15px 0;
+        display: inline-block;
 
         @media only screen and (max-width: 1115px) { 
             font-size: 55px;
