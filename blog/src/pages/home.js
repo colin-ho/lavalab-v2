@@ -405,7 +405,7 @@ const HomePage = () => {
                             </div>
                             <div className='employment-item'>
                                 <img src={ RobinhoodIcon }/>
-                                Slack
+                                Robinhood
                             </div>
                             <div className='employment-item'>
                                 <img src={ SnapchatIcon }/>
