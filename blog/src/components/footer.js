@@ -10,6 +10,10 @@ let StyledFooter = styled.div`
     text-align: center;
     line-height: 60px;
     font-family: 'NeurialGrotesk';
+
+    @media only screen and (max-width: 600px) { 
+        font-size: 14px;
+    }
 `
 
 const Footer = () => (

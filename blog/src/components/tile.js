@@ -32,6 +32,10 @@ const Tile = styled.div`
     height: 512px;
     width: 512px;
     background-color: white;
+
+    @media only screen and (max-width: 1115px) { 
+        height: 420px;
+    }
 `
 
 const FreeTile = styled.div`
@@ -64,6 +68,10 @@ const FreeTile = styled.div`
 const ImageTile = styled(Tile)`
     background-image: url(${ props => props.image });
     background-size: cover;
+    @media only screen and (max-width: 1115px) { 
+        margin: 10px auto;
+        width: 100%;
+    }
 `
 
 const StyledContentTile = styled(Tile)`
@@ -102,11 +110,18 @@ const StyledContentTile = styled(Tile)`
         margin-top: 70px;
         width: 100%;
 
+        @media only screen and (max-width: 1115px) { 
+            margin-top: 40px;
+        }
+
         .employment-item {
             flex: 1 0 21%;
             text-align: center;
             color: #8e8e93;
-            margin-bottom: 70px;
+            margin-bottom: 40px;
+            @media only screen and (max-width: 1115px) { 
+                margin-bottom: 20px;
+            }
 
                 img {
                     display: block;
@@ -114,7 +129,6 @@ const StyledContentTile = styled(Tile)`
                     margin-bottom: 10px;
                     height: 48px;
                 }
-
 
                 .more-icon {
                     height: 20px;
@@ -144,6 +158,56 @@ const ContentTile = (props) => {
     )
 }
 
+const StyledCommunityTile = styled(Tile)`
+    width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
+    background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
+    color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
+    height: 450px;
+
+    @media only screen and (max-width: 1115px) { 
+        margin: 10px auto;
+        width: 100%;
+        height: 450px;
+    }
+
+    @media only screen and (max-width: 605px) { 
+        height: 550px;
+    }
+
+    .content {
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        border-top: 1px solid ${({ theme }) => theme == 'dark' ? '#2c2c2e' : '#e5e5ea' };
+    }
+
+    .title {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        text-transform: uppercase;
+        font-family: 'NeurialGrotesk-Medium';
+        padding: 16px 0;
+        font-size: 14px;
+    }    
+`
+
+const CommunityTile = (props) => {
+    return(
+        <StyledCommunityTile theme={ props.theme } type={ props.type } height={ props.height }>
+            <p className='title'>
+                    { props.title }
+            </p>    
+            <div className='content'>
+                
+                { props.children }
+            </div>
+        </StyledCommunityTile>
+    )
+}
+
 const EmploymentTile = styled(ContentTile)`
     background-color: black;
     color: white;
@@ -151,7 +215,7 @@ const EmploymentTile = styled(ContentTile)`
     flex-wrap: wrap;
     
     @media only screen and (max-width: 1115px) {
-        height: 550px !important;
+        height: 560px
     }
 `
 
@@ -167,6 +231,10 @@ const StyledEventLabel = styled.div`
     align-items: center;
     font-size: 16px;
     line-height: 18px;
+
+    @media only screen and (max-width: 1115px) {
+        width: 90%;
+    }
 
     img {
         height: 18px;
@@ -199,23 +267,73 @@ const EventLabel = (props) => {
     )
 }
 
+let StyledMastheadTile = styled(Tile)`
+    width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
+    background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
+    color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
+    height: 450px;
+
+    @media only screen and (max-width: 1115px) { 
+        margin: 10px auto;
+        width: 100%;
+        height: 650px;
+    }
+    @media only screen and (max-width: 600px) { 
+        height: 1050px;
+    }
+
+    .content {
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        border-top: 1px solid ${({ theme }) => theme == 'dark' ? '#2c2c2e' : '#e5e5ea' };
+    }
+
+    .title {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        text-transform: uppercase;
+        font-family: 'NeurialGrotesk-Medium';
+        padding: 16px 0;
+        font-size: 14px;
+    }   
+`
+
+const MastheadTile = (props) => {
+    return(
+        <StyledMastheadTile theme={ props.theme } type={ props.type } height={ props.height }>
+            <p className='title'>
+                    { props.title }
+            </p>    
+            <div className='content'>
+                { props.children }
+            </div>
+        </StyledMastheadTile>
+    )
+}
+
 const Masthead = styled.div`
     display: flex;
     position: relative;
-    top: 30px;
-
+    height: 100%;
+    align-items: center;
 
     .right {
-        width: 50%;
+        height: 90%;
+        width: 55%;
         display: flex;
 
         .tile {
-            width: 50%;
-            border-box: box-sizing;
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
             padding: 0 20px;
             padding-top: 20px;
             
-            margin: 10px;
+            margin: 0 10px;
             background-color: #F2F2F7;
 
             .tile-title {
@@ -226,21 +344,131 @@ const Masthead = styled.div`
             .detail {
                 font-size: 14px;
             }
+
+            .learn {
+                width: 40%;
+            }
+
+            .connect {
+                width: 60%;
+            }   
+            .action-bar-container {
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                left: 0px;
+                background-color: black;
+
+                .divider {
+                    height: 1px;
+                    color: #2C2C2E;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                .action-bar {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    height: 60px;
+                    color: white;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 0px 15px;
+                    box-sizing: border-box;
+                    
+
+                    .left-text {
+                        text-transform: uppercase;
+                        flex-basis: 45%;
+                    }
+
+                    .right-text {
+                        text-align: right;
+                    }
+
+                    img {
+                        width: 14px;
+                        padding: 8px;
+                        border: 1px white solid;
+                        border-radius: 100px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .be-notified {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                background-color: black;
+                border-radius: 3px;
+                padding: 12px 15px;
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+
+                p {
+                    color: white;
+                    font-size: 14px;
+                    flex-basis: 65%
+                }
+
+                img {
+                    height: 20px;
+                }
+            }
+        }
+
+        em {
+            font-weight: bold;
+        }
+    }
+
+
+    @media only screen and (max-width: 1115px) {
+        display: block;
+        
+        .right{ 
+            margin-top: 20px;
+            width: 100%;
+
+            .tile {
+                height: 300px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) { 
+        .right {
+            display: block;
+
+            .tile { 
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
         }
     }
 `
 
 const MastheadTextTile = styled.div`
-    width: 50%;
+    width: 45%;
     position: relative;
     display: block;
+    
+    @media only screen and (max-width: 1115px) {
+        width: 100%;
+        margin-top: 60px;
+    }
 
     h1 {
         font-family: 'Editor';
         color: black;
         font-size: 36px;
-        width: 500px;
-        margin: 20px 0;
+        margin-top: 20px;
         line-height: 47px;
         font-weight: 'bold';
         font-style: 'normal'
@@ -260,7 +488,6 @@ const MastheadTextTile = styled.div`
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-
         color: #000000;
     }
 `
@@ -275,5 +502,7 @@ export {
     EventLabel,
     Masthead,
     MastheadTextTile,
-    FreeTile
+    FreeTile,
+    CommunityTile,
+    MastheadTile
 }

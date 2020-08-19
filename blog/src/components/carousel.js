@@ -82,6 +82,10 @@ const StyledCarouselSlide = styled.div`
     height: 80%;
     width: 100%;
 
+    @media only screen and (max-width: 1115px) {
+        margin-top: 40px;
+    }
+
     h1 {
         font-family: 'Editor';
         font-size: 42px;
@@ -101,7 +105,9 @@ const StyledCarouselSlide = styled.div`
     }
 
     em {
-        line-height: 2.5;
+        display: block;
+        padding: 5px 0;
+        margin: 0;
     }
 `
 

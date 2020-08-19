@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile, Masthead, MastheadTextTile, FreeTile } from "../components/tile"
+import { ContentContainer, TileRow, ImageTile, EventLabel, ContentTile, EmploymentTile, Masthead, MastheadTextTile, FreeTile, CommunityTile, MastheadTile } from "../components/tile"
 import { Carousel, CarouselSlide, TiledCarousel, SinglePanel } from "../components/carousel"
 
 import HeroTop from '../../static/img/Spring-2019-Retreat.jpg'
@@ -87,7 +87,7 @@ const HomePage = () => {
 
             <ContentContainer>
                 <TileRow>
-                    <ContentTile title="LavaLab for Impact 2020" type="full" height="350">
+                    <MastheadTile title="LavaLab for Impact 2020" type="full" height="350">
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
@@ -96,45 +96,70 @@ const HomePage = () => {
                                     black community.
                                 </p>
                                 <p classname="content">
-                                    LavaLab will be shifting its focus from recruiting a cohort to
-                                    building an accessible, inclusive, virtual program this fall.
+                                    LavaLab will be shifting its focus from recruiting a cohort to 
+                                    <em> building an accessible, inclusive, virtual program this fall. </em>
                                     We are launching a Social Entrepreneurship Toolkit that has two components,
-                                    LavaConnect and LavaLearn.
+                                    Lava<em>Connect</em> and Lava<em>Learn</em>.
                                 </p>
                             </MastheadTextTile>
                             <div className='right'>
-                                <div className='tile'>
-                                    <p className='tile-title'>LavaConnect</p>
+                                <div className='tile connect'>
+                                    <p className='tile-title'>Lava<em>Connect</em></p>
                                     <p className='detail'>
-                                        LavaConnect pairs students who have entrepreneurial ideas 
+                                        Lava<em>Connect</em> pairs students who have entrepreneurial ideas 
                                         that support the BIPOC community with Lava alumni who can 
                                         provide coding, designing, project management and mentorship.
                                     </p>
+                                    <div className='action-bar-container'>
+                                        <div className='action-bar'>
+                                            <p className='left-text'>
+                                                For Students
+                                            </p>
+                                            <p className='right-text'>
+                                                Submit an idea
+                                            </p>
+                                            <img src={ RightArrowIcon }/>
+                                        </div>
+                                        <div className='divider'/>
+                                        <div className='action-bar'>
+                                            <p className='left-text'>
+                                                For Lava Alumni
+                                            </p>
+                                            <p className='right-text'>
+                                                Sign up to help
+                                            </p>
+                                            <img src={ RightArrowIcon }/>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='tile'>
-                                    <p className='tile-title'>LavaLearn</p>
+                                <div className='tile learn'>
+                                    <p className='tile-title'>Lava<em>Learn</em></p>
                                     <p className='detail'>
-                                        LavaLearn provides open access curriculum along with 
+                                        Lava<em>Learn</em> provides open access curriculum along with 
                                         entrepreneurial and tech resources, workshops, and fireside 
                                         chats to USC and the greater public.
                                     </p>
+                                    <div className='be-notified'>
+                                        <p>Be notified when we launch</p>
+                                        <img src={ RightArrowIcon }/>
+                                    </div>
                                 </div>
                             </div>
                         </Masthead>
-                    </ContentTile>
+                    </MastheadTile>
                 </TileRow>
                 <TileRow>
                     <ImageTile image={ TileDemoNight } >
                         <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
                     </ImageTile>
                     <ContentTile title='Welcome'>
-                        <Carousel titles={['Welcome', 'The Experience', 'Cirrculum']}>
+                        <Carousel titles={['Welcome', 'The Experience', 'Cirriculum']}>
                             <CarouselSlide>
                                 <h1>
                                     Welcome
                                 </h1>
                                 <p>
-                                    <em>Fully immerse yourself in the startup experience.</em><br/>
+                                    <em>Fully immerse yourself in the startup experience.</em>
                                     We are the University of Southern California’s premiere, student-run, product incubator. 
                                     Every semester, LavaLab invites a new cohort of visionary designers, developers, and project 
                                     managers to build tomorrow’s startups, today.
@@ -262,11 +287,11 @@ const HomePage = () => {
             </ImageHero>
             <ContentContainer>
                 <TileRow>
-                    <ContentTile type='full' title='Community'>
+                    <CommunityTile type='full' title='Community'>
                         <SinglePanel>
                             <CarouselSlide>
                                 <h1>
-                                    A network of like-minded innovators, over 200 members strong and growing
+                                    A network of passionate innovators, over 350 members strong and growing.
                                 </h1>
                                 <p>
                                     The LavaLab network is like no other. We are a community of entrepreneurs, go-getters, 
@@ -277,7 +302,7 @@ const HomePage = () => {
                                 </p>
                             </CarouselSlide>
                         </SinglePanel>
-                    </ContentTile>
+                    </CommunityTile>
                 </TileRow>
             </ContentContainer>
             <ImageHero className='quote'>
@@ -554,12 +579,18 @@ const ExecutiveBoard = styled.div`
         }
     }
 
-
+    @media only screen and (max-width: 900px) { 
+        .member {
+            padding: 20px;
+        }
+        
+    }
 
     @media only screen and (max-width: 550px) { 
         .member {
             width: 50%;
             margin: 0 auto;
+            padding: 10px;
         }
     }
 `
@@ -576,13 +607,16 @@ const EmploymentContent = styled.div`
         color: #8e8e93;
         margin-bottom: 70px;
 
+        @media only screen and (max-width: 1115px) { 
+            margin-bottom: 30px;
+        }
+
         img {
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
             height: 48px;
         }
-
 
         .more-icon {
             height: 20px;
@@ -617,13 +651,13 @@ const ImageHero = styled.div`
         align-items: center;
 
         @media only screen and (max-width: 1115px) { 
-            font-size: 28px;
+            font-size: 25px;
             line-height: 32px;
         }
         
         .quote-content { 
             margin: 0 auto;
-            width: 90%;
+            width: 85%;
             max-width: 1044px;
             span{
                 color: #ff5c39;
