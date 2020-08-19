@@ -279,11 +279,11 @@ let StyledMastheadTile = styled(Tile)`
     }
 
     @media only screen and (max-width: 850px) { 
-        height: 600px;
+        height: 650px;
     }
 
     @media only screen and (max-width: 600px) { 
-        height: 1050px;
+        height: 950px;
     }
 
     .content {
@@ -450,6 +450,7 @@ const Masthead = styled.div`
             display: block;
 
             .tile { 
+                height: 250px;
                 width: 100%;
                 margin: 0;
                 margin-bottom: 20px;
