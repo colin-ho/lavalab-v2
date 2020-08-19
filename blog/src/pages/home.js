@@ -87,7 +87,7 @@ const HomePage = () => {
 
             <ContentContainer>
                 <TileRow>
-                    <MastheadTile title="LavaLab for Impact 2020" type="full" height="350">
+                    <MastheadTile title="LavaLab for Impact Fall 2020" type="full" height="350">
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
@@ -116,9 +116,11 @@ const HomePage = () => {
                                                 For Students
                                             </p>
                                             <p className='right-text'>
-                                                Submit an idea
+                                                Submit an idea by 8/31
                                             </p>
-                                            <img src={ RightArrowIcon }/>
+                                            <a href="https://docs.google.com/forms/d/1ImgYmVf3HJYCbYBOtqBWUYl-2PjRcGitS3yODJ2L9d0/viewform?ts=5f28b778&edit_requested=true">
+                                                <img src={ RightArrowIcon }/>
+                                            </a>
                                         </div>
                                         <div className='divider'/>
                                         <div className='action-bar'>
@@ -128,7 +130,9 @@ const HomePage = () => {
                                             <p className='right-text'>
                                                 Sign up to help
                                             </p>
-                                            <img src={ RightArrowIcon }/>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbelrNdQVhqGuTMJDQiDdiC54uu_onwcP1USqpuadVbXwttA/viewform">
+                                                <img src={ RightArrowIcon }/>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,10 +143,12 @@ const HomePage = () => {
                                         entrepreneurial and tech resources, workshops, and fireside 
                                         chats to USC and the greater public.
                                     </p>
-                                    <div className='be-notified'>
-                                        <p>Be notified when we launch</p>
-                                        <img src={ RightArrowIcon }/>
-                                    </div>
+                                    <a href="https://www.flow.page/lavalab">
+                                        <div className='be-notified'>
+                                            <p>Sign up for Lava<em>Learn</em> updates</p>
+                                            <img src={ RightArrowIcon }/>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </Masthead>
@@ -153,7 +159,7 @@ const HomePage = () => {
                         <EventLabel icon={ DemoNightIcon } name='Demo Night' location='Los Angeles, CA' date='Fall 2019'/>
                     </ImageTile>
                     <ContentTile title='Welcome'>
-                        <Carousel titles={['Welcome', 'The Experience', 'Cirriculum']}>
+                        <Carousel titles={['Welcome', 'The Experience', 'Curriculum']}>
                             <CarouselSlide>
                                 <h1>
                                     Welcome
@@ -337,11 +343,11 @@ const HomePage = () => {
                                     Kyoku
                                 </h1>
                                 <p>
-                                    Working with dietitians and doctors, Kyoku creates personalized nutrition, tailored to the body type, workout activity, and fitness goals 
-                                    of each user. They provide unique, plant-based, superfood shakes in beautifully designed, 
-                                    single-serve packets that are delivered 
-                                    monthly to your doorstep.
+                                Post-ride recovery shakes made for your body type, riding style, and cycling goals from plant-based superfoods. Personalized for optimal performance. 
                                 </p>
+                                <a href="https://kyoku.com/">
+                                    https://kyoku.com/
+                                </a>
                             </CarouselSlide>
                             <CarouselSlide>
                                 <h1>
@@ -361,6 +367,9 @@ const HomePage = () => {
                                     Everyone hates comparing prices online. Spree turns anyone into a shopping wizard by 
                                     automatically comparing prices and checking out from everywhere, in just one click!
                                 </p>
+                                <a href="https://www.joinspree.com/">
+                                    https://www.joinspree.com/
+                                </a>
                             </CarouselSlide>
                         </Carousel>
                     </ContentTile>

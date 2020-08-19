@@ -109,6 +109,13 @@ const StyledCarouselSlide = styled.div`
         padding: 5px 0;
         margin: 0;
     }
+
+    a {
+        display: block;
+        margin: 20px 0;
+        color: #5d71d8;
+        font-weight: bold;
+    }
 `
 
 const CarouselSlide = ({title, children}) => (
@@ -199,10 +206,9 @@ const SinglePanel = ( {children} ) => {
                 { children }
             </div>
             <div className='carouselControls'>
-                {/* TODO: Setup links through constants page */}
-                <img className='social-icon' src={ FacebookIcon }/>
-                <img className='social-icon' src={ InstagramIcon }/>
-                <img className='social-icon' src={ TwitterIcon }/>
+                <a href="https://www.facebook.com/usclavalab"><img className='social-icon' src={ FacebookIcon }/></a>
+                <a href="https://www.instagram.com/usclavalab/?hl=en"><img className='social-icon' src={ InstagramIcon }/></a>
+                <a href="https://twitter.com/usclavalab"><img className='social-icon' src={ TwitterIcon }/></a>
                 <div className='currentPage'>Connect with our community</div>
             </div>
         </StyledSinglePanel>

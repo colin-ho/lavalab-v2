@@ -201,7 +201,6 @@ const CommunityTile = (props) => {
                     { props.title }
             </p>    
             <div className='content'>
-                
                 { props.children }
             </div>
         </StyledCommunityTile>
@@ -271,13 +270,18 @@ let StyledMastheadTile = styled(Tile)`
     width: ${({ type }) => type == 'full' ? 1044 : 512 }px;
     background-color: ${({ theme }) => theme == 'dark' ? 'black' : 'white' };
     color: ${({ theme }) => theme == 'dark' ? 'white' : 'black' };
-    height: 450px;
+    height: 370px;
 
     @media only screen and (max-width: 1115px) { 
         margin: 10px auto;
         width: 100%;
-        height: 650px;
+        height: 550px;
     }
+
+    @media only screen and (max-width: 850px) { 
+        height: 600px;
+    }
+
     @media only screen and (max-width: 600px) { 
         height: 1050px;
     }
@@ -374,13 +378,13 @@ const Masthead = styled.div`
                     color: white;
                     width: 100%;
                     justify-content: space-between;
-                    padding: 0px 15px;
+                    padding: 0px 12px;
                     box-sizing: border-box;
                     
 
                     .left-text {
                         text-transform: uppercase;
-                        flex-basis: 45%;
+                        /* flex-basis: 45%; */
                     }
 
                     .right-text {
@@ -389,7 +393,7 @@ const Masthead = styled.div`
 
                     img {
                         width: 14px;
-                        padding: 8px;
+                        padding: 5px;
                         border: 1px white solid;
                         border-radius: 100px;
                         cursor: pointer;
@@ -413,7 +417,7 @@ const Masthead = styled.div`
                 p {
                     color: white;
                     font-size: 14px;
-                    flex-basis: 65%
+                    flex-basis: 55%
                 }
 
                 img {
@@ -449,6 +453,15 @@ const Masthead = styled.div`
                 width: 100%;
                 margin: 0;
                 margin-bottom: 20px;
+                .action-bar-container {
+                    .action-bar {
+                        padding: 0 30px;
+                    }
+
+                    .left-text {
+                        flex-basis: 50%;
+                    }
+                }
             }
         }
     }
