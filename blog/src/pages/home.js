@@ -119,7 +119,7 @@ const HomePage = () => {
                                                 For Students
                                             </p>
                                             <p className='right-text'>
-                                                Submit an idea by 8/31
+                                                Submit an idea by 9/3
                                             </p>
                                             <a href="https://docs.google.com/forms/d/1ImgYmVf3HJYCbYBOtqBWUYl-2PjRcGitS3yODJ2L9d0/viewform?ts=5f28b778&edit_requested=true">
                                                 <img src={ RightArrowIcon }/>
