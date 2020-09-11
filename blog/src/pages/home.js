@@ -113,7 +113,7 @@ const HomePage = () => {
                                         that support the BIPOC community with Lava alumni who can 
                                         provide coding, designing, project management and mentorship.
                                     </p>
-                                    <div className='action-bar-container'>
+                                    {/* <div className='action-bar-container'>
                                         <div className='action-bar'>
                                             <p className='left-text'>
                                                 For Students
@@ -137,7 +137,7 @@ const HomePage = () => {
                                                 <img src={ RightArrowIcon }/>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className='tile learn'>
                                     <p className='tile-title'>Lava<em>Learn</em></p>
