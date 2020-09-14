@@ -146,9 +146,9 @@ const HomePage = () => {
                                         entrepreneurial and tech resources, workshops, and fireside 
                                         chats to USC and the greater public.
                                     </p>
-                                    <a href="https://www.flow.page/lavalab">
+                                    <a href="https://lavalearn.webflow.io/">
                                         <div className='be-notified'>
-                                            <p>Sign up for Lava<em>Learn</em> updates</p>
+                                            <p>LavaLearn is now live!</p>
                                             <img src={ RightArrowIcon }/>
                                         </div>
                                     </a>
