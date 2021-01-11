@@ -64,6 +64,8 @@ import Madison from '../../static/img/exec/madison.jpg'
 import Tomas from '../../static/img/exec/tomas.jpg'
 import Viren from '../../static/img/exec/viren.jpg'
 import Glory from '../../static/img/exec/glory.png'
+import Shub from '../../static/img/exec/shub.png'
+import Amber from '../../static/img/exec/amber.png'
 
 import "./home.css"
 const HomePage = () => {
@@ -449,21 +451,21 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Viren } className="profile-pic"/>
+                                <img src={ Shub } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ CurriculumIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Viren Parmar</p>
+                                        <p className="name">Shub Gaur</p>
                                         <p className="eboard-title">Director of Operations</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Bella } className="profile-pic"/>
+                                <img src={ Amber } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ RecruitmentIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Bella Archer</p>
+                                        <p className="name">Amber Pugh</p>
                                         <p className="eboard-title">Director of Recruitment</p>
                                     </div>
                                 </div>
