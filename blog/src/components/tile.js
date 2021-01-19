@@ -333,6 +333,7 @@ const Masthead = styled.div`
         .tile {
             position: relative;
             height: 100%;
+            width: 50%;
             box-sizing: border-box;
             padding: 0 20px;
             padding-top: 20px;
@@ -341,7 +342,7 @@ const Masthead = styled.div`
             background-color: #F2F2F7;
 
             .tile-title {
-                font-size: 20px;
+                font-size: 24px;
                 margin-bottom: 10px;
             }
 
@@ -350,11 +351,11 @@ const Masthead = styled.div`
             }
 
             .learn {
-                width: 40%;
+                width: 50%;
             }
 
-            .connect {
-                width: 60%;
+            .apply {
+                width: 50%;
             }   
             .action-bar-container {
                 position: absolute;
@@ -405,7 +406,7 @@ const Masthead = styled.div`
                 position: absolute;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-start;
 
                 background-color: black;
                 border-radius: 3px;
@@ -413,11 +414,12 @@ const Masthead = styled.div`
                 left: 20px;
                 right: 20px;
                 bottom: 20px;
+                width: max-content;
 
                 p {
                     color: white;
                     font-size: 14px;
-                    flex-basis: 55%
+                    padding-right: 5px;
                 }
 
                 img {

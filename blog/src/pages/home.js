@@ -92,65 +92,30 @@ const HomePage = () => {
 
             <ContentContainer>
                 <TileRow>
-                    <MastheadTile title="LavaLab for Impact Fall 2020" type="full" height="350">
+                    <MastheadTile title="What's Happening Now" type="full" height="350">
                         <Masthead>
                             <MastheadTextTile>
-                                <h1 className='hero-header'>Social Entrepreneurship Toolkit</h1>
-                                <p className="subheader">
-                                    LavaLab is dedicating its efforts this semester to support USC's
-                                    black community.
-                                </p>
-                                <p classname="content">
-                                    LavaLab will be shifting its focus from recruiting a cohort to 
-                                    <em> building an accessible, inclusive, virtual program this fall. </em>
-                                    We are launching a Social Entrepreneurship Toolkit that has two components,
-                                    Lava<em>Connect</em> and Lava<em>Learn</em>.
-                                </p>
+                                <h1 className='hero-header'>Applications for our Spring 2021 Cohort are now open.</h1>
                             </MastheadTextTile>
                             <div className='right'>
-                                <div className='tile connect'>
-                                    <p className='tile-title'>Lava<em>Connect</em></p>
-                                    <p className='detail'>
-                                        Lava<em>Connect</em> pairs students who have entrepreneurial ideas 
-                                        that support the BIPOC community with Lava alumni who can 
-                                        provide coding, designing, project management and mentorship.
-                                    </p>
-                                    {/* <div className='action-bar-container'>
-                                        <div className='action-bar'>
-                                            <p className='left-text'>
-                                                For Students
-                                            </p>
-                                            <p className='right-text'>
-                                                Submit an idea by 9/3
-                                            </p>
-                                            <a href="https://docs.google.com/forms/d/1ImgYmVf3HJYCbYBOtqBWUYl-2PjRcGitS3yODJ2L9d0/viewform?ts=5f28b778&edit_requested=true">
-                                                <img src={ RightArrowIcon }/>
-                                            </a>
+                                <div className='tile apply'>
+                                    <p className='tile-title'>Applications are due on January 31st at 5 PM PST.</p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScDJYSrHlD2n9nEezi6j8UpkmCe3cEkct-AWUaGr-Pp0i0U1w/viewform" target="_blank">
+                                        <div className='be-notified'>
+                                            <p>Apply</p>
+                                            <img src={ RightArrowIcon }/>
                                         </div>
-                                        <div className='divider'/>
-                                        <div className='action-bar'>
-                                            <p className='left-text'>
-                                                For Lava Alumni
-                                            </p>
-                                            <p className='right-text'>
-                                                Sign up to help
-                                            </p>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbelrNdQVhqGuTMJDQiDdiC54uu_onwcP1USqpuadVbXwttA/viewform">
-                                                <img src={ RightArrowIcon }/>
-                                            </a>
-                                        </div>
-                                    </div> */}
+                                    </a>
                                 </div>
                                 <div className='tile learn'>
-                                    <p className='tile-title'>Lava<em>Learn</em></p>
+                                    <p className='tile-title'>LavaLearn</p>
                                     <p className='detail'>
-                                        Lava<em>Learn</em> provides open access curriculum along with 
-                                        entrepreneurial and tech resources, workshops, and fireside 
-                                        chats to USC and the greater public.
+                                        LavaLearn is our signature open-access curriculum, providing entrepreneurial
+                                        and tech resources, workshops, and fireside chats to USC and the greater public.
                                     </p>
-                                    <a href="https://lavalearn.webflow.io/">
+                                    <a href="https://lavalearn.webflow.io/" target="_blank">
                                         <div className='be-notified'>
-                                            <p>LavaLearn is now live!</p>
+                                            <p>Check it out</p>
                                             <img src={ RightArrowIcon }/>
                                         </div>
                                     </a>
