@@ -99,10 +99,10 @@ const HomePage = () => {
                             </MastheadTextTile>
                             <div className='right'>
                                 <div className='tile apply'>
-                                    <p className='tile-title'>Applications are due on January 31st at 5 PM PST.</p>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScDJYSrHlD2n9nEezi6j8UpkmCe3cEkct-AWUaGr-Pp0i0U1w/viewform" target="_blank">
+                                    <p className='tile-title'>Demo Night is on April 29th at 7 PM PST.</p>
+                                    <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
                                         <div className='be-notified'>
-                                            <p>Apply</p>
+                                            <p>Watch here</p>
                                             <img src={ RightArrowIcon }/>
                                         </div>
                                     </a>
