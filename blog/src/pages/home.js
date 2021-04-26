@@ -113,7 +113,7 @@ const HomePage = () => {
                                         LavaLearn is our signature open-access curriculum, providing entrepreneurial
                                         and tech resources, workshops, and fireside chats to USC and the greater public.
                                     </p>
-                                    <a href="https://lavalearn.webflow.io/" target="_blank">
+                                    <a href="https://lavalearn.org/" target="_blank">
                                         <div className='be-notified'>
                                             <p>Check it out</p>
                                             <img src={ RightArrowIcon }/>
