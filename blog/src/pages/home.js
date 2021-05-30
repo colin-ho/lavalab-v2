@@ -480,7 +480,7 @@ const HomePage = () => {
                                 <div className="description">
                                     <img className="eboard-icon" src={ DevelopmentIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Tomas Acin</p>
+                                        <p className="name">Nikhil Patel</p>
                                         <p className="eboard-title">Director of Development</p>
                                     </div>
                                 </div>
