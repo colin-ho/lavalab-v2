@@ -28,6 +28,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
+    npm install -g gatsby-cli
     cd my-default-starter/
     gatsby develop
     ```

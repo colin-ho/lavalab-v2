@@ -55,15 +55,13 @@ import DesignIcon from '../../static/icon/Design-Icon/Highlight.png'
 import DevelopmentIcon from '../../static/icon/Development-Icon/Highlight.png'
 import MarketingIcon from '../../static/icon/marketing.png'
 
-import Anant from '../../static/img/exec/anant.jpg'
-import Bella from '../../static/img/exec/bella.jpg'
-import Ivy from '../../static/img/exec/ivy.jpg'
-import Jessica from '../../static/img/exec/jessica.jpg'
-import Jimena from '../../static/img/exec/jimena.jpg'
+import Eshana from '../../static/img/exec/eshana.jpg'
+import Steph from '../../static/img/exec/Steph.jpg'
+import Haley from '../../static/img/exec/haley.jpg'
+import Mia from '../../static/img/exec/mia.jpg'
 import Madison from '../../static/img/exec/madison.jpg'
-import Tomas from '../../static/img/exec/tomas.jpg'
-import Viren from '../../static/img/exec/viren.jpg'
-import Glory from '../../static/img/exec/glory.png'
+import Nikhil from '../../static/img/exec/nikhil.jpeg'
+import Natalia from '../../static/img/exec/natalia.jpg'
 import Shub from '../../static/img/exec/shub.png'
 import Amber from '../../static/img/exec/amber.png'
 
@@ -406,11 +404,11 @@ const HomePage = () => {
                         <ExecutiveBoard>
                             
                             <div className="member">
-                                <img src={ Glory } className="profile-pic"/>
+                                <img src={ Natalia } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ PresidentIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Glory Kanes</p>
+                                        <p className="name">Natalia Murillo</p>
                                         <p className="eboard-title">President</p>
                                     </div>
                                 </div>
@@ -436,11 +434,11 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Anant } className="profile-pic"/>
+                                <img src={ Eshana } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ CommunityIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Anant Vasudevan</p>
+                                        <p className="name">Eshana Seshadri</p>
                                         <p className="eboard-title">Director of Community</p>
                                     </div>
                                 </div>
@@ -456,27 +454,27 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Jimena } className="profile-pic"/>
+                                <img src={ Mia } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ FinanceIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Jimena Villarreal</p>
+                                        <p className="name">Mia Ahmady</p>
                                         <p className="eboard-title">Director of Sponsorship</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Ivy } className="profile-pic"/>
+                                <img src={ Steph } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ DesignIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Ivy Tsang</p>
+                                        <p className="name">Stephanie Noh</p>
                                         <p className="eboard-title">Director of Design</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Tomas } className="profile-pic"/>
+                                <img src={ Nikhil } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ DevelopmentIcon }/>
                                     <div className="description-inner">
@@ -486,11 +484,11 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={ Jessica } className="profile-pic"/>
+                                <img src={ Haley } className="profile-pic"/>
                                 <div className="description">
                                     <img className="eboard-icon" src={ MarketingIcon }/>
                                     <div className="description-inner">
-                                        <p className="name">Jessica Wang</p>
+                                        <p className="name">Haley Ho</p>
                                         <p className="eboard-title">Director of Marketing</p>
                                     </div>
                                 </div>
