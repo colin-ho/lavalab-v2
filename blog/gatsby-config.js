@@ -32,7 +32,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ['Editor', 'NeurialGrotesk', 'NeurialGrotesk-Medium'],
+          families: ["Editor", "NeurialGrotesk", "NeurialGrotesk-Medium"],
           urls: ["/fonts/fonts.css"],
         },
       },
@@ -42,7 +42,7 @@ module.exports = {
       options: {
         // Add any options here
       },
-    }
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

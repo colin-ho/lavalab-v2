@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 import HomePage from "./home.js"
 import Footer from "../components/footer.js"
 
-
 const IndexPage = () => (
   <Layout>
     <HomePage></HomePage>

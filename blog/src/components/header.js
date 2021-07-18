@@ -4,10 +4,7 @@ import React from "react"
 
 import "./header.css"
 
-const Header = ({ siteTitle }) => (
-  <header>
-  </header>
-)
+const Header = ({ siteTitle }) => <header></header>
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
