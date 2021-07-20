@@ -73,7 +73,7 @@ import DevelopmentIcon from "../../static/icon/Development-Icon/Highlight.png"
 import MarketingIcon from "../../static/icon/marketing.png"
 
 import Eshana from "../../static/img/exec/eshana.jpg"
-import Steph from "../../static/img/exec/Steph.jpg"
+import Steph from "../../static/img/exec/steph.jpg"
 import Haley from "../../static/img/exec/haley.jpg"
 import Mia from "../../static/img/exec/mia.jpg"
 import Madison from "../../static/img/exec/madison.jpg"
