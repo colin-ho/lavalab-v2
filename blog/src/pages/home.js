@@ -111,13 +111,13 @@ const HomePage = () => {
             <Masthead>
               <MastheadTextTile>
                 <h1 className="hero-header">
-                  Applications for our Spring 2021 Cohort are now open.
+                  Applications for our Fall 2021 Cohort will open on 8/27.
                 </h1>
               </MastheadTextTile>
               <div className="right">
                 <div className="tile apply">
                   <p className="tile-title">
-                    Demo Night is on April 29th at 7 PM PST.
+                    Demo Night date will be announced soon.
                   </p>
                   <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
                     <div className="be-notified">
