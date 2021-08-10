@@ -34,7 +34,7 @@ const Tile = styled.div`
   background-color: white;
 
   @media only screen and (max-width: 1115px) {
-    height: 420px;
+    height: ${props => (props.height ? "600px" : "420px")};
   }
 `
 
@@ -67,10 +67,11 @@ const FreeTile = styled.div`
 const ImageTileHeight = styled(Tile)`
   background-image: url(${props => props.image});
   background-size: cover;
-  height: ${props => (props.height ? props.height : "100%")};
+  height: ${props => (props.height ? props.height : "100%")} !important;
   @media only screen and (max-width: 1115px) {
     margin: 10px auto;
     width: 100%;
+    height: ${props => (props.height ? props.height : "100%")} !important;
   }
 `
 const ImageTile = styled(Tile)`

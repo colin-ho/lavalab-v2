@@ -95,6 +95,7 @@ const HomePage = () => {
           className="video-player embed-responsive embed-responsive-1by1"
           height="100%"
           controls
+          playsinline
           style={{ padding: "0 auto", textAlign: "center", width: "100%" }}
           autoPlay
         >
