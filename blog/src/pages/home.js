@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -10,6 +11,7 @@ import {
   ContentContainer,
   TileRow,
   ImageTile,
+  ImageTileHeight,
   EventLabel,
   ContentTile,
   EmploymentTile,
@@ -26,6 +28,7 @@ import {
   SinglePanel,
 } from "../components/carousel"
 
+import PromoVideo from "../../static/vid/lavalabf21intro.mp4"
 import HeroTop from "../../static/img/Spring-2019-Retreat.jpg"
 import Fall2019DemoNight from "../../static/img/Fall-2019-Retreat.jpg"
 
@@ -86,24 +89,22 @@ import "./home.css"
 const HomePage = () => {
   return (
     <div className="page">
-      <ImageHero background={HeroTop}>
-        <div className="hero-content">
-          <img src={LavaLabLogo} />
-          <HeroDivider></HeroDivider>
-          <h1 className="hero-header">Find Your Cofounders</h1>
-          <div className="bottom-row">
-            {/* <Button text='Join our community'/> */}
-            {/* <div className='clear-button'>
-                            <p>Watch the film</p>
-                            <img src={ PlayIcon }/>
-                        </div> */}
-            {/* <div className='get-to-know-us'>
-                            Get to know us
-                            <img src={ DownArrowIcon }/>
-                        </div> */}
-          </div>
-        </div>
-      </ImageHero>
+      <VideoHero>
+        <video
+          id="video"
+          className="video-player embed-responsive embed-responsive-1by1"
+          height="100%"
+          controls
+          style={{ padding: "0 auto", textAlign: "center", width: "100%" }}
+          autoPlay
+        >
+          <source
+            className="embed-response-item"
+            src={PromoVideo}
+            type="video/mp4"
+          />
+        </video>
+      </VideoHero>
 
       <ContentContainer>
         <TileRow>
@@ -145,7 +146,7 @@ const HomePage = () => {
           </MastheadTile>
         </TileRow>
         <TileRow>
-          <ImageTile image={TileDemoNight}>
+          <ImageTile image={TileDemoNight} height={"100%"}>
             <EventLabel
               icon={DemoNightIcon}
               name="Demo Night"
@@ -187,6 +188,71 @@ const HomePage = () => {
               </CarouselSlide>
             </Carousel>
           </ContentTile>
+        </TileRow>
+        <TileRow height={"600 px"}>
+          <ContentTile title="Find Your Role" height={550}>
+            <Carousel titles={["Developer", "Designer", "Product Manager"]}>
+              <CarouselSlide>
+                <h1>Developer</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You have a knack for building and are able to hack through
+                  anything (literally and metaphorically). You are fearless in
+                  creating and are ready to teach yourself unknown tech
+                  concepts. Your grit and perseverance keep you going through
+                  coding challenges.
+                  <em>What you'll be doing:</em>
+                  Working with a fellow developer on your team to build your
+                  product: an app, website, or physical product. Creating an MVP
+                  with baseline features to get your product's ideas across.
+                  Coming together with your PM and designer to brainstorm the
+                  problem you want to solve and how to address it.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Designer</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You have a passion about crafting visual experiences. You are
+                  empathetic and able to put yourself in the user's shoes. Your
+                  ability to learn continues to push your design skills. Your
+                  creativity and attention to detail take your abilities to the
+                  next level.
+                  <em>What you'll be doing:</em>
+                  Designing the MVP for your team's product including the
+                  branding, user experience, and marketing materials.
+                  Conceptualize the best way to get your product's message
+                  across through creative expression. Coming together with your
+                  PM and developers to brainstorm the problem you want to solve
+                  and how to address it.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Product Manager</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You are ready to disrupt the norm and solve any problem that
+                  comes your way. You naturally take leadership positions in
+                  your own ventures, jobs, or class projects and are able to get
+                  a team working together to execute. You have a vision and love
+                  approaching obstacles in a creative way.
+                  <em>What you'll be doing:</em>
+                  Creating direction for your team through organization and
+                  collaboration. Working with your designer and developers to
+                  drive the product forward. Ideating on key innovations and
+                  scoping out the market for your product.
+                </p>
+              </CarouselSlide>
+            </Carousel>
+          </ContentTile>
+          <ImageTileHeight image={HeroTop} height={"550px"}>
+            <EventLabel
+              icon={CommunityRetreatIcon}
+              name="Community Retreat"
+              location="Big Bear, CA"
+              date="Fall 2019"
+            />
+          </ImageTileHeight>
         </TileRow>
         <TileRow>
           <ContentTile type="full" title="Events">
@@ -635,6 +701,151 @@ const ImageHero = styled.div`
   height: ${({ height }) => (height ? height : "810")}px;
   width: 100%;
   background-size: cover;
+  background-position: center;
+
+  @media only screen and (max-width: 1115px) {
+    height: 500px;
+    background-position: center;
+  }
+
+  &.quote {
+    color: white;
+    background-color: black;
+    font-family: "Editor";
+    font-size: 52px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1115px) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    .quote-content {
+      margin: 0 auto;
+      width: 85%;
+      max-width: 1044px;
+      span {
+        color: #ff5c39;
+      }
+
+      .quote-profile {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 17.5px;
+
+        img {
+          height: 18px;
+          width: 18px;
+          padding: 8px;
+          border: 1px solid #ff5c39;
+          border-radius: 100px;
+          margin-right: 15px;
+        }
+
+        .quote-profile-details {
+          .name {
+            font-family: "NeurialGrotesk-Medium";
+          }
+
+          .detail {
+            font-family: "NeurialGrotesk";
+            color: #8e8e93;
+          }
+        }
+      }
+    }
+  }
+
+  .event-container {
+    position: relative;
+    max-width: 1044px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .hero-content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1044px;
+    width: 90%;
+    top: 460px;
+    vertical-align: top;
+
+    img {
+      display: inline-block;
+      width: 250px;
+    }
+
+    @media only screen and (max-width: 1115px) {
+      top: 150px;
+    }
+  }
+
+  .hero-header {
+    font-size: 81px;
+    font-family: "Editor";
+    color: white;
+    width: 50%;
+    line-height: 1.1;
+    margin: 15px 0;
+    display: inline-block;
+
+    @media only screen and (max-width: 1115px) {
+      font-size: 55px;
+    }
+  }
+
+  .bottom-row {
+    display: flex;
+    align-items: middle;
+  }
+
+  .clear-button {
+    margin-left: 10px;
+    display: inline-flex;
+    color: white;
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  .clear-button img {
+    height: 18px;
+    width: 18px;
+    display: block;
+    padding-left: 10px;
+  }
+
+  .get-to-know-us {
+    display: inline-flex;
+    padding: 0 15px;
+    color: white;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    font-family: NeurialGrotesk-Medium;
+  }
+
+  .get-to-know-us img {
+    display: block;
+    height: 14px;
+    width: 14px;
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px white solid;
+    border-radius: 20px;
+  }
+`
+
+const VideoHero = styled.div`
+  position: relative;
+  height: ${({ height }) => (height ? height : "810")}px;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
   background-position: center;
 
   @media only screen and (max-width: 1115px) {

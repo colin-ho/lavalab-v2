@@ -64,7 +64,15 @@ const FreeTile = styled.div`
     font-size: 14px;
   }
 `
-
+const ImageTileHeight = styled(Tile)`
+  background-image: url(${props => props.image});
+  background-size: cover;
+  height: ${props => (props.height ? props.height : "100%")};
+  @media only screen and (max-width: 1115px) {
+    margin: 10px auto;
+    width: 100%;
+  }
+`
 const ImageTile = styled(Tile)`
   background-image: url(${props => props.image});
   background-size: cover;
@@ -512,6 +520,7 @@ export {
   TileRow,
   Tile,
   ImageTile,
+  ImageTileHeight,
   ContentTile,
   EmploymentTile,
   EventLabel,
