@@ -138,7 +138,8 @@ const HomePage = () => {
               allow="autoplay; fullscreen; picture-in-picture"
               style={{
                 padding: "0 auto",
-                marginTop: 32,
+                paddingBottom: 16,
+                marginTop: 28,
                 textAlign: "center",
                 width: "100%",
                 height: "100%",
