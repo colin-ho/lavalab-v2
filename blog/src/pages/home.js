@@ -126,13 +126,19 @@ const HomePage = () => {
 
       <ContentContainer>
         <TileRow height={"600 px"}>
-          <ContentTile image={HeroTop} className="video" height={550}>
+          <ContentTile
+            image={HeroTop}
+            className="video"
+            height={550}
+            title="Fall 2021 Intro"
+          >
             <iframe
               src="https://player.vimeo.com/video/589509456?h=51f392d0c5"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               style={{
                 padding: "0 auto",
+                marginTop: 32,
                 textAlign: "center",
                 width: "100%",
                 height: "100%",
