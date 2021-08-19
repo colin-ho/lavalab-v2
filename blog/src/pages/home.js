@@ -128,15 +128,16 @@ const HomePage = () => {
         <TileRow height={"600 px"}>
           <ContentTile image={HeroTop} className="video" height={550}>
             <iframe
+              src="https://player.vimeo.com/video/589509456?h=51f392d0c5"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
               style={{
                 padding: "0 auto",
                 textAlign: "center",
                 width: "100%",
                 height: "100%",
               }}
-              src="https://player.vimeo.com/video/589509456?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=51f392d0c5&amp;autoplay=1"
               frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen
               title="Lavalab Fall 2021 Promo"
             ></iframe>
