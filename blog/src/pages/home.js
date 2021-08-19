@@ -89,45 +89,21 @@ import "./home.css"
 const HomePage = () => {
   return (
     <div className="page">
-      {/* <VideoHero>
-        <video
-          id="video"
-          className="video-player embed-responsive embed-responsive-1by1"
-          height="100%"
-          controls
-          playsInline
-          style={{ padding: "0 auto", textAlign: "center", width: "100%" }}
-          autoPlay
-        >
-          <source
-            className="embed-response-item"
-            src={PromoVideo}
-            type="video/mp4"
-          />
-        </video>
-      </VideoHero> */}
-      <ImageHero background={HeroTop}>
-        <div className="hero-content">
-          <img src={LavaLabLogo} />
-          <HeroDivider></HeroDivider>
-          <h1 className="hero-header">Find Your Cofounders</h1>
-          <div className="bottom-row">
-            {/* <Button text='Join our community'/> */}
-            {/* <div className='clear-button'>
-                            <p>Watch the film</p>
-                            <img src={ PlayIcon }/>
-                        </div> */}
-            {/* <div className='get-to-know-us'>
-                            Get to know us
-                            <img src={ DownArrowIcon }/>
-                        </div> */}
-          </div>
-        </div>
-      </ImageHero>
-
       <ContentContainer>
         <TileRow height={"600 px"}>
-          <ContentTile image={HeroTop} className="video" height={550}>
+          <ContentTile theme="dark">
+            <img src={LavaLabLogo} height={64} style={{ marginLeft: -12 }} />
+            <CarouselSlide>
+              <h1 style={{ fontSize: 36, marginTop: -64 }}>
+                Come meet your Co-founders
+              </h1>
+              <p style={{ fontSize: 18, marginTop: 32 }}>
+                Lavalab is the University of Southern California's premier
+                student-run, product incubator.
+              </p>
+            </CarouselSlide>
+          </ContentTile>
+          <ContentTile image={HeroTop} className="video">
             <video
               id="video"
               className="video-player embed-responsive embed-responsive-1by1"
@@ -143,61 +119,6 @@ const HomePage = () => {
                 type="video/mp4"
               />
             </video>
-          </ContentTile>
-          <ContentTile title="Find Your Role" height={550}>
-            <Carousel titles={["Developer", "Designer", "Product Manager"]}>
-              <CarouselSlide>
-                <h1>Developer</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You have a knack for building and are able to hack through
-                  anything (literally and metaphorically). You are fearless in
-                  creating and are ready to teach yourself unknown tech
-                  concepts. Your grit and perseverance keep you going through
-                  coding challenges.
-                  <em>What you'll be doing:</em>
-                  Working with a fellow developer on your team to build your
-                  product: an app, website, or physical product. Creating an MVP
-                  with baseline features to get your product's ideas across.
-                  Coming together with your PM and designer to brainstorm the
-                  problem you want to solve and how to address it.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Designer</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You have a passion about crafting visual experiences. You are
-                  empathetic and able to put yourself in the user's shoes. Your
-                  ability to learn continues to push your design skills. Your
-                  creativity and attention to detail take your abilities to the
-                  next level.
-                  <em>What you'll be doing:</em>
-                  Designing the MVP for your team's product including the
-                  branding, user experience, and marketing materials.
-                  Conceptualize the best way to get your product's message
-                  across through creative expression. Coming together with your
-                  PM and developers to brainstorm the problem you want to solve
-                  and how to address it.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Product Manager</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You are ready to disrupt the norm and solve any problem that
-                  comes your way. You naturally take leadership positions in
-                  your own ventures, jobs, or class projects and are able to get
-                  a team working together to execute. You have a vision and love
-                  approaching obstacles in a creative way.
-                  <em>What you'll be doing:</em>
-                  Creating direction for your team through organization and
-                  collaboration. Working with your designer and developers to
-                  drive the product forward. Ideating on key innovations and
-                  scoping out the market for your product.
-                </p>
-              </CarouselSlide>
-            </Carousel>
           </ContentTile>
         </TileRow>
         <TileRow>
@@ -284,6 +205,71 @@ const HomePage = () => {
               </CarouselSlide>
             </Carousel>
           </ContentTile>
+        </TileRow>
+        <TileRow height={"600 px"}>
+          <ContentTile title="Find Your Role" height={550}>
+            <Carousel titles={["Developer", "Designer", "Product Manager"]}>
+              <CarouselSlide>
+                <h1>Developer</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You have a knack for building and are able to hack through
+                  anything (literally and metaphorically). You are fearless in
+                  creating and are ready to teach yourself unknown tech
+                  concepts. Your grit and perseverance keep you going through
+                  coding challenges.
+                  <em>What you'll be doing:</em>
+                  Working with a fellow developer on your team to build your
+                  product: an app, website, or physical product. Creating an MVP
+                  with baseline features to get your product's ideas across.
+                  Coming together with your PM and designer to brainstorm the
+                  problem you want to solve and how to address it.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Designer</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You have a passion about crafting visual experiences. You are
+                  empathetic and able to put yourself in the user's shoes. Your
+                  ability to learn continues to push your design skills. Your
+                  creativity and attention to detail take your abilities to the
+                  next level.
+                  <em>What you'll be doing:</em>
+                  Designing the MVP for your team's product including the
+                  branding, user experience, and marketing materials.
+                  Conceptualize the best way to get your product's message
+                  across through creative expression. Coming together with your
+                  PM and developers to brainstorm the problem you want to solve
+                  and how to address it.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Product Manager</h1>
+                <p>
+                  <em>Who you are:</em>
+                  You are ready to disrupt the norm and solve any problem that
+                  comes your way. You naturally take leadership positions in
+                  your own ventures, jobs, or class projects and are able to get
+                  a team working together to execute. You have a vision and love
+                  approaching obstacles in a creative way.
+                  <em>What you'll be doing:</em>
+                  Creating direction for your team through organization and
+                  collaboration. Working with your designer and developers to
+                  drive the product forward. Ideating on key innovations and
+                  scoping out the market for your product.
+                </p>
+              </CarouselSlide>
+            </Carousel>
+          </ContentTile>
+          <ImageTileHeight image={HeroTop} height={"550px"}>
+            <EventLabel
+              icon={CommunityRetreatIcon}
+              name="Community Retreat"
+              location="Big Bear, CA"
+              date="Fall 2019"
+            />
+          </ImageTileHeight>
         </TileRow>
         <TileRow>
           <ContentTile type="full" title="Events">
