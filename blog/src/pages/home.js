@@ -28,7 +28,6 @@ import {
   SinglePanel,
 } from "../components/carousel"
 
-import PromoVideo from "../../static/vid/lavalabf21intro.mp4"
 import HeroTop from "../../static/img/Spring-2019-Retreat.jpg"
 import Fall2019DemoNight from "../../static/img/Fall-2019-Retreat.jpg"
 
