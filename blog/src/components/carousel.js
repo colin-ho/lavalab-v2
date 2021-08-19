@@ -106,6 +106,8 @@ const StyledCarouselSlide = styled.div`
     display: block;
     padding: 5px 0;
     margin: 0;
+    font-weight: bold;
+    font-size: 17px;
   }
 
   a {

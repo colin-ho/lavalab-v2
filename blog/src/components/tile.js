@@ -87,7 +87,9 @@ const StyledContentTile = styled(Tile)`
   width: ${({ type }) => (type == "full" ? 1044 : 512)}px;
   background-color: ${({ theme }) => (theme == "dark" ? "black" : "white")};
   color: ${({ theme }) => (theme == "dark" ? "white" : "black")};
-  height: ${({ height }) => height}px;
+  @media only screen and (min-width: 1115px) {
+    height: ${({ height }) => height}px;
+  }
 
   @media only screen and (max-width: 1115px) {
     margin: 10px auto;
