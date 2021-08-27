@@ -516,6 +516,30 @@ const MastheadTextTile = styled.div`
     line-height: 19px;
     color: #000000;
   }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: black;
+    border-radius: 3px;
+    padding: 12px 15px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: max-content;
+    margin-top: 40px;
+    p {
+      color: #ffffff !important;
+      text-decoration: none !important;
+    }
+  }
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+  }
 `
 
 export {

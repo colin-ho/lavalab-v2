@@ -124,7 +124,7 @@ const HomePage = () => {
         </div>
       </ImageHero>
 
-      <ContentContainer>
+      <ContentContainer id={"join"}>
         <TileRow height={"600 px"}>
           <ContentTile
             image={HeroTop}
@@ -220,13 +220,36 @@ const HomePage = () => {
             </Carousel>
           </ContentTile>
         </TileRow>
-        <TileRow>
+        <TileRow id={"events"}>
           <MastheadTile title="What's Happening Now" type="full" height="350">
             <Masthead>
               <MastheadTextTile>
-                <h1 className="hero-header">
-                  Applications for our Fall 2021 Cohort will open on 8/27.
+                <h1 className="hero-header" className="tile-title">
+                  Applications for our Fall 2021 Cohort are open.
                 </h1>
+                <a href="https://forms.gle/o8zPF6KxTh22bNtY9" target="_blank">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+
+                      backgroundColor: "black",
+                      borderRadius: "3px",
+                      padding: "12px 15px",
+                      left: "20px",
+                      right: "20px",
+                      bottom: "20px",
+                      width: "max-content",
+                      fontColor: "white",
+                    }}
+                  >
+                    <p style={{ fontColor: "white !important" }}>
+                      Check it out
+                    </p>
+                    <img src={RightArrowIcon} height={20} />
+                  </div>
+                </a>
               </MastheadTextTile>
               <div className="right">
                 <div className="tile apply">
@@ -261,15 +284,7 @@ const HomePage = () => {
             </Masthead>
           </MastheadTile>
         </TileRow>
-        <TileRow>
-          <ImageTile image={TileDemoNight} height={"100%"}>
-            <EventLabel
-              icon={DemoNightIcon}
-              name="Demo Night"
-              location="Los Angeles, CA"
-              date="Fall 2019"
-            />
-          </ImageTile>
+        <TileRow id={"about"}>
           <ContentTile title="Welcome">
             <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
               <CarouselSlide>
@@ -304,7 +319,16 @@ const HomePage = () => {
               </CarouselSlide>
             </Carousel>
           </ContentTile>
+          <ImageTile image={TileDemoNight} height={"100%"}>
+            <EventLabel
+              icon={DemoNightIcon}
+              name="Demo Night"
+              location="Los Angeles, CA"
+              date="Fall 2019"
+            />
+          </ImageTile>
         </TileRow>
+
         <TileRow>
           <ContentTile type="full" title="Events">
             <TiledCarousel

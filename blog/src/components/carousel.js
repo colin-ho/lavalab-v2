@@ -7,10 +7,6 @@ import RightIconDisabled from "../../static/icon/Right-Arrow-Icon/Disabled.png"
 import LeftIconEnabled from "../../static/icon/Left-Arrow-Icon/Light.png"
 import RightIconEnabled from "../../static/icon/Right-Arrow-Icon/Light.png"
 
-import FacebookIcon from "../../static/icon/Facebook-Icon/Light.png"
-import InstagramIcon from "../../static/icon/Instagram-Icon/Light.png"
-import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png"
-
 const StyledCarousel = styled.div`
   width: 472px;
   height: 100%;
@@ -177,7 +173,7 @@ const StyledSinglePanel = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    width: 472px;
+    width: 100%;
     left: 0;
     bottom: 0;
     height: 80px;
@@ -222,18 +218,6 @@ const SinglePanel = ({ children }) => {
   return (
     <StyledSinglePanel>
       <div className="carouselContent">{children}</div>
-      <div className="carouselControls">
-        <a href="https://www.facebook.com/usclavalab">
-          <img className="social-icon" src={FacebookIcon} />
-        </a>
-        <a href="https://www.instagram.com/usclavalab/?hl=en">
-          <img className="social-icon" src={InstagramIcon} />
-        </a>
-        <a href="https://twitter.com/usclavalab">
-          <img className="social-icon" src={TwitterIcon} />
-        </a>
-        <div className="currentPage">Connect with our community</div>
-      </div>
     </StyledSinglePanel>
   )
 }
