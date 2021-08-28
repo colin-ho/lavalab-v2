@@ -665,19 +665,7 @@ const HomePage = () => {
           </FreeTile>
         </TileRow>
       </ContentContainer>
-      <StyleHeader
-        className="navbar"
-        style={{
-          position: "absolute",
-          top: 0,
-          backgroundColor: "white",
-          right: 0,
-          left: 0,
-          display: "flex",
-          flexDirection: "row",
-          padding: "10px 30px",
-        }}
-      >
+      <StyleHeader className="navbar">
         <img src={LavaLabLogoHighlight} />
         <div className="links">
           <a href="#join">Join</a>
@@ -969,6 +957,15 @@ const StyleHeader = styled.div`
   @media only screen and (max-width: 1115px) {
     display: none;
   }
+  position: absolute;
+  top: 0;
+  background-color: white;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+
   .links {
     width: 100%;
     display: flex;
