@@ -39,6 +39,8 @@ import PlayIcon from "../../static/icon/Play-Icon/Light.png"
 import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.png"
 
 import LavaLabLogo from "../../static/lavalab-logo.png"
+import LavaLearnLogoWhite from "../../static/lavalearn-logo-white.png"
+import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png"
 
 import PersonIcon from "../../static/icon/Person-Icon/Highlight.png"
 
@@ -124,13 +126,13 @@ const HomePage = () => {
         </div>
       </ImageHero>
 
-      <ContentContainer id={"join"}>
-        <TileRow height={"600 px"}>
+      <ContentContainer>
+        <TileRow height={"600 px"} id={"join"}>
           <ContentTile
             image={HeroTop}
             className="video"
             height={550}
-            title="Fall 2021 Intro"
+            // title="Fall 2021 Intro"
           >
             <iframe
               src="https://player.vimeo.com/video/589509456?h=51f392d0c5"
@@ -139,10 +141,10 @@ const HomePage = () => {
               style={{
                 padding: "0 auto",
                 paddingBottom: 16,
-                marginTop: 28,
                 textAlign: "center",
                 width: "100%",
                 height: "100%",
+                maxHeight: 550,
               }}
               frameborder="0"
               allowfullscreen
@@ -220,7 +222,7 @@ const HomePage = () => {
             </Carousel>
           </ContentTile>
         </TileRow>
-        <TileRow id={"events"}>
+        <TileRow>
           <MastheadTile title="What's Happening Now" type="full" height="350">
             <Masthead>
               <MastheadTextTile>
@@ -329,7 +331,7 @@ const HomePage = () => {
           </ImageTile>
         </TileRow>
 
-        <TileRow>
+        <TileRow id={"events"}>
           <ContentTile type="full" title="Events">
             <TiledCarousel
               titles={[
@@ -474,7 +476,7 @@ const HomePage = () => {
       </ImageHero>
 
       <ContentContainer>
-        <TileRow>
+        <TileRow id="alumni">
           <ContentTile title="Alumni Project Spotlight">
             <Carousel titles={["Kyoku", "Recess", "Spree"]}>
               <CarouselSlide>
@@ -663,6 +665,35 @@ const HomePage = () => {
           </FreeTile>
         </TileRow>
       </ContentContainer>
+      <StyleHeader
+        className="navbar"
+        style={{
+          position: "absolute",
+          top: 0,
+          backgroundColor: "white",
+          right: 0,
+          left: 0,
+          display: "flex",
+          flexDirection: "row",
+          padding: "10px 30px",
+        }}
+      >
+        <img src={LavaLabLogoHighlight} />
+        <div className="links">
+          <a href="#join">Join</a>
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#alumni">Alumni</a>
+          <a href="#footer">Contact</a>
+          <a
+            href="https://lavalearn.org/"
+            target="_blank"
+            style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
+          >
+            <img src={LavaLearnLogoWhite} />
+          </a>
+        </div>
+      </StyleHeader>
     </div>
   )
 }
@@ -934,7 +965,25 @@ const HeroDivider = styled.div`
   background-color: white;
   margin: 0 auto;
 `
-
+const StyleHeader = styled.div`
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      margin-left: 40px;
+    }
+  }
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+`
 const StyledButton = styled.div`
   display: inline-flex;
   background-color: #ff5c39;

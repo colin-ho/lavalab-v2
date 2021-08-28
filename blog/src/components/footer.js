@@ -53,6 +53,8 @@ let StyledFooter = styled.div`
   }
   img.lava {
     height: 60px;
+    margin-right: auto;
+    margin-left: 30px;
   }
   .top {
     display: flex;
@@ -60,7 +62,7 @@ let StyledFooter = styled.div`
       display: none;
     }
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     .icons {
       align-self: center;
       flex: 0 1 auto;
@@ -77,12 +79,13 @@ let StyledFooter = styled.div`
     .lava-link {
       align-self: center;
       margin-bottom: 10px;
+      margin-right: 30px;
     }
   }
 `
 
 const Footer = () => (
-  <StyledFooter>
+  <StyledFooter id="footer">
     <div className="top">
       <img className="lava" src={LavaLabLogo} />
       <div className="icons">
@@ -96,7 +99,7 @@ const Footer = () => (
           <img className="social-icon" src={TwitterIcon} />
         </a>
       </div>
-      <div></div>
+
       <a
         className="lava-link"
         href="https://learn.usclavalab.org/"
