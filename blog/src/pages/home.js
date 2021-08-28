@@ -966,6 +966,9 @@ const HeroDivider = styled.div`
   margin: 0 auto;
 `
 const StyleHeader = styled.div`
+  @media only screen and (max-width: 1115px) {
+    display: none;
+  }
   .links {
     width: 100%;
     display: flex;
