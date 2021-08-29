@@ -255,7 +255,9 @@ const HomePage = () => {
               </MastheadTextTile>
               <div className="right">
                 <div className="tile apply">
-                  <p className="tile-title">Come to the Idea Grind on 8/30.</p>
+                  <p className="tile-title">
+                    Come to the Idea Grind on 8/30 at 8-9PM in JFF316.
+                  </p>
                   <p className="detail">
                     The Idea Grind is our take on an info session where you'll
                     get to brainstorm ideas and meet some of our E-Board
