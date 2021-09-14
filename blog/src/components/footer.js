@@ -5,6 +5,8 @@ import InstagramIcon from "../../static/icon/Instagram-Icon/Light.png"
 import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png"
 import LavaLabLogo from "../../static/lavalab-logo.png"
 import LavaLearnLogo from "../../static/lavalearn-logo.png"
+import GriefCenterLogo from "../../static/img/greif-logo.png"
+import NeudesicLogo from "../../static/img/Neudesic-White-Logo.png"
 
 let StyledFooter = styled.div`
   background-color: black;
@@ -27,7 +29,8 @@ let StyledFooter = styled.div`
       padding: 6px;
       border: 1px solid #ffffff;
       border-radius: 100px;
-      margin-left: 32px;
+      margin-left: 16px;
+      margin-right: 16px;
       cursor: pointer;
     }
   }
@@ -81,6 +84,11 @@ let StyledFooter = styled.div`
       margin-bottom: 10px;
       margin-right: 30px;
     }
+    .sponsors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 `
 
@@ -109,6 +117,21 @@ const Footer = () => (
           <img src={LavaLearnLogo} height={30} />
         </div>
       </a>
+    </div>
+    <div className="sponsors">
+      <p style={{ width: "100%", fontSize: 20, paddingBottom: 12 }}>
+        Our sponsors:
+      </p>
+      <img
+        src={NeudesicLogo}
+        height={30}
+        style={{ paddingBottom: 10, paddingLeft: 20, paddingRight: 20 }}
+      />
+      <img
+        src={GriefCenterLogo}
+        height={60}
+        style={{ paddingLeft: 20, paddingRight: 20 }}
+      />
     </div>
     <div className="copyright">
       <p>LavaLab 2021. All Rights Reserved.</p>
