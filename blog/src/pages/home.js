@@ -28,8 +28,8 @@ import {
   SinglePanel,
 } from "../components/carousel"
 
-import HeroTop from "../../static/img/Spring-2019-Retreat.jpg"
-import Fall2019DemoNight from "../../static/img/Fall-2019-Retreat.jpg"
+import HeroTop from "../../static/img/Fall-2019-Retreat.jpg"
+import Fall2019DemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
 
 import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
 
