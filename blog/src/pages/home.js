@@ -127,7 +127,108 @@ const HomePage = () => {
       </ImageHero>
 
       <ContentContainer>
-        <TileRow height={"600 px"} id={"join"}>
+        <TileRow id={"about"}>
+          <MastheadTile title="What's Happening Now" type="full" height="350">
+            <Masthead>
+              <MastheadTextTile>
+                <h1 className="hero-header" className="tile-title">
+                  Demo Night is on December 2nd at 7pm. (Location TBA)
+                </h1>
+                <a
+                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDE3czNiOW1vYWk2N2gzdTVscGI5NnVybW8gZGU1dHVzZzJjcTdjdmZhcGg0cmIyZHJvMWdAZw&tmsrc=de5tusg2cq7cvfaph4rb2dro1g%40group.calendar.google.com"
+                  target="_blank"
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-start",
+
+                      backgroundColor: "black",
+                      borderRadius: "3px",
+                      padding: "12px 15px",
+                      left: "20px",
+                      right: "20px",
+                      bottom: "20px",
+                      width: "max-content",
+                      fontColor: "white",
+                    }}
+                  >
+                    <p style={{ fontColor: "white !important" }}>
+                      Save the Date!
+                    </p>
+                    <img src={RightArrowIcon} height={20} />
+                  </div>
+                </a>
+              </MastheadTextTile>
+              <div className="right">
+                <div className="tile apply">
+                  <p className="tile-title">Spring 2022 Recruitment</p>
+                  <p className="detail">
+                    Spring recruiment details and events will be annouced at the
+                    beginning of the next semester.
+                  </p>
+                  {/* <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
+                    <div className="be-notified">
+                      <p>Watch here</p>
+                      <img src={RightArrowIcon} />
+                    </div>
+                  </a> */}
+                </div>
+                <div className="tile learn">
+                  <p className="tile-title">LavaLearn</p>
+                  <p className="detail">
+                    LavaLearn is our signature open-access curriculum, providing
+                    entrepreneurial and tech resources, workshops, and fireside
+                    chats to USC and the greater public.
+                  </p>
+                  <a href="https://lavalearn.org/" target="_blank">
+                    <div className="be-notified">
+                      <p>Check it out</p>
+                      <img src={RightArrowIcon} />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </Masthead>
+          </MastheadTile>
+        </TileRow>
+
+        <TileRow height={"600 px"}>
+          <ContentTile title="Welcome" height={550}>
+            <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
+              <CarouselSlide>
+                <h1>Welcome</h1>
+                <p>
+                  <em>Fully immerse yourself in the startup experience.</em>
+                  We are the University of Southern California’s premiere,
+                  student-run, product incubator. Every semester, LavaLab
+                  invites a new cohort of visionary designers, developers, and
+                  project managers to build tomorrow’s startups, today.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>The Experience</h1>
+                <p>
+                  Every semester for the past 7 years, LavaLab takes a cohort of
+                  28 students composed of designers, developers, and project
+                  managers. After getting to know your fellow cohort members,
+                  you are then put into teams of 4 to create your startup. Dream
+                  big: makeup company, bar hopping app, parking
+                  hardware--anything goes.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Curriculum</h1>
+                <p>
+                  Our trademark curriculum teaches you how to build a product,
+                  from ideation to deployment, while reinforcing principles of
+                  entrepreneurship and innovation. Learn the ins-and-outs of
+                  your role as a designer, developer, or project manager.
+                </p>
+              </CarouselSlide>
+            </Carousel>
+          </ContentTile>
           <ContentTile
             image={HeroTop}
             className="video"
@@ -150,23 +251,18 @@ const HomePage = () => {
               allowfullscreen
               title="Lavalab Fall 2021 Promo"
             ></iframe>
-            {/* <video
-              id="video"
-              className="video-player embed-responsive embed-responsive-1by1"
-              height="100%"
-              controls
-              playsInline
-              style={{ padding: "0 auto", textAlign: "center", width: "100%" }}
-              autoPlay
-            >
-              <source
-                className="embed-response-item"
-                src={PromoVideo}
-                type="video/mp4"
-              />
-            </video> */}
           </ContentTile>
-          <ContentTile title="Find Your Role" height={550}>
+        </TileRow>
+        <TileRow id={"join"}>
+          <ImageTile image={TileDemoNight} height={"100%"}>
+            <EventLabel
+              icon={DemoNightIcon}
+              name="Demo Night"
+              location="Los Angeles, CA"
+              date="Fall 2019"
+            />
+          </ImageTile>
+          <ContentTile title="Find Your Role" height={"100%"}>
             <Carousel titles={["Developer", "Designer", "Product Manager"]}>
               <CarouselSlide>
                 <h1>Developer</h1>
@@ -222,117 +318,6 @@ const HomePage = () => {
             </Carousel>
           </ContentTile>
         </TileRow>
-        <TileRow>
-          <MastheadTile title="What's Happening Now" type="full" height="350">
-            <Masthead>
-              <MastheadTextTile>
-                <h1 className="hero-header" className="tile-title">
-                  Applications for our Fall 2021 Cohort are open.
-                </h1>
-                <a href="https://forms.gle/o8zPF6KxTh22bNtY9" target="_blank">
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "flex-start",
-
-                      backgroundColor: "black",
-                      borderRadius: "3px",
-                      padding: "12px 15px",
-                      left: "20px",
-                      right: "20px",
-                      bottom: "20px",
-                      width: "max-content",
-                      fontColor: "white",
-                    }}
-                  >
-                    <p style={{ fontColor: "white !important" }}>
-                      Check it out
-                    </p>
-                    <img src={RightArrowIcon} height={20} />
-                  </div>
-                </a>
-              </MastheadTextTile>
-              <div className="right">
-                <div className="tile apply">
-                  <p className="tile-title">
-                    Come to the Idea Grind on 8/30 at 8-9PM in JFF316.
-                  </p>
-                  <p className="detail">
-                    The Idea Grind is our take on an info session where you'll
-                    get to brainstorm ideas and meet some of our E-Board
-                    members.
-                  </p>
-                  {/* <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
-                    <div className="be-notified">
-                      <p>Watch here</p>
-                      <img src={RightArrowIcon} />
-                    </div>
-                  </a> */}
-                </div>
-                <div className="tile learn">
-                  <p className="tile-title">LavaLearn</p>
-                  <p className="detail">
-                    LavaLearn is our signature open-access curriculum, providing
-                    entrepreneurial and tech resources, workshops, and fireside
-                    chats to USC and the greater public.
-                  </p>
-                  <a href="https://lavalearn.org/" target="_blank">
-                    <div className="be-notified">
-                      <p>Check it out</p>
-                      <img src={RightArrowIcon} />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </Masthead>
-          </MastheadTile>
-        </TileRow>
-        <TileRow id={"about"}>
-          <ContentTile title="Welcome">
-            <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
-              <CarouselSlide>
-                <h1>Welcome</h1>
-                <p>
-                  <em>Fully immerse yourself in the startup experience.</em>
-                  We are the University of Southern California’s premiere,
-                  student-run, product incubator. Every semester, LavaLab
-                  invites a new cohort of visionary designers, developers, and
-                  project managers to build tomorrow’s startups, today.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>The Experience</h1>
-                <p>
-                  Every semester for the past 7 years, LavaLab takes a cohort of
-                  28 students composed of designers, developers, and project
-                  managers. After getting to know your fellow cohort members,
-                  you are then put into teams of 4 to create your startup. Dream
-                  big: makeup company, bar hopping app, parking
-                  hardware--anything goes.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Curriculum</h1>
-                <p>
-                  Our trademark curriculum teaches you how to build a product,
-                  from ideation to deployment, while reinforcing principles of
-                  entrepreneurship and innovation. Learn the ins-and-outs of
-                  your role as a designer, developer, or project manager.
-                </p>
-              </CarouselSlide>
-            </Carousel>
-          </ContentTile>
-          <ImageTile image={TileDemoNight} height={"100%"}>
-            <EventLabel
-              icon={DemoNightIcon}
-              name="Demo Night"
-              location="Los Angeles, CA"
-              date="Fall 2019"
-            />
-          </ImageTile>
-        </TileRow>
-
         <TileRow id={"events"}>
           <ContentTile type="full" title="Events">
             <TiledCarousel
@@ -572,11 +557,11 @@ const HomePage = () => {
             <p className="title">Executive Team</p>
             <ExecutiveBoard>
               <div className="member">
-                <img src={Natalia} className="profile-pic" />
+                <img src={Amber} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={PresidentIcon} />
                   <div className="description-inner">
-                    <p className="name">Natalia Murillo</p>
+                    <p className="name">Amber Pugh</p>
                     <p className="eboard-title">President</p>
                   </div>
                 </div>
@@ -591,7 +576,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="member">
+              {/* <div className="member">
                 <img src={Amber} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={RecruitmentIcon} />
@@ -600,7 +585,7 @@ const HomePage = () => {
                     <p className="eboard-title">Director of Recruitment</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="member">
                 <img src={Eshana} className="profile-pic" />
                 <div className="description">
@@ -670,8 +655,8 @@ const HomePage = () => {
       <StyleHeader className="navbar">
         <img src={LavaLabLogoHighlight} />
         <div className="links">
-          <a href="#join">Join</a>
           <a href="#about">About</a>
+          <a href="#join">Join</a>
           <a href="#events">Events</a>
           <a href="#alumni">Alumni</a>
           <a href="#footer">Contact</a>

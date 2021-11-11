@@ -82,9 +82,9 @@ const StyledCarouselSlide = styled.div`
 
   h1 {
     font-family: "Editor";
-    font-size: 42px;
-    padding: 20px 0;
-    line-height: 46px;
+    font-size: 36px;
+    padding: 10px 0;
+    line-height: 30px;
 
     @media only screen and (max-width: 1115px) {
       font-size: 28px;
