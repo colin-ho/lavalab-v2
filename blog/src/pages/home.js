@@ -132,8 +132,21 @@ const HomePage = () => {
             <Masthead>
               <MastheadTextTile>
                 <h1 className="hero-header" className="tile-title">
-                  Demo Night is on December 2nd at 7pm. (Location TBA)
+                  Demo Night is on December 2nd at 7pm
                 </h1>
+                <h2 style={{ paddingTop: 16 }}>
+                  {" "}
+                  at the USC Village in Cowlings (UVN 1200), or online on{" "}
+                  <a
+                    target="_blank"
+                    href="http://twitch.tv/usclavalab"
+                    style={{ color: "black", textDecoration: "underline" }}
+                  >
+                    Twitch
+                  </a>
+                  .
+                </h2>
+
                 <a
                   href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDE3czNiOW1vYWk2N2gzdTVscGI5NnVybW8gZGU1dHVzZzJjcTdjdmZhcGg0cmIyZHJvMWdAZw&tmsrc=de5tusg2cq7cvfaph4rb2dro1g%40group.calendar.google.com"
                   target="_blank"
