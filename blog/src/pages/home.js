@@ -80,10 +80,12 @@ import Eshana from "../../static/img/exec/eshana.jpg"
 import Steph from "../../static/img/exec/steph.jpg"
 import Haley from "../../static/img/exec/haley.jpg"
 import Mia from "../../static/img/exec/mia.jpg"
-import Madison from "../../static/img/exec/madison.jpg"
+import Kaylin from "../../static/img/exec/kaylin.jpeg"
 import Nikhil from "../../static/img/exec/nikhil.jpeg"
 import Natalia from "../../static/img/exec/natalia.jpg"
-import Shub from "../../static/img/exec/shub.png"
+import Adil from "../../static/img/exec/adil.png"
+import Rohan from "../../static/img/exec/rohan.jpg"
+
 import Amber from "../../static/img/exec/amber.png"
 
 import "./home.css"
@@ -132,23 +134,22 @@ const HomePage = () => {
             <Masthead>
               <MastheadTextTile>
                 <h1 className="hero-header" className="tile-title">
-                  Demo Night is on December 2nd at 7pm
+                  Applications open on Jan 18th and are due on Jan 30th
                 </h1>
                 <h2 style={{ paddingTop: 16 }}>
                   {" "}
-                  at the USC Village in Cowlings (UVN 1200), or online on{" "}
-                  <a
+                  Sign up for our recruitment event calendar{" "}
+                  {/* <a
                     target="_blank"
                     href="http://twitch.tv/usclavalab"
                     style={{ color: "black", textDecoration: "underline" }}
                   >
                     Twitch
-                  </a>
-                  .
+                  </a> */}
                 </h2>
 
                 <a
-                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDE3czNiOW1vYWk2N2gzdTVscGI5NnVybW8gZGU1dHVzZzJjcTdjdmZhcGg0cmIyZHJvMWdAZw&tmsrc=de5tusg2cq7cvfaph4rb2dro1g%40group.calendar.google.com"
+                  href="https://calendar.google.com/calendar/u/2?cid=cnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
                   target="_blank"
                 >
                   <div
@@ -168,7 +169,7 @@ const HomePage = () => {
                     }}
                   >
                     <p style={{ fontColor: "white !important" }}>
-                      Save the Date!
+                      Add the Calendar
                     </p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
@@ -176,10 +177,10 @@ const HomePage = () => {
               </MastheadTextTile>
               <div className="right">
                 <div className="tile apply">
-                  <p className="tile-title">Spring 2022 Recruitment</p>
+                  <p className="tile-title">Spring 2022 Recruitment Events</p>
                   <p className="detail">
-                    Spring recruiment details and events will be annouced at the
-                    beginning of the next semester.
+                    Visit us at the USC, Marshall, and Viterbi involvement
+                    fairs, and come to the Idea Grind Jan 25th at 6pm.
                   </p>
                   {/* <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
                     <div className="be-notified">
@@ -580,25 +581,25 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Shub} className="profile-pic" />
+                <img src={Adil} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={CurriculumIcon} />
                   <div className="description-inner">
-                    <p className="name">Shub Gaur</p>
+                    <p className="name">Adil Khadri</p>
                     <p className="eboard-title">Director of Operations</p>
                   </div>
                 </div>
               </div>
-              {/* <div className="member">
-                <img src={Amber} className="profile-pic" />
+              <div className="member">
+                <img src={Rohan} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={RecruitmentIcon} />
                   <div className="description-inner">
-                    <p className="name">Amber Pugh</p>
+                    <p className="name">Rohan Kalra</p>
                     <p className="eboard-title">Director of Recruitment</p>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className="member">
                 <img src={Eshana} className="profile-pic" />
                 <div className="description">
@@ -610,11 +611,11 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Madison} className="profile-pic" />
+                <img src={Kaylin} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={IndustryRelationsIcon} />
                   <div className="description-inner">
-                    <p className="name">Madison Gong</p>
+                    <p className="name">Kaylin Hiatt</p>
                     <p className="eboard-title">
                       Director of Industry Relations
                     </p>
