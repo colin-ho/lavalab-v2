@@ -149,7 +149,7 @@ const HomePage = () => {
                 </h2>
 
                 <a
-                  href="https://calendar.google.com/calendar/u/2?cid=cnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeJmqI0rGaAVBcgwVPYYOhUDJDdWXh1vgZcpkKFWKrDg2NSbA/viewform?usp=sf_link"
                   target="_blank"
                 >
                   <div
@@ -168,9 +168,7 @@ const HomePage = () => {
                       fontColor: "white",
                     }}
                   >
-                    <p style={{ fontColor: "white !important" }}>
-                      Add the Calendar
-                    </p>
+                    <p style={{ fontColor: "white !important" }}>Apply Now</p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
                 </a>
@@ -182,12 +180,15 @@ const HomePage = () => {
                     Visit us at the USC, Marshall, and Viterbi involvement
                     fairs, and come to the Idea Grind Jan 25th at 6pm.
                   </p>
-                  {/* <a href="https://youtu.be/UGWgv9HuOJs" target="_blank">
+                  <a
+                    href="https://calendar.google.com/calendar/u/2?cid=cnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                    target="_blank"
+                  >
                     <div className="be-notified">
-                      <p>Watch here</p>
+                      <p>Add Recruitment Calendar</p>
                       <img src={RightArrowIcon} />
                     </div>
-                  </a> */}
+                  </a>
                 </div>
                 <div className="tile learn">
                   <p className="tile-title">LavaLearn</p>
