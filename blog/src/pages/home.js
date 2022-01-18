@@ -185,7 +185,7 @@ const HomePage = () => {
                     target="_blank"
                   >
                     <div className="be-notified">
-                      <p>Add Recruitment Calendar</p>
+                      <p>Recruitment Calendar</p>
                       <img src={RightArrowIcon} />
                     </div>
                   </a>
