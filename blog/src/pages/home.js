@@ -129,6 +129,66 @@ const HomePage = () => {
       </ImageHero>
 
       <ContentContainer>
+        <TileRow height={"600 px"}>
+          <ContentTile title="Welcome" height={550}>
+            <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
+              <CarouselSlide>
+                <h1>Welcome</h1>
+                <p>
+                  <em>Fully immerse yourself in the startup experience.</em>
+                  We are the University of Southern California’s premiere,
+                  student-run, product incubator. Every semester, LavaLab
+                  invites a new cohort of visionary designers, developers, and
+                  project managers to build tomorrow’s startups, today.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>The Experience</h1>
+                <p>
+                  Every semester for the past 7 years, LavaLab takes a cohort of
+                  28 students composed of designers, developers, and project
+                  managers. After getting to know your fellow cohort members,
+                  you are then put into teams of 4 to create your startup. Dream
+                  big: makeup company, bar hopping app, parking
+                  hardware--anything goes.
+                </p>
+              </CarouselSlide>
+              <CarouselSlide>
+                <h1>Curriculum</h1>
+                <p>
+                  Our trademark curriculum teaches you how to build a product,
+                  from ideation to deployment, while reinforcing principles of
+                  entrepreneurship and innovation. Learn the ins-and-outs of
+                  your role as a designer, developer, or project manager.
+                </p>
+              </CarouselSlide>
+            </Carousel>
+          </ContentTile>
+          <ContentTile
+            image={HeroTop}
+            className="video"
+            height={550}
+            // title="Fall 2021 Intro"
+          >
+            <iframe
+              src="https://player.vimeo.com/video/668728641?h=51f392d0c5"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style={{
+                padding: "0 auto",
+                paddingBottom: 16,
+                textAlign: "center",
+                width: "100%",
+                height: "100%",
+                maxHeight: 550,
+              }}
+              frameborder="0"
+              allowfullscreen
+              title="Lavalab Fall 2021 Promo"
+            ></iframe>
+          </ContentTile>
+        </TileRow>
+
         <TileRow id={"about"}>
           <MastheadTile title="What's Happening Now" type="full" height="350">
             <Masthead>
@@ -209,65 +269,6 @@ const HomePage = () => {
           </MastheadTile>
         </TileRow>
 
-        <TileRow height={"600 px"}>
-          <ContentTile title="Welcome" height={550}>
-            <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
-              <CarouselSlide>
-                <h1>Welcome</h1>
-                <p>
-                  <em>Fully immerse yourself in the startup experience.</em>
-                  We are the University of Southern California’s premiere,
-                  student-run, product incubator. Every semester, LavaLab
-                  invites a new cohort of visionary designers, developers, and
-                  project managers to build tomorrow’s startups, today.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>The Experience</h1>
-                <p>
-                  Every semester for the past 7 years, LavaLab takes a cohort of
-                  28 students composed of designers, developers, and project
-                  managers. After getting to know your fellow cohort members,
-                  you are then put into teams of 4 to create your startup. Dream
-                  big: makeup company, bar hopping app, parking
-                  hardware--anything goes.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Curriculum</h1>
-                <p>
-                  Our trademark curriculum teaches you how to build a product,
-                  from ideation to deployment, while reinforcing principles of
-                  entrepreneurship and innovation. Learn the ins-and-outs of
-                  your role as a designer, developer, or project manager.
-                </p>
-              </CarouselSlide>
-            </Carousel>
-          </ContentTile>
-          <ContentTile
-            image={HeroTop}
-            className="video"
-            height={550}
-            // title="Fall 2021 Intro"
-          >
-            <iframe
-              src="https://player.vimeo.com/video/589509456?h=51f392d0c5"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={{
-                padding: "0 auto",
-                paddingBottom: 16,
-                textAlign: "center",
-                width: "100%",
-                height: "100%",
-                maxHeight: 550,
-              }}
-              frameborder="0"
-              allowfullscreen
-              title="Lavalab Fall 2021 Promo"
-            ></iframe>
-          </ContentTile>
-        </TileRow>
         <TileRow id={"join"}>
           <ImageTile image={TileDemoNight} height={"100%"}>
             <EventLabel
