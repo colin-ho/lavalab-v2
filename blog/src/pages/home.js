@@ -198,7 +198,7 @@ const HomePage = () => {
                 </h1>
                 <h2 style={{ paddingTop: 16 }}>
                   {" "}
-                  Sign up for our recruitment event calendar{"  "}
+                  {"  "}
                   {/* <a
                     target="_blank"
                     href="http://twitch.tv/usclavalab"
