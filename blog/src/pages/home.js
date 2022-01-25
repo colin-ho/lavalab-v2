@@ -30,7 +30,7 @@ import {
 
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg"
 import Fall2019DemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
-
+import Fall2018BeachBonfire from "../../static/img/Fall-2018-Beach-Bonfire.jpg"
 import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
 
 import RightArrowIcon from "../../static/icon/Right-Arrow-Icon/Light.png"
@@ -426,7 +426,7 @@ const HomePage = () => {
           </ContentTile>
         </TileRow>
       </ContentContainer>
-      <ImageHero background={Fall2019DemoNight} height="800">
+      <ImageHero background={Fall2018BeachBonfire} height="800">
         <div className="event-container">
           <EventLabel
             icon={DemoNightIcon}
