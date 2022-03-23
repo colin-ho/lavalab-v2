@@ -81,7 +81,7 @@ import Steph from "../../static/img/exec/steph.jpg"
 import Haley from "../../static/img/exec/haley.jpg"
 import Mia from "../../static/img/exec/mia.jpg"
 import Kaylin from "../../static/img/exec/kaylin.jpeg"
-import Nikhil from "../../static/img/exec/nikhil.jpeg"
+import Nikhil from "../../static/img/exec/nikhil.png"
 import Natalia from "../../static/img/exec/natalia.jpg"
 import Adil from "../../static/img/exec/adil.png"
 import Rohan from "../../static/img/exec/rohan.jpg"
@@ -193,8 +193,8 @@ const HomePage = () => {
           <MastheadTile title="What's Happening Now" type="full" height="350">
             <Masthead>
               <MastheadTextTile>
-                <h1 className="hero-header" className="tile-title">
-                  Applications open on Jan 18th and are due on Jan 30th
+                <h1 className="hero-header tile-title">
+                  Applications for the Spring 2021 cohort are now closed.
                 </h1>
                 <h2 style={{ paddingTop: 16 }}>
                   {" "}
@@ -208,7 +208,7 @@ const HomePage = () => {
                   </a> */}
                 </h2>
 
-                <a
+                {/* <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeJmqI0rGaAVBcgwVPYYOhUDJDdWXh1vgZcpkKFWKrDg2NSbA/viewform?usp=sf_link"
                   target="_blank"
                 >
@@ -231,21 +231,18 @@ const HomePage = () => {
                     <p style={{ fontColor: "white !important" }}>Apply Now</p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
-                </a>
+                </a> */}
               </MastheadTextTile>
               <div className="right">
                 <div className="tile apply">
-                  <p className="tile-title">Spring 2022 Recruitment Events</p>
-                  <p className="detail">
-                    Visit us at the USC, Marshall, and Viterbi involvement
-                    fairs, and come to the Idea Grind Jan 25th at 6pm.
-                  </p>
+                  <p className="tile-title">Demo Night</p>
+                  <p className="detail">Location TBA</p>
                   <a
-                    href="https://calendar.google.com/calendar/u/2?cid=cnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                    href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
                     target="_blank"
                   >
                     <div className="be-notified">
-                      <p>Recruitment Calendar</p>
+                      <p>Save the Date</p>
                       <img src={RightArrowIcon} />
                     </div>
                   </a>
