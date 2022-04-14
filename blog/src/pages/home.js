@@ -235,7 +235,9 @@ const HomePage = () => {
               <div className="right">
                 <div className="tile apply">
                   <p className="tile-title">Demo Night</p>
-                  <p className="detail">7-9:30 PM at the TCC Ballroom</p>
+                  <p className="detail">
+                    April 27th from 7-9:30 PM at the TCC Ballroom
+                  </p>
                   <a
                     href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
                     target="_blank"
