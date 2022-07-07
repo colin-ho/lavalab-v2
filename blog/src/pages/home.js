@@ -76,16 +76,16 @@ import DesignIcon from "../../static/icon/Design-Icon/Highlight.png"
 import DevelopmentIcon from "../../static/icon/Development-Icon/Highlight.png"
 import MarketingIcon from "../../static/icon/marketing.png"
 
-import Eshana from "../../static/img/exec/eshana.jpg"
-import Steph from "../../static/img/exec/steph.jpg"
-import Haley from "../../static/img/exec/haley.jpg"
-import Mia from "../../static/img/exec/mia.jpg"
+import Joanna from "../../static/img/exec/joanna.jpg"
+import Mitchell from "../../static/img/exec/mitchell.jpg"
+import Phoebe from "../../static/img/exec/phoebe.jpg"
+import Tierra from "../../static/img/exec/tierra.jpg"
 import Kaylin from "../../static/img/exec/kaylin.jpeg"
 import Nikhil from "../../static/img/exec/nikhil.png"
 import Adil from "../../static/img/exec/lildil.png"
-import Rohan from "../../static/img/exec/rohan.jpg"
-
-import Amber from "../../static/img/exec/amber.png"
+import Maanya from "../../static/img/exec/maanya.jpg"
+import Colin from "../../static/img/exec/colin.jpg"
+import Hanson from "../../static/img/exec/hanson.jpg"
 
 import "./home.css"
 const HomePage = () => {
@@ -181,7 +181,7 @@ const HomePage = () => {
                 height: "100%",
                 maxHeight: 550,
               }}
-              frameborder="0"
+              //frameborder="0"
               allowfullscreen
               title="Lavalab Fall 2021 Promo"
             ></iframe>
@@ -571,11 +571,11 @@ const HomePage = () => {
             <p className="title">Executive Team</p>
             <ExecutiveBoard>
               <div className="member">
-                <img src={Amber} className="profile-pic" />
+                <img src={Nikhil} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={PresidentIcon} />
                   <div className="description-inner">
-                    <p className="name">Amber Pugh</p>
+                    <p className="name">Nikhil Patel</p>
                     <p className="eboard-title">President</p>
                   </div>
                 </div>
@@ -591,21 +591,21 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Rohan} className="profile-pic" />
+                <img src={Maanya} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={RecruitmentIcon} />
                   <div className="description-inner">
-                    <p className="name">Rohan Kalra</p>
+                    <p className="name">Maanya Kashyap</p>
                     <p className="eboard-title">Director of Recruitment</p>
                   </div>
                 </div>
               </div>
               <div className="member">
-                <img src={Eshana} className="profile-pic" />
+                <img src={Joanna} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={CommunityIcon} />
                   <div className="description-inner">
-                    <p className="name">Eshana Seshadri</p>
+                    <p className="name">Joanna Park</p>
                     <p className="eboard-title">Director of Community</p>
                   </div>
                 </div>
@@ -623,42 +623,52 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Mia} className="profile-pic" />
+                <img src={Tierra} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={FinanceIcon} />
                   <div className="description-inner">
-                    <p className="name">Mia Ahmady</p>
+                    <p className="name">Tierra Buissereth</p>
                     <p className="eboard-title">Director of Sponsorship</p>
                   </div>
                 </div>
               </div>
               <div className="member">
-                <img src={Steph} className="profile-pic" />
+                <img src={Hanson} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={DesignIcon} />
                   <div className="description-inner">
-                    <p className="name">Stephanie Noh</p>
+                    <p className="name">Hanson Leung</p>
                     <p className="eboard-title">Director of Design</p>
                   </div>
                 </div>
               </div>
               <div className="member">
-                <img src={Nikhil} className="profile-pic" />
+                <img src={Colin} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={DevelopmentIcon} />
                   <div className="description-inner">
-                    <p className="name">Nikhil Patel</p>
+                    <p className="name">Colin Ho</p>
                     <p className="eboard-title">Director of Development</p>
                   </div>
                 </div>
               </div>
               <div className="member">
-                <img src={Haley} className="profile-pic" />
+                <img src={Phoebe} className="profile-pic" />
                 <div className="description">
                   <img className="eboard-icon" src={MarketingIcon} />
                   <div className="description-inner">
-                    <p className="name">Haley Ho</p>
+                    <p className="name">Phoebe Um</p>
                     <p className="eboard-title">Director of Marketing</p>
+                  </div>
+                </div>
+              </div>
+              <div className="member">
+                <img src={Mitchell} className="profile-pic" />
+                <div className="description">
+                  <img className="eboard-icon" src={MarketingIcon} />
+                  <div className="description-inner">
+                    <p className="name">Mitchell Morrison</p>
+                    <p className="eboard-title">Director of Alumni Relations</p>
                   </div>
                 </div>
               </div>
