@@ -84,9 +84,9 @@ const ImageTile = styled(Tile)`
 `
 
 const StyledContentTile = styled(Tile)`
-  width: ${({ type }) => (type == "full" ? 1044 : 512)}px;
-  background-color: ${({ theme }) => (theme == "dark" ? "black" : "white")};
-  color: ${({ theme }) => (theme == "dark" ? "white" : "black")};
+  width: ${({ type }) => (type === "full" ? 1044 : 512)}px;
+  background-color: ${({ theme }) => (theme === "dark" ? "black" : "white")};
+  color: ${({ theme }) => (theme === "dark" ? "white" : "black")};
   @media only screen and (min-width: 1115px) {
     height: ${({ height }) => height}px;
   }
@@ -103,7 +103,7 @@ const StyledContentTile = styled(Tile)`
     left: 20px;
     right: 20px;
     border-top: 1px solid
-      ${({ theme }) => (theme == "dark" ? "#2c2c2e" : "#e5e5ea")};
+      ${({ theme }) => (theme === "dark" ? "#2c2c2e" : "#e5e5ea")};
   }
 
   .title {
@@ -155,22 +155,22 @@ const StyledContentTile = styled(Tile)`
 `
 
 const ContentTile = props => {
-  return (
-    <StyledContentTile
-      theme={props.theme}
-      type={props.type}
-      height={props.height}
-    >
-      <p className="title">{props.title}</p>
-      <div className="content">{props.children}</div>
-    </StyledContentTile>
-  )
+    return (
+        <StyledContentTile
+            theme={props.theme}
+            type={props.type}
+            height={props.height}
+        >
+            <p className="title">{props.title}</p>
+            <div className="content">{props.children}</div>
+        </StyledContentTile>
+    )
 }
 
 const StyledCommunityTile = styled(Tile)`
-  width: ${({ type }) => (type == "full" ? 1044 : 512)}px;
-  background-color: ${({ theme }) => (theme == "dark" ? "black" : "white")};
-  color: ${({ theme }) => (theme == "dark" ? "white" : "black")};
+  width: ${({ type }) => (type === "full" ? 1044 : 512)}px;
+  background-color: ${({ theme }) => (theme === "dark" ? "black" : "white")};
+  color: ${({ theme }) => (theme === "dark" ? "white" : "black")};
   height: 450px;
 
   @media only screen and (max-width: 1115px) {
@@ -190,7 +190,7 @@ const StyledCommunityTile = styled(Tile)`
     left: 20px;
     right: 20px;
     border-top: 1px solid
-      ${({ theme }) => (theme == "dark" ? "#2c2c2e" : "#e5e5ea")};
+      ${({ theme }) => (theme ==="dark" ? "#2c2c2e" : "#e5e5ea")};
   }
 
   .title {
@@ -205,16 +205,16 @@ const StyledCommunityTile = styled(Tile)`
 `
 
 const CommunityTile = props => {
-  return (
-    <StyledCommunityTile
-      theme={props.theme}
-      type={props.type}
-      height={props.height}
-    >
-      <p className="title">{props.title}</p>
-      <div className="content">{props.children}</div>
-    </StyledCommunityTile>
-  )
+    return (
+        <StyledCommunityTile
+            theme={props.theme}
+            type={props.type}
+            height={props.height}
+        >
+            <p className="title">{props.title}</p>
+            <div className="content">{props.children}</div>
+        </StyledCommunityTile>
+    )
 }
 
 const EmploymentTile = styled(ContentTile)`
@@ -264,23 +264,23 @@ const StyledEventLabel = styled.div`
 `
 
 const EventLabel = props => {
-  return (
-    <StyledEventLabel>
-      <img src={props.icon} />
-      <div className="eventDetails">
-        <p className="eventName">{props.name}</p>
-        <p className="eventDate">
-          {props.location} · {props.date}
-        </p>
-      </div>
-    </StyledEventLabel>
-  )
+    return (
+        <StyledEventLabel>
+            <img src={props.icon} alt=""/>
+            <div className="eventDetails">
+                <p className="eventName">{props.name}</p>
+                <p className="eventDate">
+                    {props.location} · {props.date}
+                </p>
+            </div>
+        </StyledEventLabel>
+    )
 }
 
 let StyledMastheadTile = styled(Tile)`
-  width: ${({ type }) => (type == "full" ? 1044 : 512)}px;
-  background-color: ${({ theme }) => (theme == "dark" ? "black" : "white")};
-  color: ${({ theme }) => (theme == "dark" ? "white" : "black")};
+  width: ${({ type }) => (type === "full" ? 1044 : 512)}px;
+  background-color: ${({ theme }) => (theme === "dark" ? "black" : "white")};
+  color: ${({ theme }) => (theme === "dark" ? "white" : "black")};
   height: 370px;
 
   @media only screen and (max-width: 1115px) {
@@ -304,7 +304,7 @@ let StyledMastheadTile = styled(Tile)`
     left: 20px;
     right: 20px;
     border-top: 1px solid
-      ${({ theme }) => (theme == "dark" ? "#2c2c2e" : "#e5e5ea")};
+      ${({ theme }) => (theme === "dark" ? "#2c2c2e" : "#e5e5ea")};
   }
 
   .title {
@@ -319,16 +319,16 @@ let StyledMastheadTile = styled(Tile)`
 `
 
 const MastheadTile = props => {
-  return (
-    <StyledMastheadTile
-      theme={props.theme}
-      type={props.type}
-      height={props.height}
-    >
-      <p className="title">{props.title}</p>
-      <div className="content">{props.children}</div>
-    </StyledMastheadTile>
-  )
+    return (
+        <StyledMastheadTile
+            theme={props.theme}
+            type={props.type}
+            height={props.height}
+        >
+            <p className="title">{props.title}</p>
+            <div className="content">{props.children}</div>
+        </StyledMastheadTile>
+    )
 }
 
 const Masthead = styled.div`
@@ -543,17 +543,17 @@ const MastheadTextTile = styled.div`
 `
 
 export {
-  ContentContainer,
-  TileRow,
-  Tile,
-  ImageTile,
-  ImageTileHeight,
-  ContentTile,
-  EmploymentTile,
-  EventLabel,
-  Masthead,
-  MastheadTextTile,
-  FreeTile,
-  CommunityTile,
-  MastheadTile,
+    ContentContainer,
+    TileRow,
+    Tile,
+    ImageTile,
+    ImageTileHeight,
+    ContentTile,
+    EmploymentTile,
+    EventLabel,
+    Masthead,
+    MastheadTextTile,
+    FreeTile,
+    CommunityTile,
+    MastheadTile,
 }

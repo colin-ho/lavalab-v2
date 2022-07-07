@@ -95,26 +95,26 @@ let StyledFooter = styled.div`
 const Footer = () => (
   <StyledFooter id="footer">
     <div className="top">
-      <img className="lava" src={LavaLabLogo} />
+      <img className="lava" src={LavaLabLogo} alt=""/>
       <div className="icons">
         <a href="https://www.facebook.com/usclavalab">
-          <img className="social-icon" src={FacebookIcon} />
+          <img className="social-icon" src={FacebookIcon} alt=""/>
         </a>
         <a href="https://www.instagram.com/usclavalab/?hl=en">
-          <img className="social-icon" src={InstagramIcon} />
+          <img className="social-icon" src={InstagramIcon}alt="" />
         </a>
         <a href="https://twitter.com/usclavalab">
-          <img className="social-icon" src={TwitterIcon} />
+          <img className="social-icon" src={TwitterIcon} alt=""/>
         </a>
       </div>
 
       <a
         className="lava-link"
         href="https://learn.usclavalab.org/"
-        target="_blank"
+        target="_blank" rel="noopener noreferrer"
       >
         <div className="lavalearn">
-          <img src={LavaLearnLogo} height={30} />
+          <img src={LavaLearnLogo} height={30} alt=""/>
         </div>
       </a>
     </div>
@@ -125,12 +125,12 @@ const Footer = () => (
       <img
         src={NeudesicLogo}
         height={30}
-        style={{ paddingBottom: 10, paddingLeft: 20, paddingRight: 20 }}
+        style={{ paddingBottom: 10, paddingLeft: 20, paddingRight: 20 }} alt=""
       />
       <img
         src={GriefCenterLogo}
         height={60}
-        style={{ paddingLeft: 20, paddingRight: 20 }}
+        style={{ paddingLeft: 20, paddingRight: 20 }} alt=""
       />
     </div>
     <div className="copyright">

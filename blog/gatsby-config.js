@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Lavalab`,
+    description: `We are the University of Southern California’s premiere, student-run, product incubator. Every semester, LavaLab invites a new cohort of visionary designers, developers, and project managers to build tomorrow’s startups, today.`,
+    author: `USC Lavalab`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

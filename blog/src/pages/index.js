@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 import HomePage from "./home.js"
@@ -14,6 +12,7 @@ if (typeof window !== "undefined") {
 
 const IndexPage = () => (
   <Layout>
+    <SEO/>
     <HomePage></HomePage>
     <Footer></Footer>
   </Layout>

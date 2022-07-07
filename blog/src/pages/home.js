@@ -1,17 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import styled from "styled-components"
-
-import Layout from "../components/layout"
-// import Image from "../components/image"
-// import SEO from "../components/seo"
 
 import {
   ContentContainer,
   TileRow,
   ImageTile,
-  ImageTileHeight,
   EventLabel,
   ContentTile,
   EmploymentTile,
@@ -29,13 +23,10 @@ import {
 } from "../components/carousel"
 
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg"
-import Fall2019DemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
 import Fall2018BeachBonfire from "../../static/img/Fall-2018-Beach-Bonfire.jpg"
 import TileDemoNight from "../../static/img/Fall-2019-Demo-Night.jpg"
 
 import RightArrowIcon from "../../static/icon/Right-Arrow-Icon/Light.png"
-import DownArrowIcon from "../../static/icon/Down-Arrow-Icon/Light.png"
-import PlayIcon from "../../static/icon/Play-Icon/Light.png"
 import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.png"
 
 import LavaLabLogo from "../../static/lavalab-logo.png"
@@ -110,7 +101,7 @@ const HomePage = () => {
       </VideoHero> */}
       <ImageHero background={HeroTop}>
         <div className="hero-content">
-          <img src={LavaLabLogo} />
+          <img src={LavaLabLogo} alt="LavaLabLogo"/>
           <HeroDivider></HeroDivider>
           <h1 className="hero-header">Find Your Cofounders</h1>
           <div className="bottom-row">
@@ -138,14 +129,14 @@ const HomePage = () => {
                   We are the University of Southern California’s premiere,
                   student-run, product incubator. Every semester, LavaLab
                   invites a new cohort of visionary designers, developers, and
-                  project managers to build tomorrow’s startups, today.
+                  product managers to build tomorrow’s startups, today.
                 </p>
               </CarouselSlide>
               <CarouselSlide>
                 <h1>The Experience</h1>
                 <p>
                   Every semester for the past 7 years, LavaLab takes a cohort of
-                  28 students composed of designers, developers, and project
+                  28 students composed of designers, developers, and product
                   managers. After getting to know your fellow cohort members,
                   you are then put into teams of 4 to create your startup. Dream
                   big: makeup company, bar hopping app, parking
@@ -158,7 +149,7 @@ const HomePage = () => {
                   Our trademark curriculum teaches you how to build a product,
                   from ideation to deployment, while reinforcing principles of
                   entrepreneurship and innovation. Learn the ins-and-outs of
-                  your role as a designer, developer, or project manager.
+                  your role as a designer, developer, or product manager.
                 </p>
               </CarouselSlide>
             </Carousel>
@@ -193,7 +184,7 @@ const HomePage = () => {
             <Masthead>
               <MastheadTextTile>
                 <h1 className="hero-header tile-title">
-                  Applications for the Spring 2021 cohort are now closed.
+                  Applications for the Fall 2022 cohort will be opening in late August.
                 </h1>
                 <h2 style={{ paddingTop: 16 }}>
                   {" "}
@@ -236,15 +227,15 @@ const HomePage = () => {
                 <div className="tile apply">
                   <p className="tile-title">Demo Night</p>
                   <p className="detail">
-                    April 27th from 7-9:30 PM at the TCC Ballroom
+                    November 23rd from 7-9:30 PM. Location TBC
                   </p>
                   <a
                     href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     <div className="be-notified">
                       <p>Save the Date</p>
-                      <img src={RightArrowIcon} />
+                      <img src={RightArrowIcon} alt="" />
                     </div>
                   </a>
                 </div>
@@ -255,10 +246,10 @@ const HomePage = () => {
                     entrepreneurial and tech resources, workshops, and fireside
                     chats to USC and the greater public.
                   </p>
-                  <a href="https://lavalearn.org/" target="_blank">
+                  <a href="https://lavalearn.org/" target="_blank" rel="noopener noreferrer"> 
                     <div className="be-notified">
                       <p>Check it out</p>
-                      <img src={RightArrowIcon} />
+                      <img src={RightArrowIcon} alt=""/>
                     </div>
                   </a>
                 </div>
@@ -466,7 +457,7 @@ const HomePage = () => {
           friends and potential cofounders, and learning to hustle make this
           something I'd recommend to everyone.
           <div className="quote-profile">
-            <img src={PersonIcon} />
+            <img src={PersonIcon} alt=""/>
 
             <div className="quote-profile-details">
               <p className="name">Shub Gaur</p>
@@ -515,51 +506,51 @@ const HomePage = () => {
           <EmploymentTile title="Alumni Industry Employment" theme="dark">
             <EmploymentContent>
               <div className="employment-item">
-                <img src={AirbnbIcon} />
+                <img src={AirbnbIcon} alt=""/>
                 Airbnb
               </div>
               <div className="employment-item">
-                <img src={AmazonIcon} />
+                <img src={AmazonIcon} alt=""/>
                 Amazon
               </div>
               <div className="employment-item">
-                <img src={AppleIcon} />
+                <img src={AppleIcon} alt=""/>
                 Apple
               </div>
               <div className="employment-item">
-                <img src={FacebookIcon} />
+                <img src={FacebookIcon} alt=""/>
                 Facebook
               </div>
               <div className="employment-item">
-                <img src={GoogleIcon} />
+                <img src={GoogleIcon} alt=""/>
                 Google
               </div>
               <div className="employment-item">
-                <img src={MicrosoftIcon} />
+                <img src={MicrosoftIcon} alt=""/>
                 Microsoft
               </div>
               <div className="employment-item">
-                <img src={RobinhoodIcon} />
+                <img src={RobinhoodIcon} alt=""/>
                 Robinhood
               </div>
               <div className="employment-item">
-                <img src={SnapchatIcon} />
+                <img src={SnapchatIcon} alt=""/>
                 Snapchat
               </div>
               <div className="employment-item">
-                <img src={SlackIcon} />
+                <img src={SlackIcon} alt=""/>
                 Slack
               </div>
               <div className="employment-item">
-                <img src={TwitterIcon} />
+                <img src={TwitterIcon} alt=""/>
                 Twitter
               </div>
               <div className="employment-item">
-                <img src={UberIcon} />
+                <img src={UberIcon} alt=""/>
                 Uber
               </div>
               <div className="employment-item">
-                <img className="more-icon" src={MoreIcon} />
+                <img className="more-icon" src={MoreIcon} alt=""/>
                 And more
               </div>
             </EmploymentContent>
@@ -571,9 +562,9 @@ const HomePage = () => {
             <p className="title">Executive Team</p>
             <ExecutiveBoard>
               <div className="member">
-                <img src={Nikhil} className="profile-pic" />
+                <img src={Nikhil} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={PresidentIcon} />
+                  <img className="eboard-icon" src={PresidentIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Nikhil Patel</p>
                     <p className="eboard-title">President</p>
@@ -581,9 +572,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Adil} className="profile-pic" />
+                <img src={Adil} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={CurriculumIcon} />
+                  <img className="eboard-icon" src={CurriculumIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Adil Khadri</p>
                     <p className="eboard-title">Director of Operations</p>
@@ -591,9 +582,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Maanya} className="profile-pic" />
+                <img src={Maanya} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={RecruitmentIcon} />
+                  <img className="eboard-icon" src={RecruitmentIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Maanya Kashyap</p>
                     <p className="eboard-title">Director of Recruitment</p>
@@ -601,9 +592,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Joanna} className="profile-pic" />
+                <img src={Joanna} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={CommunityIcon} />
+                  <img className="eboard-icon" src={CommunityIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Joanna Park</p>
                     <p className="eboard-title">Director of Community</p>
@@ -611,9 +602,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Kaylin} className="profile-pic" />
+                <img src={Kaylin} className="profile-pic" alt="" />
                 <div className="description">
-                  <img className="eboard-icon" src={IndustryRelationsIcon} />
+                  <img className="eboard-icon" src={IndustryRelationsIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Kaylin Hiatt</p>
                     <p className="eboard-title">
@@ -623,9 +614,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Tierra} className="profile-pic" />
+                <img src={Tierra} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={FinanceIcon} />
+                  <img className="eboard-icon" src={FinanceIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Tierra Buissereth</p>
                     <p className="eboard-title">Director of Sponsorship</p>
@@ -633,9 +624,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Hanson} className="profile-pic" />
+                <img src={Hanson} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={DesignIcon} />
+                  <img className="eboard-icon" src={DesignIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Hanson Leung</p>
                     <p className="eboard-title">Director of Design</p>
@@ -643,9 +634,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Colin} className="profile-pic" />
+                <img src={Colin} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={DevelopmentIcon} />
+                  <img className="eboard-icon" src={DevelopmentIcon}alt="" />
                   <div className="description-inner">
                     <p className="name">Colin Ho</p>
                     <p className="eboard-title">Director of Development</p>
@@ -653,9 +644,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Phoebe} className="profile-pic" />
+                <img src={Phoebe} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={MarketingIcon} />
+                  <img className="eboard-icon" src={MarketingIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Phoebe Um</p>
                     <p className="eboard-title">Director of Marketing</p>
@@ -663,9 +654,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="member">
-                <img src={Mitchell} className="profile-pic" />
+                <img src={Mitchell} className="profile-pic" alt=""/>
                 <div className="description">
-                  <img className="eboard-icon" src={MarketingIcon} />
+                  <img className="eboard-icon" src={MarketingIcon} alt=""/>
                   <div className="description-inner">
                     <p className="name">Mitchell Morrison</p>
                     <p className="eboard-title">Director of Alumni Relations</p>
@@ -677,7 +668,7 @@ const HomePage = () => {
         </TileRow>
       </ContentContainer>
       <StyleHeader className="navbar">
-        <img src={LavaLabLogoHighlight} />
+        <a href="/"><img src={LavaLabLogoHighlight} alt=""/></a>
         <div className="links">
           <a href="#about">About</a>
           <a href="#join">Join</a>
@@ -686,10 +677,10 @@ const HomePage = () => {
           <a href="#footer">Contact</a>
           <a
             href="https://lavalearn.org/"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
           >
-            <img src={LavaLearnLogoWhite} />
+            <img src={LavaLearnLogoWhite} alt=""/>
           </a>
         </div>
       </StyleHeader>
@@ -944,7 +935,7 @@ const ImageHero = styled.div`
     border-radius: 20px;
   }
 `
-
+/*
 const VideoHero = styled.div`
   position: relative;
   height: ${({ height }) => (height ? height : "810")}px;
@@ -957,7 +948,7 @@ const VideoHero = styled.div`
     height: 500px;
     background-position: center;
   }
-`
+`*/
 
 const HeroDivider = styled.div`
   height: 1px;
@@ -995,6 +986,7 @@ const StyleHeader = styled.div`
     color: black;
   }
 `
+/*
 const StyledButton = styled.div`
   display: inline-flex;
   background-color: #ff5c39;
@@ -1012,7 +1004,8 @@ const StyledButton = styled.div`
     padding-left: 10px;
   }
 `
-
+*/
+/*
 const Button = props => {
   return (
     <StyledButton>
@@ -1021,5 +1014,5 @@ const Button = props => {
     </StyledButton>
   )
 }
-
+*/
 export default HomePage

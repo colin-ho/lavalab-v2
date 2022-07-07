@@ -115,57 +115,57 @@ const StyledCarouselSlide = styled.div`
 `
 
 const CarouselSlide = ({ title, children }) => (
-  <StyledCarouselSlide>
-    <p className="title"> {title} </p>
-    {children}
-  </StyledCarouselSlide>
+    <StyledCarouselSlide>
+        <p className="title"> {title} </p>
+        {children}
+    </StyledCarouselSlide>
 )
 
 const Carousel = ({ children, titles }) => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(0)
 
-  return (
-    <StyledCarousel>
-      <div
-        className="carouselContent"
-        style={{
-          width: `${100 * children.length}%`,
-          transform: `translateX(${(-100 / children.length) * currentSlide}%)`,
-        }}
-      >
-        {children.map((slide, idx) => (
-          <div className="carouselSlideContainer" key={idx}>
-            {slide}
-          </div>
-        ))}
-        {children}
-      </div>
-      <div className="carouselControls">
-        <img
-          src={currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled}
-          className={currentSlide === 0 ? "disabled" : ""}
-          onClick={() => {
-            if (currentSlide !== 0) setCurrentSlide(currentSlide - 1)
-          }}
-        ></img>
-        <img
-          src={
-            currentSlide === children.length - 1
-              ? RightIconDisabled
-              : RightIconEnabled
-          }
-          className={currentSlide === children.length - 1 ? "disabled" : ""}
-          onClick={() => {
-            if (currentSlide < children.length - 1)
-              setCurrentSlide(currentSlide + 1)
-          }}
-        ></img>
-        <div className="currentPage">
-          {currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}
-        </div>
-      </div>
-    </StyledCarousel>
-  )
+    return (
+        <StyledCarousel>
+            <div
+                className="carouselContent"
+                style={{
+                    width: `${100 * children.length}%`,
+                    transform: `translateX(${(-100 / children.length) * currentSlide}%)`,
+                }}
+            >
+                {children.map((slide, idx) => (
+                    <div className="carouselSlideContainer" key={idx}>
+                        {slide}
+                    </div>
+                ))}
+                {children}
+            </div>
+            <div className="carouselControls">
+                <img alt=""
+                    src={currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled}
+                    className={currentSlide === 0 ? "disabled" : ""}
+                    onClick={() => {
+                        if (currentSlide !== 0) setCurrentSlide(currentSlide - 1)
+                    }}
+                ></img>
+                <img alt=""
+                    src={
+                        currentSlide === children.length - 1
+                            ? RightIconDisabled
+                            : RightIconEnabled
+                    }
+                    className={currentSlide === children.length - 1 ? "disabled" : ""}
+                    onClick={() => {
+                        if (currentSlide < children.length - 1)
+                            setCurrentSlide(currentSlide + 1)
+                    }}
+                ></img>
+                <div className="currentPage">
+                    {currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}
+                </div>
+            </div>
+        </StyledCarousel>
+    )
 }
 
 const StyledSinglePanel = styled.div`
@@ -215,11 +215,11 @@ const StyledSinglePanel = styled.div`
 `
 
 const SinglePanel = ({ children }) => {
-  return (
-    <StyledSinglePanel>
-      <div className="carouselContent">{children}</div>
-    </StyledSinglePanel>
-  )
+    return (
+        <StyledSinglePanel>
+            <div className="carouselContent">{children}</div>
+        </StyledSinglePanel>
+    )
 }
 
 const StyledTiledCarousel = styled.div`
@@ -286,66 +286,67 @@ const IconGridTile = styled.div`
 `
 
 const TiledCarousel = ({ children, titles }) => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(0)
 
-  return (
-    <StyledTiledCarousel>
-      <StyledCarousel>
-        <div
-          className="carouselContent"
-          style={{
-            width: `${100 * children.length}%`,
-            transform: `translateX(${(-100 / children.length) *
-              currentSlide}%)`,
-          }}
-        >
-          {children.map((slide, idx) => (
-            <div className="carouselSlideContainer" key={idx}>
-              {slide}
-            </div>
-          ))}
-          {children}
-        </div>
-        <div className="carouselControls">
-          <img
-            src={currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled}
-            className={currentSlide === 0 ? "disabled" : ""}
-            onClick={() => {
-              if (currentSlide !== 0) setCurrentSlide(currentSlide - 1)
-            }}
-          ></img>
-          <img
-            src={
-              currentSlide === children.length - 1
-                ? RightIconDisabled
-                : RightIconEnabled
-            }
-            className={currentSlide === children.length - 1 ? "disabled" : ""}
-            onClick={() => {
-              if (currentSlide < children.length - 1)
-                setCurrentSlide(currentSlide + 1)
-            }}
-          ></img>
-          <div className="currentPage">
-            {currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}
-          </div>
-        </div>
-      </StyledCarousel>
-      <IconGrid className="icon-grid">
-        {children.map((slide, idx) => (
-          <IconGridTile
-            className={currentSlide === idx ? "active" : ""}
-            onClick={() => setCurrentSlide(idx)}
-          >
-            <div className="tile-inner">
-              <img src={slide.props.icon} />
-              <p>{titles[idx]}</p>
-            </div>
-          </IconGridTile>
-        ))}
-      </IconGrid>
-    </StyledTiledCarousel>
-  )
+    return (
+        <StyledTiledCarousel>
+            <StyledCarousel>
+                <div
+                    className="carouselContent"
+                    style={{
+                        width: `${100 * children.length}%`,
+                        transform: `translateX(${(-100 / children.length) *
+                            currentSlide}%)`,
+                    }}
+                >
+                    {children.map((slide, idx) => (
+                        <div className="carouselSlideContainer" key={idx}>
+                            {slide}
+                        </div>
+                    ))}
+                    {children}
+                </div>
+                <div className="carouselControls">
+                    <img alt=""
+                        src={currentSlide === 0 ? LeftIconDisabled : LeftIconEnabled}
+                        className={currentSlide === 0 ? "disabled" : ""}
+                        onClick={() => {
+                            if (currentSlide !== 0) setCurrentSlide(currentSlide - 1)
+                        }}
+                    ></img>
+                    <img
+                        alt=""
+                        src={
+                            currentSlide === children.length - 1
+                                ? RightIconDisabled
+                                : RightIconEnabled
+                        }
+                        className={currentSlide === children.length - 1 ? "disabled" : ""}
+                        onClick={() => {
+                            if (currentSlide < children.length - 1)
+                                setCurrentSlide(currentSlide + 1)
+                        }}
+                    ></img>
+                    <div className="currentPage">
+                        {currentSlide < children.length - 1 ? titles[currentSlide + 1] : ``}
+                    </div>
+                </div>
+            </StyledCarousel>
+            <IconGrid className="icon-grid">
+                {children.map((slide, idx) => (
+                    <IconGridTile
+                        className={currentSlide === idx ? "active" : ""}
+                        onClick={() => setCurrentSlide(idx)}
+                    >
+                        <div className="tile-inner">
+                            <img src={slide.props.icon} alt="" />
+                            <p>{titles[idx]}</p>
+                        </div>
+                    </IconGridTile>
+                ))}
+            </IconGrid>
+        </StyledTiledCarousel>
+    )
 }
 
 export { Carousel, TiledCarousel, SinglePanel, CarouselSlide }
