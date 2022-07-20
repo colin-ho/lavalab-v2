@@ -3,23 +3,23 @@ import React from "react"
 import styled from "styled-components"
 
 import {
-  ContentContainer,
-  TileRow,
-  ImageTile,
-  EventLabel,
-  ContentTile,
-  EmploymentTile,
-  Masthead,
-  MastheadTextTile,
-  FreeTile,
-  CommunityTile,
-  MastheadTile,
+    ContentContainer,
+    TileRow,
+    ImageTile,
+    EventLabel,
+    ContentTile,
+    EmploymentTile,
+    Masthead,
+    MastheadTextTile,
+    FreeTile,
+    CommunityTile,
+    MastheadTile,
 } from "../components/tile"
 import {
-  Carousel,
-  CarouselSlide,
-  TiledCarousel,
-  SinglePanel,
+    Carousel,
+    CarouselSlide,
+    TiledCarousel,
+    SinglePanel,
 } from "../components/carousel"
 
 import HeroTop from "../../static/img/Fall-2019-Retreat.jpg"
@@ -80,9 +80,9 @@ import Hanson from "../../static/img/exec/hanson.jpg"
 
 import "./home.css"
 const HomePage = () => {
-  return (
-    <div className="page">
-      {/* <VideoHero>
+    return (
+        <div className="page">
+            {/* <VideoHero>
         <video
           id="video"
           className="video-player embed-responsive embed-responsive-1by1"
@@ -99,106 +99,106 @@ const HomePage = () => {
           />
         </video>
       </VideoHero> */}
-      <ImageHero background={HeroTop}>
-        <div className="hero-content">
-          <img src={LavaLabLogo} alt="LavaLabLogo"/>
-          <HeroDivider></HeroDivider>
-          <h1 className="hero-header">Find Your Cofounders</h1>
-          <div className="bottom-row">
-            {/* <Button text='Join our community'/> */}
-            {/* <div className='clear-button'>
+            <ImageHero background={HeroTop}>
+                <div className="hero-content">
+                    <img src={LavaLabLogo} alt="LavaLabLogo" />
+                    <HeroDivider></HeroDivider>
+                    <h1 className="hero-header">Find Your Cofounders</h1>
+                    <div className="bottom-row">
+                        {/* <Button text='Join our community'/> */}
+                        {/* <div className='clear-button'>
                             <p>Watch the film</p>
                             <img src={ PlayIcon }/>
                         </div> */}
-            {/* <div className='get-to-know-us'>
+                        {/* <div className='get-to-know-us'>
                             Get to know us
                             <img src={ DownArrowIcon }/>
                         </div> */}
-          </div>
-        </div>
-      </ImageHero>
+                    </div>
+                </div>
+            </ImageHero>
 
-      <ContentContainer>
-        <TileRow height={"600 px"}>
-          <ContentTile title="Welcome" height={550}>
-            <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
-              <CarouselSlide>
-                <h1>Welcome</h1>
-                <p>
-                  <em>Fully immerse yourself in the startup experience.</em>
-                  We are the University of Southern California’s premiere,
-                  student-run, product incubator. Every semester, LavaLab
-                  invites a new cohort of visionary designers, developers, and
-                  product managers to build tomorrow’s startups, today.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>The Experience</h1>
-                <p>
-                  Every semester for the past 7 years, LavaLab takes a cohort of
-                  28 students composed of designers, developers, and product
-                  managers. After getting to know your fellow cohort members,
-                  you are then put into teams of 4 to create your startup. Dream
-                  big: makeup company, bar hopping app, parking
-                  hardware--anything goes.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Curriculum</h1>
-                <p>
-                  Our trademark curriculum teaches you how to build a product,
-                  from ideation to deployment, while reinforcing principles of
-                  entrepreneurship and innovation. Learn the ins-and-outs of
-                  your role as a designer, developer, or product manager.
-                </p>
-              </CarouselSlide>
-            </Carousel>
-          </ContentTile>
-          <ContentTile
-            image={HeroTop}
-            className="video"
-            height={550}
-            // title="Fall 2021 Intro"
-          >
-            <iframe
-              src="https://player.vimeo.com/video/668728641?h=51f392d0c5"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={{
-                padding: "0 auto",
-                paddingBottom: 16,
-                textAlign: "center",
-                width: "100%",
-                height: "100%",
-                maxHeight: 550,
-              }}
-              //frameborder="0"
-              allowfullscreen
-              title="Lavalab Fall 2021 Promo"
-            ></iframe>
-          </ContentTile>
-        </TileRow>
+            <ContentContainer>
+                <TileRow height={"600 px"}>
+                    <ContentTile title="Welcome" height={550}>
+                        <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
+                            <CarouselSlide>
+                                <h1>Welcome</h1>
+                                <p>
+                                    <em>Fully immerse yourself in the startup experience.</em>
+                                    We are the University of Southern California’s premiere,
+                                    student-run, product incubator. Every semester, LavaLab
+                                    invites a new cohort of visionary designers, developers, and
+                                    product managers to build tomorrow’s startups, today.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>The Experience</h1>
+                                <p>
+                                    Every semester for the past 7 years, LavaLab takes a cohort of
+                                    28 students composed of designers, developers, and product
+                                    managers. After getting to know your fellow cohort members,
+                                    you are then put into teams of 4 to create your startup. Dream
+                                    big: makeup company, bar hopping app, parking
+                                    hardware--anything goes.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Curriculum</h1>
+                                <p>
+                                    Our trademark curriculum teaches you how to build a product,
+                                    from ideation to deployment, while reinforcing principles of
+                                    entrepreneurship and innovation. Learn the ins-and-outs of
+                                    your role as a designer, developer, or product manager.
+                                </p>
+                            </CarouselSlide>
+                        </Carousel>
+                    </ContentTile>
+                    <ContentTile
+                        image={HeroTop}
+                        className="video"
+                        height={550}
+                    // title="Fall 2021 Intro"
+                    >
+                        <iframe
+                            src="https://player.vimeo.com/video/668728641?h=51f392d0c5"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            style={{
+                                padding: "0 auto",
+                                paddingBottom: 16,
+                                textAlign: "center",
+                                width: "100%",
+                                height: "100%",
+                                maxHeight: 550,
+                            }}
+                            //frameborder="0"
+                            allowfullscreen
+                            title="Lavalab Fall 2021 Promo"
+                        ></iframe>
+                    </ContentTile>
+                </TileRow>
 
-        <TileRow id={"about"}>
-          <MastheadTile title="What's Happening Now" type="full" height="350">
-            <Masthead>
-              <MastheadTextTile>
-                <h1 className="hero-header tile-title">
-                  Applications for the Fall 2022 cohort will be opening in late August.
-                </h1>
-                <h2 style={{ paddingTop: 16 }}>
-                  {" "}
-                  {"  "}
-                  {/* <a
+                <TileRow id={"about"}>
+                    <MastheadTile title="What's Happening Now" type="full" height="350">
+                        <Masthead>
+                            <MastheadTextTile>
+                                <h1 className="hero-header tile-title">
+                                    Applications for the Fall 2022 cohort will be opening in late August.
+                                </h1>
+                                <h2 style={{ paddingTop: 16 }}>
+                                    {" "}
+                                    {"  "}
+                                    {/* <a
                     target="_blank"
                     href="http://twitch.tv/usclavalab"
                     style={{ color: "black", textDecoration: "underline" }}
                   >
                     Twitch
                   </a> */}
-                </h2>
+                                </h2>
 
-                {/* <a
+                                {/* <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeJmqI0rGaAVBcgwVPYYOhUDJDdWXh1vgZcpkKFWKrDg2NSbA/viewform?usp=sf_link"
                   target="_blank"
                 >
@@ -222,470 +222,487 @@ const HomePage = () => {
                     <img src={RightArrowIcon} height={20} />
                   </div>
                 </a> */}
-              </MastheadTextTile>
-              <div className="right">
-                <div className="tile apply">
-                  <p className="tile-title">Demo Night</p>
-                  <p className="detail">
-                    November 23rd from 7-9:30 PM. Location TBC
-                  </p>
-                  <a
-                    href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
-                    target="_blank" rel="noopener noreferrer"
-                  >
-                    <div className="be-notified">
-                      <p>Save the Date</p>
-                      <img src={RightArrowIcon} alt="" />
+                            </MastheadTextTile>
+                            <div className="right">
+                                <div className="tile apply">
+                                    <p className="tile-title">Demo Night</p>
+                                    <p className="detail">
+                                        November 23rd from 7-9:30 PM. Location TBC
+                                    </p>
+                                    <a
+                                        href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
+                                        target="_blank" rel="noopener noreferrer"
+                                    >
+                                        <div className="be-notified">
+                                            <p>Save the Date</p>
+                                            <img src={RightArrowIcon} alt="" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="tile learn">
+                                    <p className="tile-title">LavaLearn</p>
+                                    <p className="detail">
+                                        LavaLearn is our signature open-access curriculum, providing
+                                        entrepreneurial and tech resources, workshops, and fireside
+                                        chats to USC and the greater public.
+                                    </p>
+                                    <a href="https://lavalearn.org/" target="_blank" rel="noopener noreferrer">
+                                        <div className="be-notified">
+                                            <p>Check it out</p>
+                                            <img src={RightArrowIcon} alt="" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </Masthead>
+                    </MastheadTile>
+                </TileRow>
+
+                <TileRow id={"join"}>
+                    <ImageTile image={TileDemoNight} height={"100%"}>
+                        <EventLabel
+                            icon={DemoNightIcon}
+                            name="Demo Night"
+                            location="Los Angeles, CA"
+                            date="Fall 2019"
+                        />
+                    </ImageTile>
+                    <ContentTile title="Find Your Role" height={"100%"}>
+                        <Carousel titles={["Developer", "Designer", "Product Manager"]}>
+                            <CarouselSlide>
+                                <h1>Developer</h1>
+                                <p>
+                                    <em>Who you are:</em>
+                                    You have a knack for building and are able to hack through
+                                    anything (literally and metaphorically). You are fearless in
+                                    creating and are ready to teach yourself unknown tech
+                                    concepts. Your grit and perseverance keep you going through
+                                    coding challenges.
+                                    <em>What you'll be doing:</em>
+                                    Working with a fellow developer on your team to build your
+                                    product: an app, website, or physical product. Creating an MVP
+                                    with baseline features to get your product's ideas across.
+                                    Coming together with your PM and designer to brainstorm the
+                                    problem you want to solve and how to address it.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Designer</h1>
+                                <p>
+                                    <em>Who you are:</em>
+                                    You have a passion about crafting visual experiences. You are
+                                    empathetic and able to put yourself in the user's shoes. Your
+                                    ability to learn continues to push your design skills. Your
+                                    creativity and attention to detail take your abilities to the
+                                    next level.
+                                    <em>What you'll be doing:</em>
+                                    Designing the MVP for your team's product including the
+                                    branding, user experience, and marketing materials.
+                                    Conceptualize the best way to get your product's message
+                                    across through creative expression. Coming together with your
+                                    PM and developers to brainstorm the problem you want to solve
+                                    and how to address it.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Product Manager</h1>
+                                <p>
+                                    <em>Who you are:</em>
+                                    You are ready to disrupt the norm and solve any problem that
+                                    comes your way. You naturally take leadership positions in
+                                    your own ventures, jobs, or class projects and are able to get
+                                    a team working together to execute. You have a vision and love
+                                    approaching obstacles in a creative way.
+                                    <em>What you'll be doing:</em>
+                                    Creating direction for your team through organization and
+                                    collaboration. Working with your designer and developers to
+                                    drive the product forward. Ideating on key innovations and
+                                    scoping out the market for your product.
+                                </p>
+                            </CarouselSlide>
+                        </Carousel>
+                    </ContentTile>
+                </TileRow>
+                <TileRow id={"events"}>
+                    <ContentTile type="full" title="Events">
+                        <TiledCarousel
+                            titles={[
+                                "First Steps",
+                                "Beach Bonfire",
+                                "Fireside Chats",
+                                "Alumni Workshops",
+                                "Community Retreat",
+                                "Pitch Night",
+                                "Hack Night",
+                                "Demo Night",
+                                "LavaLab Formal",
+                            ]}
+                        >
+                            <CarouselSlide icon={FirstStepsIcon}>
+                                <h1>Idea Grind</h1>
+                                <p>
+                                    Jump right in and see what LavaLab is about with our spin on
+                                    an Info Session. Through discussion and brainstorming, hearing
+                                    from E-board, and asking questions, you'll get a taste of what
+                                    LavaLab is about.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={BeachBonfireIcon}>
+                                <h1>Beach bonfire</h1>
+                                <p>
+                                    The first social event of the new cohort. Bond with your
+                                    fellow cohort members and LavaLab alumni over roasted
+                                    marshmallows.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={FiresideChatsIcon}>
+                                <h1>Fireside Chats</h1>
+                                <p>
+                                    Each semester, LavaLab invites the industry’s top pioneers and
+                                    entrepreneurs to share their experiences and engage with our
+                                    members. In the past, we’ve had industry leaders like Elon
+                                    Musk, Evan Spiegel, and Arielle Zuckerberg.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={AlumniWorkshopsIcon}>
+                                <h1>Alumni Workshops</h1>
+                                <p>
+                                    LavaLum know best. Learn insights and skills from alumni-led
+                                    workshops on anything from React Native, to Figma shortcuts,
+                                    to giving the best pitch.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={CommunityRetreatIcon}>
+                                <h1>Community Retreat</h1>
+                                <p>
+                                    Who doesn’t love a weekend getaway? Join fellow cohort members
+                                    and LavaLab alumni for a trip away from Downtown Los Angeles.
+                                    Get to know your future co-founders on a whole ‘nother level.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={PitchNightIcon}>
+                                <h1>Pitch Night</h1>
+                                <p>
+                                    Two weeks before the final showcase, run through your pitch
+                                    with no judgement. Get feedback from LavaLum on how to perfect
+                                    your product and pitch for Demo Night.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={HackNightIcon}>
+                                <h1>Hack Night</h1>
+                                <p>
+                                    It’s the final stretch. Join your fellow devs and designers to
+                                    grind out the finishing touches of your product. Fuel up with
+                                    free food and encouragement from our E-board.
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={DemoNightIcon}>
+                                <h1>Demo Night</h1>
+                                <p>
+                                    The Oscars of LavaLab. Demo and pitch your product to investor
+                                    judges to showcase your team's hard work. Congratulations,
+                                    you’re now a LavaLum!
+                                </p>
+                            </CarouselSlide>
+                            <CarouselSlide icon={LavaLabFormalIcon}>
+                                <h1>LavaLab Formal</h1>
+                                <p>
+                                    A celebration of hard work, new friends, and the graduation of
+                                    another accomplished cohort. Cheers!
+                                </p>
+                            </CarouselSlide>
+                        </TiledCarousel>
+                    </ContentTile>
+                </TileRow>
+            </ContentContainer>
+            <ImageHero background={Fall2018BeachBonfire} height="800">
+                <div className="event-container">
+                    <EventLabel
+                        icon={DemoNightIcon}
+                        name="Retreat"
+                        location="Los Angeles, CA"
+                        date="Fall 2019"
+                    />
+                </div>
+            </ImageHero>
+            <ContentContainer>
+                <TileRow>
+                    <CommunityTile type="full" title="Community">
+                        <SinglePanel>
+                            <CarouselSlide>
+                                <h1>
+                                    A network of passionate innovators, over 350 members strong
+                                    and growing.
+                                </h1>
+                                <p>
+                                    The LavaLab network is like no other. We are a community of
+                                    entrepreneurs, go-getters, and change makers who value
+                                    connection, deep engagement, and building for a brighter
+                                    future. Grow together in an environment that meets you where
+                                    you’re at and pushes you to become the best version of
+                                    yourself. At LavaLab, you’ll meet your future co-founders and
+                                    some of your closest friends.
+                                </p>
+                            </CarouselSlide>
+                        </SinglePanel>
+                    </CommunityTile>
+                </TileRow>
+            </ContentContainer>
+            <ImageHero className="quote">
+                <div className="quote-content">
+                    <span>“</span>
+                    <br />
+                    Lavalab made my semester one of the most rewarding experiences as a
+                    student so far. Turning a vision into a reality, finding lifelong
+                    friends and potential cofounders, and learning to hustle make this
+                    something I'd recommend to everyone.
+                    <div className="quote-profile">
+                        <img src={PersonIcon} alt="" />
+
+                        <div className="quote-profile-details">
+                            <p className="name">Shub Gaur</p>
+                            <p className="detail">Product Manager · Spring 2020</p>
+                        </div>
                     </div>
-                  </a>
                 </div>
-                <div className="tile learn">
-                  <p className="tile-title">LavaLearn</p>
-                  <p className="detail">
-                    LavaLearn is our signature open-access curriculum, providing
-                    entrepreneurial and tech resources, workshops, and fireside
-                    chats to USC and the greater public.
-                  </p>
-                  <a href="https://lavalearn.org/" target="_blank" rel="noopener noreferrer"> 
-                    <div className="be-notified">
-                      <p>Check it out</p>
-                      <img src={RightArrowIcon} alt=""/>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </Masthead>
-          </MastheadTile>
-        </TileRow>
+            </ImageHero>
 
-        <TileRow id={"join"}>
-          <ImageTile image={TileDemoNight} height={"100%"}>
-            <EventLabel
-              icon={DemoNightIcon}
-              name="Demo Night"
-              location="Los Angeles, CA"
-              date="Fall 2019"
-            />
-          </ImageTile>
-          <ContentTile title="Find Your Role" height={"100%"}>
-            <Carousel titles={["Developer", "Designer", "Product Manager"]}>
-              <CarouselSlide>
-                <h1>Developer</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You have a knack for building and are able to hack through
-                  anything (literally and metaphorically). You are fearless in
-                  creating and are ready to teach yourself unknown tech
-                  concepts. Your grit and perseverance keep you going through
-                  coding challenges.
-                  <em>What you'll be doing:</em>
-                  Working with a fellow developer on your team to build your
-                  product: an app, website, or physical product. Creating an MVP
-                  with baseline features to get your product's ideas across.
-                  Coming together with your PM and designer to brainstorm the
-                  problem you want to solve and how to address it.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Designer</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You have a passion about crafting visual experiences. You are
-                  empathetic and able to put yourself in the user's shoes. Your
-                  ability to learn continues to push your design skills. Your
-                  creativity and attention to detail take your abilities to the
-                  next level.
-                  <em>What you'll be doing:</em>
-                  Designing the MVP for your team's product including the
-                  branding, user experience, and marketing materials.
-                  Conceptualize the best way to get your product's message
-                  across through creative expression. Coming together with your
-                  PM and developers to brainstorm the problem you want to solve
-                  and how to address it.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Product Manager</h1>
-                <p>
-                  <em>Who you are:</em>
-                  You are ready to disrupt the norm and solve any problem that
-                  comes your way. You naturally take leadership positions in
-                  your own ventures, jobs, or class projects and are able to get
-                  a team working together to execute. You have a vision and love
-                  approaching obstacles in a creative way.
-                  <em>What you'll be doing:</em>
-                  Creating direction for your team through organization and
-                  collaboration. Working with your designer and developers to
-                  drive the product forward. Ideating on key innovations and
-                  scoping out the market for your product.
-                </p>
-              </CarouselSlide>
-            </Carousel>
-          </ContentTile>
-        </TileRow>
-        <TileRow id={"events"}>
-          <ContentTile type="full" title="Events">
-            <TiledCarousel
-              titles={[
-                "First Steps",
-                "Beach Bonfire",
-                "Fireside Chats",
-                "Alumni Workshops",
-                "Community Retreat",
-                "Pitch Night",
-                "Hack Night",
-                "Demo Night",
-                "LavaLab Formal",
-              ]}
-            >
-              <CarouselSlide icon={FirstStepsIcon}>
-                <h1>Idea Grind</h1>
-                <p>
-                  Jump right in and see what LavaLab is about with our spin on
-                  an Info Session. Through discussion and brainstorming, hearing
-                  from E-board, and asking questions, you'll get a taste of what
-                  LavaLab is about.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={BeachBonfireIcon}>
-                <h1>Beach bonfire</h1>
-                <p>
-                  The first social event of the new cohort. Bond with your
-                  fellow cohort members and LavaLab alumni over roasted
-                  marshmallows.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={FiresideChatsIcon}>
-                <h1>Fireside Chats</h1>
-                <p>
-                  Each semester, LavaLab invites the industry’s top pioneers and
-                  entrepreneurs to share their experiences and engage with our
-                  members. In the past, we’ve had industry leaders like Elon
-                  Musk, Evan Spiegel, and Arielle Zuckerberg.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={AlumniWorkshopsIcon}>
-                <h1>Alumni Workshops</h1>
-                <p>
-                  LavaLum know best. Learn insights and skills from alumni-led
-                  workshops on anything from React Native, to Figma shortcuts,
-                  to giving the best pitch.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={CommunityRetreatIcon}>
-                <h1>Community Retreat</h1>
-                <p>
-                  Who doesn’t love a weekend getaway? Join fellow cohort members
-                  and LavaLab alumni for a trip away from Downtown Los Angeles.
-                  Get to know your future co-founders on a whole ‘nother level.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={PitchNightIcon}>
-                <h1>Pitch Night</h1>
-                <p>
-                  Two weeks before the final showcase, run through your pitch
-                  with no judgement. Get feedback from LavaLum on how to perfect
-                  your product and pitch for Demo Night.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={HackNightIcon}>
-                <h1>Hack Night</h1>
-                <p>
-                  It’s the final stretch. Join your fellow devs and designers to
-                  grind out the finishing touches of your product. Fuel up with
-                  free food and encouragement from our E-board.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={DemoNightIcon}>
-                <h1>Demo Night</h1>
-                <p>
-                  The Oscars of LavaLab. Demo and pitch your product to investor
-                  judges to showcase your team's hard work. Congratulations,
-                  you’re now a LavaLum!
-                </p>
-              </CarouselSlide>
-              <CarouselSlide icon={LavaLabFormalIcon}>
-                <h1>LavaLab Formal</h1>
-                <p>
-                  A celebration of hard work, new friends, and the graduation of
-                  another accomplished cohort. Cheers!
-                </p>
-              </CarouselSlide>
-            </TiledCarousel>
-          </ContentTile>
-        </TileRow>
-      </ContentContainer>
-      <ImageHero background={Fall2018BeachBonfire} height="800">
-        <div className="event-container">
-          <EventLabel
-            icon={DemoNightIcon}
-            name="Retreat"
-            location="Los Angeles, CA"
-            date="Fall 2019"
-          />
+            <ContentContainer>
+                <TileRow id="alumni">
+                    <ContentTile title="Alumni Project Spotlight">
+                        <Carousel titles={["CarbonLink", "Kyoku", "Fleek"]}>
+                            <CarouselSlide>
+                                <h1>CarbonLink</h1>
+                                <p>
+                                Access carbon markets.
+                                CarbonLink is the simple and secure platform to buy, sell, and manage carbon offsets on the blockchain.
+                                </p>
+                                <a href="https://www.carbonlink.io/">https://www.carbonlink.io/</a>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Kyoku</h1>
+                                <p>
+                                    Post-ride recovery shakes made for your body type, riding
+                                    style, and cycling goals from plant-based superfoods.
+                                    Personalized for optimal performance.
+                                </p>
+                                <a href="https://kyoku.com/">https://kyoku.com/</a>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Fleek</h1>
+                                <p>
+                                Your style, on Fleek. Explore curated items, search across top women's clothing brands, save favorites, organize Fleek boards, and purchase items.
+                                </p>
+                                <a href="https://www.fleekfashion.app/">
+                                    https://www.fleekfashion.app/
+                                </a>
+                            </CarouselSlide>
+                        </Carousel>
+                    </ContentTile>
+
+                    <EmploymentTile title="Alumni Industry Employment" theme="dark">
+                        <EmploymentContent>
+                            <div className="employment-item">
+                                <img src={AirbnbIcon} alt="" />
+                                Airbnb
+                            </div>
+                            <div className="employment-item">
+                                <img src={AmazonIcon} alt="" />
+                                Amazon
+                            </div>
+                            <div className="employment-item">
+                                <img src={AppleIcon} alt="" />
+                                Apple
+                            </div>
+                            <div className="employment-item">
+                                <img src={FacebookIcon} alt="" />
+                                Facebook
+                            </div>
+                            <div className="employment-item">
+                                <img src={GoogleIcon} alt="" />
+                                Google
+                            </div>
+                            <div className="employment-item">
+                                <img src={MicrosoftIcon} alt="" />
+                                Microsoft
+                            </div>
+                            <div className="employment-item">
+                                <img src={RobinhoodIcon} alt="" />
+                                Robinhood
+                            </div>
+                            <div className="employment-item">
+                                <img src={SnapchatIcon} alt="" />
+                                Snapchat
+                            </div>
+                            <div className="employment-item">
+                                <img src={SlackIcon} alt="" />
+                                Slack
+                            </div>
+                            <div className="employment-item">
+                                <img src={TwitterIcon} alt="" />
+                                Twitter
+                            </div>
+                            <div className="employment-item">
+                                <img src={UberIcon} alt="" />
+                                Uber
+                            </div>
+                            <div className="employment-item">
+                                <img className="more-icon" src={MoreIcon} alt="" />
+                                And more
+                            </div>
+                        </EmploymentContent>
+                    </EmploymentTile>
+                </TileRow>
+                <TileRow>
+                    <FreeTile title="Executive Team" type="full">
+                        <hr />
+                        <p className="title">Executive Team</p>
+                        <ExecutiveBoard>
+                            <div className="member">
+                                <img src={Nikhil} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={PresidentIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/patel-nikhil/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Nikhil Patel</p>
+                                        </a>
+                                        <p className="eboard-title">President</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Adil} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={CurriculumIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/adilkhadri/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Adil Khadri</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Operations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Maanya} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={RecruitmentIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/maanya-kashyap/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Maanya Kashyap</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Recruitment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Joanna} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={CommunityIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/joannapark02/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Joanna Park</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Community</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Kaylin} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={IndustryRelationsIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/kaylinhiatt/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Kaylin Hiatt</p>
+                                        </a>
+                                        <p className="eboard-title">
+                                            Director of Industry Relations
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Tierra} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={FinanceIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/tierrabuissereth/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Tierra Buissereth</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Sponsorship</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Hanson} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={DesignIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/hansonleung/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Hanson Leung</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Colin} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={DevelopmentIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/colin-ho99/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Colin Ho</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Phoebe} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={MarketingIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/phoebeum/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Phoebe Um</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Marketing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="member">
+                                <img src={Mitchell} className="profile-pic" alt="" />
+                                <div className="description">
+                                    <img className="eboard-icon" src={CurriculumIcon} alt="" />
+                                    <div className="description-inner">
+                                        <a href="https://www.linkedin.com/in/mitchell-morrison2024/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Mitchell Morrison</p>
+                                        </a>
+                                        <p className="eboard-title">Director of Alumni Relations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ExecutiveBoard>
+                    </FreeTile>
+                </TileRow>
+            </ContentContainer>
+            <StyleHeader className="navbar">
+                <a href="/"><img src={LavaLabLogoHighlight} alt="" /></a>
+                <div className="links">
+                    <a href="#about">About</a>
+                    <a href="#join">Join</a>
+                    <a href="#events">Events</a>
+                    <a href="#alumni">Alumni</a>
+                    <a href="#footer">Contact</a>
+                    <a
+                        href="https://lavalearn.org/"
+                        target="_blank" rel="noopener noreferrer"
+                        style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
+                    >
+                        <img src={LavaLearnLogoWhite} alt="" />
+                    </a>
+                </div>
+            </StyleHeader>
         </div>
-      </ImageHero>
-      <ContentContainer>
-        <TileRow>
-          <CommunityTile type="full" title="Community">
-            <SinglePanel>
-              <CarouselSlide>
-                <h1>
-                  A network of passionate innovators, over 350 members strong
-                  and growing.
-                </h1>
-                <p>
-                  The LavaLab network is like no other. We are a community of
-                  entrepreneurs, go-getters, and change makers who value
-                  connection, deep engagement, and building for a brighter
-                  future. Grow together in an environment that meets you where
-                  you’re at and pushes you to become the best version of
-                  yourself. At LavaLab, you’ll meet your future co-founders and
-                  some of your closest friends.
-                </p>
-              </CarouselSlide>
-            </SinglePanel>
-          </CommunityTile>
-        </TileRow>
-      </ContentContainer>
-      <ImageHero className="quote">
-        <div className="quote-content">
-          <span>“</span>
-          <br />
-          Lavalab made my semester one of the most rewarding experiences as a
-          student so far. Turning a vision into a reality, finding lifelong
-          friends and potential cofounders, and learning to hustle make this
-          something I'd recommend to everyone.
-          <div className="quote-profile">
-            <img src={PersonIcon} alt=""/>
-
-            <div className="quote-profile-details">
-              <p className="name">Shub Gaur</p>
-              <p className="detail">Product Manager · Spring 2020</p>
-            </div>
-          </div>
-        </div>
-      </ImageHero>
-
-      <ContentContainer>
-        <TileRow id="alumni">
-          <ContentTile title="Alumni Project Spotlight">
-            <Carousel titles={["Kyoku", "Recess", "Spree"]}>
-              <CarouselSlide>
-                <h1>Kyoku</h1>
-                <p>
-                  Post-ride recovery shakes made for your body type, riding
-                  style, and cycling goals from plant-based superfoods.
-                  Personalized for optimal performance.
-                </p>
-                <a href="https://kyoku.com/">https://kyoku.com/</a>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Recess</h1>
-                <p>
-                  Recess creates shared calendars that display free-time between
-                  all parties and suggests personalized activities for you and
-                  your group. Maintain your friendships with a frictionless
-                  scheduling flow.
-                </p>
-              </CarouselSlide>
-              <CarouselSlide>
-                <h1>Spree</h1>
-                <p>
-                  Everyone hates comparing prices online. Spree turns anyone
-                  into a shopping wizard by automatically comparing prices and
-                  checking out from everywhere, in just one click!
-                </p>
-                <a href="https://www.joinspree.com/">
-                  https://www.joinspree.com/
-                </a>
-              </CarouselSlide>
-            </Carousel>
-          </ContentTile>
-
-          <EmploymentTile title="Alumni Industry Employment" theme="dark">
-            <EmploymentContent>
-              <div className="employment-item">
-                <img src={AirbnbIcon} alt=""/>
-                Airbnb
-              </div>
-              <div className="employment-item">
-                <img src={AmazonIcon} alt=""/>
-                Amazon
-              </div>
-              <div className="employment-item">
-                <img src={AppleIcon} alt=""/>
-                Apple
-              </div>
-              <div className="employment-item">
-                <img src={FacebookIcon} alt=""/>
-                Facebook
-              </div>
-              <div className="employment-item">
-                <img src={GoogleIcon} alt=""/>
-                Google
-              </div>
-              <div className="employment-item">
-                <img src={MicrosoftIcon} alt=""/>
-                Microsoft
-              </div>
-              <div className="employment-item">
-                <img src={RobinhoodIcon} alt=""/>
-                Robinhood
-              </div>
-              <div className="employment-item">
-                <img src={SnapchatIcon} alt=""/>
-                Snapchat
-              </div>
-              <div className="employment-item">
-                <img src={SlackIcon} alt=""/>
-                Slack
-              </div>
-              <div className="employment-item">
-                <img src={TwitterIcon} alt=""/>
-                Twitter
-              </div>
-              <div className="employment-item">
-                <img src={UberIcon} alt=""/>
-                Uber
-              </div>
-              <div className="employment-item">
-                <img className="more-icon" src={MoreIcon} alt=""/>
-                And more
-              </div>
-            </EmploymentContent>
-          </EmploymentTile>
-        </TileRow>
-        <TileRow>
-          <FreeTile title="Executive Team" type="full">
-            <hr />
-            <p className="title">Executive Team</p>
-            <ExecutiveBoard>
-              <div className="member">
-                <img src={Nikhil} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={PresidentIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Nikhil Patel</p>
-                    <p className="eboard-title">President</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Adil} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={CurriculumIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Adil Khadri</p>
-                    <p className="eboard-title">Director of Operations</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Maanya} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={RecruitmentIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Maanya Kashyap</p>
-                    <p className="eboard-title">Director of Recruitment</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Joanna} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={CommunityIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Joanna Park</p>
-                    <p className="eboard-title">Director of Community</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Kaylin} className="profile-pic" alt="" />
-                <div className="description">
-                  <img className="eboard-icon" src={IndustryRelationsIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Kaylin Hiatt</p>
-                    <p className="eboard-title">
-                      Director of Industry Relations
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Tierra} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={FinanceIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Tierra Buissereth</p>
-                    <p className="eboard-title">Director of Sponsorship</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Hanson} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={DesignIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Hanson Leung</p>
-                    <p className="eboard-title">Director of Design</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Colin} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={DevelopmentIcon}alt="" />
-                  <div className="description-inner">
-                    <p className="name">Colin Ho</p>
-                    <p className="eboard-title">Director of Development</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Phoebe} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={MarketingIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Phoebe Um</p>
-                    <p className="eboard-title">Director of Marketing</p>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Mitchell} className="profile-pic" alt=""/>
-                <div className="description">
-                  <img className="eboard-icon" src={MarketingIcon} alt=""/>
-                  <div className="description-inner">
-                    <p className="name">Mitchell Morrison</p>
-                    <p className="eboard-title">Director of Alumni Relations</p>
-                  </div>
-                </div>
-              </div>
-            </ExecutiveBoard>
-          </FreeTile>
-        </TileRow>
-      </ContentContainer>
-      <StyleHeader className="navbar">
-        <a href="/"><img src={LavaLabLogoHighlight} alt=""/></a>
-        <div className="links">
-          <a href="#about">About</a>
-          <a href="#join">Join</a>
-          <a href="#events">Events</a>
-          <a href="#alumni">Alumni</a>
-          <a href="#footer">Contact</a>
-          <a
-            href="https://lavalearn.org/"
-            target="_blank" rel="noopener noreferrer"
-            style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
-          >
-            <img src={LavaLearnLogoWhite} alt=""/>
-          </a>
-        </div>
-      </StyleHeader>
-    </div>
-  )
+    )
 }
 
 const ExecutiveBoard = styled.div`
@@ -737,6 +754,13 @@ const ExecutiveBoard = styled.div`
         .eboard-title {
           text-transform: none;
           color: #8e8e93;
+        }
+
+        .linkedInLinks{
+            color:black;
+            &:hover {
+                color:#FF5C39;
+            }
         }
       }
     }
