@@ -66,6 +66,7 @@ import FinanceIcon from "../../static/icon/Finance-Icon/Highlight.png"
 import DesignIcon from "../../static/icon/Design-Icon/Highlight.png"
 import DevelopmentIcon from "../../static/icon/Development-Icon/Highlight.png"
 import MarketingIcon from "../../static/icon/marketing.png"
+import OperationsIcon from "../../static/icon/operations.svg"
 
 import Joanna from "../../static/img/exec/joanna.jpg"
 import Mitchell from "../../static/img/exec/mitchell.jpg"
@@ -573,7 +574,7 @@ const HomePage = () => {
                             <div className="member">
                                 <img src={Adil} className="profile-pic" alt="" />
                                 <div className="description">
-                                    <img className="eboard-icon" src={CurriculumIcon} alt="" />
+                                    <img className="eboard-icon" src={OperationsIcon} alt="" />
                                     <div className="description-inner">
                                         <a href="https://www.linkedin.com/in/adilkhadri/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
                                             <p className="name">Adil Khadri</p>
@@ -758,6 +759,7 @@ const ExecutiveBoard = styled.div`
 
         .linkedInLinks{
             color:black;
+            text-decoration:none;
             &:hover {
                 color:#FF5C39;
             }
