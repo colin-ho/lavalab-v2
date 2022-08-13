@@ -677,7 +677,7 @@ const HomePage = () => {
                                         <a href="https://www.linkedin.com/in/mitchell-morrison2024/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
                                             <p className="name">Mitchell Morrison</p>
                                         </a>
-                                        <p className="eboard-title">Director of Alumni Relations</p>
+                                        <p className="eboard-title">Director of Alumni and External Community</p>
                                     </div>
                                 </div>
                             </div>
