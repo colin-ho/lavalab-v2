@@ -9,10 +9,12 @@ import SmoothScroll from "smooth-scroll"
 
 const IndexPage = () => {
     useEffect(() => {
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1500,
-            speedAsDuration: true
-        });
+        if (typeof window !== "undefined"){
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1500,
+                speedAsDuration: true
+            });
+        }
     }, [])
 
     return (
