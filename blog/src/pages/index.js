@@ -1,29 +1,21 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import HomePage from "./home.js"
 import Footer from "../components/footer.js"
-import SmoothScroll from "smooth-scroll"
-
-const IndexPage = () => {
-    useEffect(() => {
-        if (typeof window !== "undefined"){
-            var scroll = new SmoothScroll('a[href*="#"]', {
-                speed: 1500,
-                speedAsDuration: true
-            });
-        }
-    }, [])
-
-    return (
-        <Layout>
-            <SEO />
-            <HomePage></HomePage>
-            <Footer></Footer>
-        </Layout>
-    )
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
 }
+
+const IndexPage = () => (
+  <Layout>
+    <SEO/>
+    <HomePage></HomePage>
+    <Footer></Footer>
+  </Layout>
+)
 
 export default IndexPage
