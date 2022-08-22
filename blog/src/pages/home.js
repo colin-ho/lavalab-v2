@@ -120,7 +120,7 @@ const HomePage = () => {
             </ImageHero>
 
             <ContentContainer>
-                <TileRow height={"600 px"}>
+                <TileRow height={"600 px"} id={"about"} >
                     <ContentTile title="Welcome" height={550}>
                         <Carousel titles={["Welcome", "The Experience", "Curriculum"]}>
                             <CarouselSlide>
@@ -180,12 +180,12 @@ const HomePage = () => {
                     </ContentTile>
                 </TileRow>
 
-                <TileRow id={"about"}>
+                <TileRow id={"join"}>
                     <MastheadTile title="What's Happening Now" type="full" height="350">
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className="hero-header tile-title">
-                                    Applications for the Fall 2022 cohort will be opening in late August.
+                                    Applications for the Fall 2022 cohort have begun!
                                 </h1>
                                 <h2 style={{ paddingTop: 16 }}>
                                     {" "}
@@ -199,8 +199,8 @@ const HomePage = () => {
                   </a> */}
                                 </h2>
 
-                                {/* <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeJmqI0rGaAVBcgwVPYYOhUDJDdWXh1vgZcpkKFWKrDg2NSbA/viewform?usp=sf_link"
+                                { <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_mWAOgInzjfFiB_7_mztuIz5ts99OYU-4xdqC_zLOGfIxA/viewform"
                   target="_blank"
                 >
                   <div
@@ -222,16 +222,19 @@ const HomePage = () => {
                     <p style={{ fontColor: "white !important" }}>Apply Now</p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
-                </a> */}
+                </a> }
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
-                                    <p className="tile-title">Demo Night</p>
+                                    <p className="tile-title">Idea Grind</p>
                                     <p className="detail">
-                                        November 23rd from 7-9:30 PM. Location TBC
+                                        Come see what LavaLab is about with our spin on an Info Session.
+                                    </p>
+                                    <p className="detail" style={{marginTop:"10px"}}>
+                                        September 1st from 8-10 PM. Location TBC.
                                     </p>
                                     <a
-                                        href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEybHIzMmtndDA3b25zcTZ2YWxwMWw4NHEgcnFmZ2dwcDE2MTNkbTJhcmZxbThtbDlxbm9AZw&tmsrc=rqfggpp1613dm2arfqm8ml9qno%40group.calendar.google.com"
+                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Idea+Grind&details=Jump+right+in+and+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.+Through+discussion+and+brainstorming%2C+hearing+from+E-board%2C+and+asking+questions%2C+you%27ll+get+a+taste+of+what+LavaLab+is+about.&dates=20220902T030000Z%2F20220902T050000Z"
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <div className="be-notified">
@@ -259,7 +262,7 @@ const HomePage = () => {
                     </MastheadTile>
                 </TileRow>
 
-                <TileRow id={"join"}>
+                <TileRow>
                     <ImageTile image={TileDemoNight} height={"100%"}>
                         <EventLabel
                             icon={DemoNightIcon}
@@ -471,7 +474,7 @@ const HomePage = () => {
             <ContentContainer>
                 <TileRow id="alumni">
                     <ContentTile title="Alumni Project Spotlight">
-                        <Carousel titles={["CarbonLink", "Kyoku", "Fleek"]}>
+                        <Carousel titles={["CarbonLink", "Fleek","Kyoku"]}>
                             <CarouselSlide>
                                 <h1>CarbonLink</h1>
                                 <p>
@@ -481,15 +484,6 @@ const HomePage = () => {
                                 <a href="https://www.carbonlink.io/">https://www.carbonlink.io/</a>
                             </CarouselSlide>
                             <CarouselSlide>
-                                <h1>Kyoku</h1>
-                                <p>
-                                    Post-ride recovery shakes made for your body type, riding
-                                    style, and cycling goals from plant-based superfoods.
-                                    Personalized for optimal performance.
-                                </p>
-                                <a href="https://kyoku.com/">https://kyoku.com/</a>
-                            </CarouselSlide>
-                            <CarouselSlide>
                                 <h1>Fleek</h1>
                                 <p>
                                 Your style, on Fleek. Explore curated items, search across top women's clothing brands, save favorites, organize Fleek boards, and purchase items.
@@ -497,6 +491,15 @@ const HomePage = () => {
                                 <a href="https://www.fleekfashion.app/">
                                     https://www.fleekfashion.app/
                                 </a>
+                            </CarouselSlide>
+                            <CarouselSlide>
+                                <h1>Kyoku</h1>
+                                <p>
+                                    Post-ride recovery shakes made for your body type, riding
+                                    style, and cycling goals from plant-based superfoods.
+                                    Personalized for optimal performance.
+                                </p>
+                                <a href="https://kyoku.com/">https://kyoku.com/</a>
                             </CarouselSlide>
                         </Carousel>
                     </ContentTile>
@@ -763,6 +766,10 @@ const ExecutiveBoard = styled.div`
             &:hover {
                 color:#FF5C39;
             }
+        }
+
+        .name{
+            font-weight:600;
         }
       }
     }
