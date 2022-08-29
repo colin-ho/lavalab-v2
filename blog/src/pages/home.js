@@ -231,10 +231,10 @@ const HomePage = () => {
                                         Come see what LavaLab is about with our spin on an Info Session.
                                     </p>
                                     <p className="detail" style={{marginTop:"10px"}}>
-                                        September 1st from 8-10 PM. Location TBC.
+                                        ZHS 159, September 1st from 8-10 PM
                                     </p>
                                     <a
-                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Idea+Grind&details=Jump+right+in+and+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.+Through+discussion+and+brainstorming%2C+hearing+from+E-board%2C+and+asking+questions%2C+you%27ll+get+a+taste+of+what+LavaLab+is+about.&dates=20220902T030000Z%2F20220902T050000Z"
+                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Idea+Grind&details=Come+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.&location=ZHS+159&dates=20220902T030000Z%2F20220902T045000Z"
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <div className="be-notified">
