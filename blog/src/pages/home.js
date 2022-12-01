@@ -570,7 +570,7 @@ const HomePage = () => {
                                         <a href="https://www.linkedin.com/in/patel-nikhil/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
                                             <p className="name">Nikhil Patel</p>
                                         </a>
-                                        <p className="eboard-title">President</p>
+                                        <p className="eboard-title">Supreme Dictator God</p>
                                     </div>
                                 </div>
                             </div>
