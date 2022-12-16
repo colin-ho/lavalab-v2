@@ -51,8 +51,8 @@ import FacebookIcon from "../../static/icon/Facebook-Icon/Light.png"
 import GoogleIcon from "../../static/icon/Google-Icon/Light.png"
 import MicrosoftIcon from "../../static/icon/Microsoft-Icon/Light.png"
 import RobinhoodIcon from "../../static/icon/Robinhood-Icon/Light.png"
-import SlackIcon from "../../static/icon/Slack-Icon/Light.png"
 import SnapchatIcon from "../../static/icon/Snapchat-Icon/Light.png"
+import StripeIcon from "../../static/icon/Stripe-Icon/stripe_icon.png"
 import TwitterIcon from "../../static/icon/Twitter-Icon/Light.png"
 import UberIcon from "../../static/icon/Uber-Icon/Light.png"
 import MoreIcon from "../../static/icon/Add-Icon/Light.png"
@@ -185,7 +185,7 @@ const HomePage = () => {
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className="hero-header tile-title">
-                                    Applications for the Spring 2022 cohort will open in January!
+                                    Applications for the Spring 2022 cohort will open in January 9th!
                                 </h1>
                                 <h2 style={{ paddingTop: 16 }}>
                                     {" "}
@@ -226,15 +226,15 @@ const HomePage = () => {
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
-                                    <p className="tile-title">Demo Night</p>
+                                    <p className="tile-title">Idea Grind</p>
                                     <p className="detail">
-                                        Come see the amazing products from the Fall'22 cohort!
+                                    Come see what LavaLab is about with our spin on an Info Session.
                                     </p>
                                     <p className="detail" style={{marginTop:"10px"}}>
-                                        Tommy's Place, November 29th at 7pm
+                                        January 26th, Location TBD
                                     </p>
                                     <a
-                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Demo+Night&details=Join+us+to+see+the+amazing+products+that+the+Fall%2722+cohort+have+created%21&location=Tommy%27s+Place&dates=20221130T030000Z%2F20221130T050000Z"
+                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=LavaLab+Idea+Grind&details=Come+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.&location=TBD&dates=20230126T110000Z%2F20221226T120000Z"
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <div className="be-notified">
@@ -539,8 +539,8 @@ const HomePage = () => {
                                 Snapchat
                             </div>
                             <div className="employment-item">
-                                <img src={SlackIcon} alt="" />
-                                Slack
+                                <img src={StripeIcon} alt="" />
+                                Stripe
                             </div>
                             <div className="employment-item">
                                 <img src={TwitterIcon} alt="" />
