@@ -72,12 +72,12 @@ import Joanna from "../../static/img/exec/joanna.jpg"
 import Mitchell from "../../static/img/exec/mitchell.jpg"
 import Phoebe from "../../static/img/exec/phoebe.jpg"
 import Tierra from "../../static/img/exec/tierra.jpg"
-import Kaylin from "../../static/img/exec/kaylin.jpeg"
 import Nikhil from "../../static/img/exec/nikhil.png"
-import Adil from "../../static/img/exec/lildil.png"
 import Maanya from "../../static/img/exec/maanya.jpg"
 import Colin from "../../static/img/exec/colin.jpg"
 import Hanson from "../../static/img/exec/hanson.jpg"
+import Anay from "../../static/img/exec/anay.jpg"
+import Scott from "../../static/img/exec/scott.jpg"
 
 import "./home.css"
 const HomePage = () => {
@@ -185,7 +185,7 @@ const HomePage = () => {
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className="hero-header tile-title">
-                                    Applications for the Spring 2022 cohort will open in January 9th!
+                                    Applications for the Spring 2023 cohort are open! 
                                 </h1>
                                 <h2 style={{ paddingTop: 16 }}>
                                     {" "}
@@ -199,8 +199,8 @@ const HomePage = () => {
                   </a> */}
                                 </h2>
 
-                                {/* <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_mWAOgInzjfFiB_7_mztuIz5ts99OYU-4xdqC_zLOGfIxA/viewform"
+                                {<a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfCaoqwBPYIiE6uw6ipmY8AWtyGrUWXJOmV4l_kexJrNDQ6Ew/viewform"
                   target="_blank"
                 >
                   <div
@@ -222,7 +222,7 @@ const HomePage = () => {
                     <p style={{ fontColor: "white !important" }}>Apply Now</p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
-                </a> */}
+                </a>}
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
@@ -234,7 +234,7 @@ const HomePage = () => {
                                         January 26th, Location TBD
                                     </p>
                                     <a
-                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=LavaLab+Idea+Grind&details=Come+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.&location=TBD&dates=20230126T110000Z%2F20221226T120000Z"
+                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=LavaLab+Idea+Grind&details=Come+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.&location=TBD&dates=20230127T040000Z%2F20230127T060000Z"
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <div className="be-notified">
@@ -575,12 +575,12 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Adil} className="profile-pic" alt="" />
+                                <img src={Mitchell} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={OperationsIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/adilkhadri/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Adil Khadri</p>
+                                        <a href="https://www.linkedin.com/in/mitchell-morrison2024/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Mitchell Morrison</p>
                                         </a>
                                         <p className="eboard-title">Director of Operations</p>
                                     </div>
@@ -611,12 +611,12 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Kaylin} className="profile-pic" alt="" />
+                                <img src={Scott} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={IndustryRelationsIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/kaylinhiatt/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Kaylin Hiatt</p>
+                                        <a href="https://www.linkedin.com/in/susantoscott/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Scott Susanto</p>
                                         </a>
                                         <p className="eboard-title">
                                             Director of Industry Relations
@@ -673,12 +673,12 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Mitchell} className="profile-pic" alt="" />
+                                <img src={Anay} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={CurriculumIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/mitchell-morrison2024/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Mitchell Morrison</p>
+                                        <a href="https://www.linkedin.com/in/anaykarwal/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Anay Karwal</p>
                                         </a>
                                         <p className="eboard-title">Director of Alumni and External Community</p>
                                     </div>
