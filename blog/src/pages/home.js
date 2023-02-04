@@ -185,7 +185,7 @@ const HomePage = () => {
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className="hero-header tile-title">
-                                    Applications for the Spring 2023 cohort are open! 
+                                    Applications for the Spring 2023 cohort have closed.
                                 </h1>
                                 <h2 style={{ paddingTop: 16 }}>
                                     {" "}
@@ -199,7 +199,7 @@ const HomePage = () => {
                   </a> */}
                                 </h2>
 
-                                {<a
+                                {/*<a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfCaoqwBPYIiE6uw6ipmY8AWtyGrUWXJOmV4l_kexJrNDQ6Ew/viewform"
                   target="_blank"
                 >
@@ -222,26 +222,26 @@ const HomePage = () => {
                     <p style={{ fontColor: "white !important" }}>Apply Now</p>
                     <img src={RightArrowIcon} height={20} />
                   </div>
-                </a>}
+                </a>*/}
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
-                                    <p className="tile-title">Idea Grind</p>
+                                    <p className="tile-title">Demo Night</p>
                                     <p className="detail">
-                                    Come see what LavaLab is about with our spin on an Info Session.
+                                    Stay tuned for updates on our signature startup showcase and pitch competition!
                                     </p>
                                     <p className="detail" style={{marginTop:"10px"}}>
-                                        January 25th 8-10pm, ZHS 159
+                                        April 25th, Location TBD
                                     </p>
-                                    <a
-                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Idea+Grind&details=Come+see+what+LavaLab+is+about+with+our+spin+on+an+Info+Session.&location=ZHS+159&dates=20230126T040000Z%2F20230126T060000Z"
+                                    {<a
+                                        href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lavalab+Demo+Night+Spring+2023&location=TBD&dates=20230426T020000Z%2F20230426T050000Z"
                                         target="_blank" rel="noopener noreferrer"
                                     >
                                         <div className="be-notified">
                                             <p>Save the Date</p>
                                             <img src={RightArrowIcon} alt="" />
                                         </div>
-                                    </a>
+                                    </a>}
                                 </div>
                                 <div className="tile learn">
                                     <p className="tile-title">LavaLearn</p>
