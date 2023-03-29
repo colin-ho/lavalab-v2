@@ -75,7 +75,7 @@ import Tierra from "../../static/img/exec/tierra.jpg"
 import Nikhil from "../../static/img/exec/nikhil.png"
 import Maanya from "../../static/img/exec/maanya.jpg"
 import Colin from "../../static/img/exec/colin.jpg"
-import Hanson from "../../static/img/exec/hanson.jpg"
+import Haley from "../../static/img/exec/haley.jpg"
 import Anay from "../../static/img/exec/anay.jpg"
 import Scott from "../../static/img/exec/scott.jpg"
 
@@ -250,7 +250,7 @@ const HomePage = () => {
                                         entrepreneurial and tech resources, workshops, and fireside
                                         chats to USC and the greater public.
                                     </p>
-                                    <a href="https://lavalearn.org/" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://learn.usclavalab.org/" target="_blank" rel="noopener noreferrer">
                                         <div className="be-notified">
                                             <p>Check it out</p>
                                             <img src={RightArrowIcon} alt="" />
@@ -637,12 +637,12 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Hanson} className="profile-pic" alt="" />
+                                <img src={Phoebe} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={DesignIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/hansonleung/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Hanson Leung</p>
+                                        <a href="https://www.linkedin.com/in/phoebeum/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Phoebe Um</p>
                                         </a>
                                         <p className="eboard-title">Director of Design</p>
                                     </div>
@@ -661,12 +661,12 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="member">
-                                <img src={Phoebe} className="profile-pic" alt="" />
+                                <img src={Haley} className="profile-pic" alt="" />
                                 <div className="description">
                                     <img className="eboard-icon" src={MarketingIcon} alt="" />
                                     <div className="description-inner">
-                                        <a href="https://www.linkedin.com/in/phoebeum/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
-                                            <p className="name">Phoebe Um</p>
+                                        <a href="https://www.linkedin.com/in/hellohaleyho/" target="_blank" rel="noopener noreferrer" className="linkedInLinks">
+                                            <p className="name">Haley Ho</p>
                                         </a>
                                         <p className="eboard-title">Director of Marketing</p>
                                     </div>
@@ -697,7 +697,7 @@ const HomePage = () => {
                     <a href="#alumni">Alumni</a>
                     <a href="#footer">Contact</a>
                     <a
-                        href="https://lavalearn.org/"
+                        href="https://learn.usclavalab.org/"
                         target="_blank" rel="noopener noreferrer"
                         style={{ backgroundColor: "black", padding: 10, borderRadius: 5 }}
                     >
