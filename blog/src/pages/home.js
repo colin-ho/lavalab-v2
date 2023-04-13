@@ -185,7 +185,7 @@ const HomePage = () => {
                         <Masthead>
                             <MastheadTextTile>
                                 <h1 className="hero-header tile-title">
-                                    Applications for the Spring 2023 cohort have closed.
+                                    Demo Night: Our signature pitch and demo competition.
                                 </h1>
                                 <h2 style={{ paddingTop: 16 }}>
                                     {" "}
@@ -199,8 +199,8 @@ const HomePage = () => {
                   </a> */}
                                 </h2>
 
-                                {/*<a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfCaoqwBPYIiE6uw6ipmY8AWtyGrUWXJOmV4l_kexJrNDQ6Ew/viewform"
+                                {<a
+                  href= "http://twitch.tv/usclavalab"//"https://docs.google.com/forms/d/e/1FAIpQLSfCaoqwBPYIiE6uw6ipmY8AWtyGrUWXJOmV4l_kexJrNDQ6Ew/viewform"
                   target="_blank"
                 >
                   <div
@@ -219,16 +219,15 @@ const HomePage = () => {
                       fontColor: "white",
                     }}
                   >
-                    <p style={{ fontColor: "white !important" }}>Apply Now</p>
+                    <p style={{ fontColor: "white !important" }}>Stream it live</p>{/*apply now*/ }
                     <img src={RightArrowIcon} height={20} />
                   </div>
-                </a>*/}
+                </a>}
                             </MastheadTextTile>
                             <div className="right">
                                 <div className="tile apply">
                                     <p className="tile-title">Demo Night</p>
                                     <p className="detail">
-                                        Demo Night is our signature event, where our 7 startup teams demo their products and pitch them to our panel of judges.
                                         Come celebrate the beginning of USC's newest startups!
                                     </p>
                                     <p className="detail" style={{marginTop:"10px"}}>
