@@ -31,7 +31,7 @@ import DemoNightIcon from "../../static/icon/Events/Demo-Night-Icon/Highlight.pn
 
 import LavaLabLogo from "../../static/lavalab-logo.png"
 import LavaLearnLogoWhite from "../../static/lavalearn-logo-white.png"
-import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight-pride.png"
+import LavaLabLogoHighlight from "../../static/lavalab-logo-highlight.png"
 
 import PersonIcon from "../../static/icon/Person-Icon/Highlight.png"
 
